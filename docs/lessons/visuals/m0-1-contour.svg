@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" role="img" aria-labelledby="title desc">
+  <title id="title">>=BC@ ?@>4C:B>2>9 0=0;8B8:8 =0 ?@8<5@5  8B<0</title>
+  <desc id="desc">0<:=CBK9 :>=BC@: ?@>1;5<0 ’ UX ’ A>1KB8O ’ @0AGQB ’ AB0B8AB8:0 ’ BI ’ @5H5=85 ’ 87<5=5=85 ?@>4C:B0.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#2F4A3E"/>
+    </marker>
+    <style>
+      .box { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 2; }
+      .box-accent { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 2; }
+      .lbl { font-family: Georgia, 'Times New Roman', serif; font-size: 15px; fill: #1C2B24; text-anchor: middle; }
+      .sub { font-family: system-ui, sans-serif; font-size: 11px; fill: #4A5C52; text-anchor: middle; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .flow { stroke: #2F4A3E; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="920" height="520" fill="#FBF8F2"/>
+  <text x="40" y="36" class="title">>=BC@ @5H5=8O · CG51=K9 ?@>4C:B « 8B<»</text>
+  <text x="40" y="58" class="hint">5B@8:0 =5 «15@QBAO 87 107K»  >=0 ?@>E>48B 25AL :@C3 8 2>72@0I05BAO 87<5=5=85<</text>
+
+  <!-- Top row -->
+  <rect class="box-accent" x="40" y="90" width="160" height="70" rx="6"/>
+  <text class="lbl" x="120" y="118">1. @>1;5<0</text>
+  <text class="sub" x="120" y="138">1@>A0NB A5@8N : D7</text>
+
+  <rect class="box" x="250" y="90" width="160" height="70" rx="6"/>
+  <text class="lbl" x="330" y="118">2. UX / ?>B>:</text>
+  <text class="sub" x="330" y="138">>=1>@48=3 ’ G5:-8=</text>
+
+  <rect class="box" x="460" y="90" width="160" height="70" rx="6"/>
+  <text class="lbl" x="540" y="118">3. !>1KB8O</text>
+  <text class="sub" x="540" y="138">habit_created, check_in</text>
+
+  <rect class="box" x="670" y="90" width="200" height="70" rx="6"/>
+  <text class="lbl" x="770" y="118">4. SQL / Python</text>
+  <text class="sub" x="770" y="138">4>AB0BL F8D@C</text>
+
+  <!-- Bottom row (right to left visually via flow) -->
+  <rect class="box" x="670" y="280" width="200" height="70" rx="6"/>
+  <text class="lbl" x="770" y="308">5. !B0B8AB8:0</text>
+  <text class="sub" x="770" y="328">HC< 8;8 MDD5:B?</text>
+
+  <rect class="box" x="460" y="280" width="160" height="70" rx="6"/>
+  <text class="lbl" x="540" y="308">6. BI</text>
+  <text class="sub" x="540" y="328">>4=> >?@545;5=85</text>
+
+  <rect class="box-accent" x="250" y="280" width="160" height="70" rx="6"/>
+  <text class="lbl" x="330" y="308">7.  5H5=85</text>
+  <text class="sub" x="330" y="328">45=L38 8 2K1>@</text>
+
+  <rect class="box-accent" x="40" y="280" width="160" height="70" rx="6"/>
+  <text class="lbl" x="120" y="308">8. 7<5=5=85</text>
+  <text class="sub" x="120" y="328">M:@0= / ?>B>:</text>
+
+  <!-- Arrows top -->
+  <path class="flow" d="M200 125 H245"/>
+  <path class="flow" d="M410 125 H455"/>
+  <path class="flow" d="M620 125 H665"/>
+  <!-- down -->
+  <path class="flow" d="M770 160 V275"/>
+  <!-- bottom leftward -->
+  <path class="flow" d="M670 315 H625"/>
+  <path class="flow" d="M460 315 H415"/>
+  <path class="flow" d="M250 315 H205"/>
+  <!-- up back to UX -->
+  <path class="flow" d="M120 280 V200 H330 V165"/>
+
+  <text x="40" y="420" class="hint">!<>B@5BL: 87<5=5=85 A=>20 2E>48B 2 UX  :>=BC@ 70<:=CB. N1>9 @07@K2 = ;81> =587<5@8<K9 ?@>4C:B, ;81> >BGQB 157 @5H5=8O.</text>
+  <text x="40" y="450" class="hint">C@A · 0.1 · ?@>4C:B>20O 0=0;8B8:0 2 M?>EC AI</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+  <title id="title">Bottleneck on Ritm funnel</title>
+  <desc id="desc">Funnel throughput: habitídepth is the narrow neck; optimizing paywall while depth is low does not raise revenue.</desc>
+  <defs>
+    <style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .t { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; text-anchor: middle; }
+      .s { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; text-anchor: middle; }
+      .ok { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 1.8; }
+      .bad { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 2.5; }
+      .mid { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.8; }
+      .arrow { fill: #2F4A3E; }
+      .call { font-family: Georgia, serif; font-size: 14px; fill: #8B3A2F; }
+      .leg { font-family: system-ui, sans-serif; font-size: 11px; fill: #1C2B24; }
+    </style>
+  </defs>
+  <rect class="bg" width="960" height="420"/>
+  <text x="36" y="32" class="title">#7:>5 3>@;KH:> ∑ F5?>G:0  8B<0</text>
+  <text x="36" y="52" class="hint">#G51=K9 A@57: 10k install. #7:>5 <5AB> = <8=8<0;L=0O ?@>?CA:=0O A?>A>1=>ABL 725=0 4> 45=53.</text>
+
+  <!-- funnel steps as trapezoid-like bars -->
+  <rect class="ok" x="60" y="90" width="840" height="36" rx="4"/>
+  <text class="t" x="480" y="112">install 10 000</text>
+
+  <rect class="ok" x="100" y="140" width="760" height="36" rx="4"/>
+  <text class="t" x="480" y="162">onboarding  7 200 ∑ CV 72%</text>
+
+  <rect class="mid" x="150" y="190" width="660" height="36" rx="4"/>
+  <text class="t" x="480" y="212">habit_created 5 400 ∑ CV 75%</text>
+
+  <rect class="bad" x="280" y="240" width="400" height="44" rx="4"/>
+  <text class="t" x="480" y="260">depth e3 ∑ 1 450 ∑ CV 27%</text>
+  <text class="s" x="480" y="276">ê #  +(</text>
+
+  <rect class="mid" x="220" y="300" width="520" height="36" rx="4"/>
+  <text class="t" x="480" y="322">paywall_view 2 000 (G0ABL 4> F5==>AB8)</text>
+
+  <rect class="ok" x="340" y="350" width="280" height="36" rx="4"/>
+  <text class="t" x="480" y="372">subscribe 380 ∑ 40;LH5 45=L38</text>
+
+  <text x="700" y="255" class="call">=5 :@CB8BL paywall</text>
+  <text x="700" y="272" class="hint">?>:0 =5 A428=CB depth</text>
+
+  <text x="36" y="405" class="leg">K2>4: C;CGH5=85 =5-C7:>3> 725=0 =5 ?>4=8<05B 2K@CG:C :>3>@BK. !=0G0;0 habitídepth.</text>
+</svg>

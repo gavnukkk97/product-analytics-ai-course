@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" role="img" aria-labelledby="title desc">
+  <title id="title">$8;LB@ 2K1>@0 ?@>1;5<K 4;O  8B<0</title>
+  <desc id="desc">>@>=:0 87 ?OB8 :@8B5@852: G0AB>B0, 1>;L, ?;0BQ65A?>A>1=>ABL, 4>ABC?=>ABL, 0;LB5@=0B82K  : @01>G59 ?@>1;5<5.</desc>
+  <defs>
+    <style>
+      .t { font-family: Georgia, serif; font-size: 20px; fill: #1C2B24; }
+      .lbl { font-family: Georgia, serif; font-size: 15px; fill: #1C2B24; text-anchor: middle; }
+      .sub { font-family: system-ui, sans-serif; font-size: 11px; fill: #4A5C52; text-anchor: middle; }
+      .muted { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .f1 { fill: #E8EFEA; stroke: #2F4A3E; stroke-width: 2; }
+      .f2 { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 2; }
+      .f3 { fill: #D0DFD4; stroke: #2F4A3E; stroke-width: 2; }
+      .f4 { fill: #C3D7C8; stroke: #2F4A3E; stroke-width: 2; }
+      .f5 { fill: #B5CEBB; stroke: #2F4A3E; stroke-width: 2; }
+      .out { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 2; }
+    </style>
+  </defs>
+  <rect width="920" height="520" fill="#FBF8F2"/>
+  <text x="40" y="36" class="t">$8;LB@ ?@>1;5<K · =5 «@K=>: wellness», 0 @01>B0 ?>;L7>20B5;O</text>
+  <text x="40" y="58" class="muted">064K9 A;>9 >BA5:05B @0A?;K2G0BK5 D>@<C;8@>2:8. 0 2KE>45  ?@>1;5<0, : :>B>@>9 <>6=> ?@82O70BL <5B@8:C.</text>
+
+  <!-- funnel trapezoids approximated as rects narrowing -->
+  <rect class="f1" x="120" y="90" width="680" height="56" rx="6"/>
+  <text class="lbl" x="460" y="114">1. '0AB>B0</text>
+  <text class="sub" x="460" y="134">A8BC0F8O 2>7=8:05B G0AB>? · 5654=52=K9 G5:-8= / A@K2</text>
+
+  <rect class="f2" x="160" y="156" width="600" height="56" rx="6"/>
+  <text class="lbl" x="460" y="180">2. >;L</text>
+  <text class="sub" x="460" y="200">GB> B5@ONB ?@8 ?@>20;5 A5@88? · ABK4, 01>=5<5=B, 845=B8G=>ABL</text>
+
+  <rect class="f3" x="200" y="222" width="520" height="56" rx="6"/>
+  <text class="lbl" x="460" y="246">3. ;0BQ65A?>A>1=>ABL</text>
+  <text class="sub" x="460" y="266">C65 ?;0BOB G5<-B>? · 4@C385 ?>4?8A:8, :>CG, H01;>=K</text>
+
+  <rect class="f4" x="240" y="288" width="440" height="56" rx="6"/>
+  <text class="lbl" x="460" y="312">4. >ABC?=>ABL</text>
+  <text class="sub" x="460" y="332">4>BO=5<AO ;8 :0=0;><? · store / :>=B5=B; B2B  ?>765</text>
+
+  <rect class="f5" x="280" y="354" width="360" height="56" rx="6"/>
+  <text class="lbl" x="460" y="378">5. ;LB5@=0B82K</text>
+  <text class="sub" x="460" y="398">2:;NG0O «=8G53>» 8 :0;5=40@L · G5< <K ;CGH5 C45@60=85<</text>
+
+  <rect class="out" x="300" y="430" width="320" height="60" rx="6"/>
+  <text class="lbl" x="460" y="455"> 01>G0O ?@>1;5<0  8B<0</text>
+  <text class="sub" x="460" y="475">B5@ONB A5@8N 2 ?5@2K5 7 4=59 ’ <5B@8:0 depthe3</text>
+</svg>

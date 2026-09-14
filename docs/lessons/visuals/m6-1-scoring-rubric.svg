@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Capstone scoring rubric</title>
+  <desc id="desc">Five scored criteria for live defense on Ritm plus pass bar.</desc>
+  <defs><style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .h { font-family: Georgia, serif; font-size: 13px; fill: #1C2B24; text-anchor: middle; }
+      .t { font-family: system-ui, sans-serif; font-size: 11px; fill: #1C2B24; text-anchor: middle; }
+      .s { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; text-anchor: middle; }
+      .box { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.8; }
+      .ok { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 1.8; }
+      .focus { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 2.2; }
+      .pri { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 2; }
+      .warn { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 2; }
+      .e { stroke: #2F4A3E; stroke-width: 1.8; fill: none; marker-end: url(#arr); }
+</style></defs>
+  <rect class="bg" width="960" height="520"/>
+  <text x="36" y="32" class="title">Рубрика баллов · капстоун Ритм</text>
+  <text x="36" y="52" class="hint">Макс 20. Зачёт: ≥14 и ни одного «0» в критичных критериях.</text>
+
+  <rect class="box" x="40" y="90" width="170" height="140" rx="6"/>
+  <text class="h" x="125" y="120">Проблема</text>
+  <text class="t" x="125" y="150">0–4</text>
+  <text class="s" x="125" y="175">Работа юзера</text>
+  <text class="s" x="125" y="195">Узкое = из данных</text>
+  <text class="s" x="125" y="215">Не wishlist</text>
+
+  <rect class="box" x="230" y="90" width="170" height="140" rx="6"/>
+  <text class="h" x="315" y="120">Метрики</text>
+  <text class="t" x="315" y="150">0–4</text>
+  <text class="s" x="315" y="175">Словарь М5.1</text>
+  <text class="s" x="315" y="195">Сравнение</text>
+  <text class="s" x="315" y="215">Юнит-связь</text>
+
+  <rect class="box" x="420" y="90" width="170" height="140" rx="6"/>
+  <text class="h" x="505" y="120">SQL / BI</text>
+  <text class="t" x="505" y="150">0–4</text>
+  <text class="s" x="505" y="175">Зерно верно</text>
+  <text class="s" x="505" y="195">Воспроизводимо</text>
+  <text class="s" x="505" y="215">Дашборд = решение</text>
+
+  <rect class="ok" x="610" y="90" width="170" height="140" rx="6"/>
+  <text class="h" x="695" y="120">A/B честно</text>
+  <text class="t" x="695" y="150">0–4</text>
+  <text class="s" x="695" y="175">Карточка</text>
+  <text class="s" x="695" y="195">Почему не шум</text>
+  <text class="s" x="695" y="215">Без peeking-story</text>
+
+  <rect class="pri" x="800" y="90" width="120" height="140" rx="6"/>
+  <text class="h" x="860" y="120">Решение</text>
+  <text class="t" x="860" y="150">0–4</text>
+  <text class="s" x="860" y="175">Глагол</text>
+  <text class="s" x="860" y="195">₽ порядка</text>
+  <text class="s" x="860" y="215">Риск</text>
+
+  <rect class="warn" x="80" y="270" width="800" height="90" rx="6"/>
+  <text class="h" x="480" y="305">Критичный ноль (автонедобор)</text>
+  <text class="t" x="480" y="335">Нет primary из словаря · нет решения-глагола · подгонка под ключ / «AI winner»</text>
+
+  <rect class="box" x="80" y="390" width="380" height="70" rx="6"/>
+  <text class="h" x="270" y="420">≥14 + нет крит. нуля</text>
+  <text class="s" x="270" y="445">Зачёт живой защиты</text>
+
+  <rect class="box" x="500" y="390" width="380" height="70" rx="6"/>
+  <text class="h" x="690" y="420">11–13</text>
+  <text class="s" x="690" y="445">Доработка 48ч + короткий ретейк</text>
+
+  <text x="36" y="500" class="hint">Преподаватель сверяет A/B-знак с instructor key; студент сдаёт до сверки. М6.1</text>
+</svg>

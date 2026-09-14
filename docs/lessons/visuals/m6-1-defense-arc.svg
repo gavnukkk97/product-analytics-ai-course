@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Ten-minute live defense arc</title>
+  <desc id="desc">Timed blocks for Ritm defense: problem metrics SQL BI AB decision.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#2F4A3E"/>
+    </marker>
+<style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .h { font-family: Georgia, serif; font-size: 13px; fill: #1C2B24; text-anchor: middle; }
+      .t { font-family: system-ui, sans-serif; font-size: 11px; fill: #1C2B24; text-anchor: middle; }
+      .s { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; text-anchor: middle; }
+      .box { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.8; }
+      .ok { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 1.8; }
+      .focus { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 2.2; }
+      .pri { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 2; }
+      .warn { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 2; }
+      .e { stroke: #2F4A3E; stroke-width: 1.8; fill: none; marker-end: url(#arr); }
+</style></defs>
+  <rect class="bg" width="960" height="520"/>
+  <text x="36" y="32" class="title">Живая защита 10 мин · рубрика М6.1</text>
+  <text x="36" y="52" class="hint">Один контур Ритма: проблема → метрики → SQL/BI → A/B → решение. Без тура по всем графикам.</text>
+
+  <rect class="box" x="30" y="90" width="170" height="130" rx="6"/>
+  <text class="h" x="115" y="120">0:00–1:30</text>
+  <text class="t" x="115" y="150">Проблема</text>
+  <text class="s" x="115" y="175">Работа юзера</text>
+  <text class="s" x="115" y="195">Узкое звено</text>
+
+  <rect class="box" x="215" y="90" width="170" height="130" rx="6"/>
+  <text class="h" x="300" y="120">1:30–3:00</text>
+  <text class="t" x="300" y="150">Метрики</text>
+  <text class="s" x="300" y="175">Древо / словарь</text>
+  <text class="s" x="300" y="195">Сравнение с базой</text>
+
+  <rect class="box" x="400" y="90" width="170" height="130" rx="6"/>
+  <text class="h" x="485" y="120">3:00–5:00</text>
+  <text class="t" x="485" y="150">SQL / BI</text>
+  <text class="s" x="485" y="175">Зерно · запрос</text>
+  <text class="s" x="485" y="195">Дашборд-решение</text>
+
+  <rect class="ok" x="585" y="90" width="170" height="130" rx="6"/>
+  <text class="h" x="670" y="120">5:00–7:30</text>
+  <text class="t" x="670" y="150">A/B</text>
+  <text class="s" x="670" y="175">Дизайн + исход</text>
+  <text class="s" x="670" y="195">Почему не шум</text>
+
+  <rect class="pri" x="770" y="90" width="160" height="130" rx="6"/>
+  <text class="h" x="850" y="120">7:30–10:00</text>
+  <text class="t" x="850" y="150">Решение</text>
+  <text class="s" x="850" y="175">₽ · риски</text>
+  <text class="s" x="850" y="195">След. шаг</text>
+
+  <path class="e" d="M200 155 H210"/>
+  <path class="e" d="M385 155 H395"/>
+  <path class="e" d="M570 155 H580"/>
+  <path class="e" d="M755 155 H765"/>
+
+  <rect class="warn" x="80" y="260" width="800" height="80" rx="6"/>
+  <text class="h" x="480" y="295">Что убивает защиту</text>
+  <text class="t" x="480" y="320">Слайд-кладбище · primary не из словаря · нет денег · «AI сказал, что выиграли»</text>
+
+  <rect class="box" x="80" y="370" width="380" height="80" rx="6"/>
+  <text class="h" x="270" y="400">Вопросы жюри (типовые)</text>
+  <text class="s" x="270" y="425">Определение · N · guardrail · цена ошибки</text>
+
+  <rect class="box" x="500" y="370" width="380" height="80" rx="6"/>
+  <text class="h" x="690" y="400">М6.2 свёрнут сюда</text>
+  <text class="s" x="690" y="425">Пир-ревью + портфолио — блок практики</text>
+
+  <text x="36" y="490" class="hint">Смотреть: время на решение ≥2.5 мин; P1–P4 видны как одна история. М6.1 · проход 3</text>
+</svg>

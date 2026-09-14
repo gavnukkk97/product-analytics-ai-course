@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">AI SQL acceptance loop</title>
+  <desc id="desc">Six-step acceptance checklist from business question to decision on Rit< metrics.</desc>
+  <defs>
+    <style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .t { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; text-anchor: middle; }
+      .s { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; text-anchor: middle; }
+      .n { font-family: Georgia, serif; font-size: 18px; fill: #1C2B24; text-anchor: middle; }
+      .box { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 1.8; }
+      .warn { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 1.8; }
+      .ok { fill: #1C2B24; }
+      .ot { font-family: system-ui, sans-serif; font-size: 12px; fill: #FBF8F2; text-anchor: middle; }
+      .arrow { stroke: #2F4A3E; stroke-width: 2; fill: none; marker-end: url(#m); }
+    </style>
+    <marker id="m" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#2F4A3E"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="960" height="560"/>
+  <text x="36" y="34" class="title">&8:; ?@8Q<:8 AI-SQL · « 8B<»</text>
+  <text x="36" y="54" class="hint">'8A;> 4;O @5H5=8O  B>;L:> ?>A;5 G5:-;8AB0. #25@5==K9 B>= <>45;8 =5 70<5=O5B count.</text>
+
+  <rect class="box" x="40" y="80" width="130" height="100" rx="6"/>
+  <text class="n" x="105" y="118">1</text>
+  <text class="t" x="105" y="142">5@=></text>
+  <text class="s" x="105" y="162">user / event / day?</text>
+
+  <path class="arrow" d="M180 130 H210"/>
+  <rect class="box" x="220" y="80" width="130" height="100" rx="6"/>
+  <text class="n" x="285" y="118">2</text>
+  <text class="t" x="285" y="142">JOIN</text>
+  <text class="s" x="285" y="162">count 4>/?>A;5</text>
+
+  <path class="arrow" d="M360 130 H390"/>
+  <rect class="box" x="400" y="80" width="130" height="100" rx="6"/>
+  <text class="n" x="465" y="118">3</text>
+  <text class="t" x="465" y="142">=0<5=0B5;L</text>
+  <text class="s" x="465" y="162">:B> «2A5»?</text>
+
+  <path class="arrow" d="M540 130 H570"/>
+  <rect class="box" x="580" y="80" width="130" height="100" rx="6"/>
+  <text class="n" x="645" y="118">4</text>
+  <text class="t" x="645" y="142">:=> / 40BK</text>
+  <text class="s" x="645" y="162">>B :0:>9 ts?</text>
+
+  <path class="arrow" d="M720 130 H750"/>
+  <rect class="box" x="760" y="80" width="160" height="100" rx="6"/>
+  <text class="n" x="840" y="118">5</text>
+  <text class="t" x="840" y="142">NULL / :@0O</text>
+  <text class="s" x="840" y="162">internal, props</text>
+
+  <path class="arrow" d="M840 190 V220"/>
+  <rect class="box" x="700" y="230" width="220" height="90" rx="6"/>
+  <text class="n" x="810" y="268">6</text>
+  <text class="t" x="810" y="292">!BK: / sample</text>
+  <text class="s" x="810" y="312">5 user_id 2@CG=CN</text>
+
+  <path class="arrow" d="M700 275 H520"/>
+  <rect class="ok" x="300" y="230" width="200" height="90" rx="6"/>
+  <text class="ot" x="400" y="270"> 5H5=85</text>
+  <text class="ot" x="400" y="292" style="fill:#DCE8DF;font-size:11px">8;8 >B:07 >B F8D@K</text>
+
+  <path class="arrow" d="M300 275 H250"/>
+  <rect class="warn" x="40" y="230" width="200" height="90" rx="6"/>
+  <text class="t" x="140" y="270">K@0 ’ D8:A</text>
+  <text class="s" x="140" y="292">?@><?B 8;8 :>4</text>
+  <text class="s" x="140" y="310">=0704 : H03C 1</text>
+
+  <rect class="warn" x="40" y="360" width="880" height="160" rx="6"/>
+  <text x="60" y="392" class="t" style="text-anchor:start; font-family: Georgia, serif; font-size:14px">'B> 2KGQ@:8205< 87 >B25B0 AI</text>
+  <text class="s" x="60" y="422" style="text-anchor:start">· 170FK «?>MB><C =C6=> ?>2KA8BL F5=C / 28=>20B paywall»  ?@8G8==>ABL, =5 D0:B.</text>
+  <text class="s" x="60" y="446" style="text-anchor:start">· >;O 2=5 AE5<K  8B<0 (device_type, session_id, country)  30;;NF8=0F8O.</text>
+  <text class="s" x="60" y="470" style="text-anchor:start">· @0A82K9 SQL 157 >?@545;5=8O G8A;8B5;O/7=0<5=0B5;O/>:=0  =5 <5B@8:0.</text>
+  <text class="s" x="60" y="494" style="text-anchor:start">K2>4: >AB0;8AL :>4 + :>=B@>;L=K9 count  <>6=> =5AB8 =0 A8=:0?; 8=0G5 =5B.</text>
+</svg>

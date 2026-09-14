@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 560" role="img" aria-labelledby="title desc">
+  <title id="title">!B0@B>2>5 45@52> <5B@8:  8B<0</title>
+  <desc id="desc">B 2K@CG:8 Pro 2=87 4> 459AB289: ?;0BOI85, ARPPU, paywall, D7 habit depth, >=1>@48=3. K45;5=0 <5B@8:0 @5H5=8O ?@>E>40 1.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#2F4A3E"/>
+    </marker>
+    <style>
+      .t { font-family: Georgia, serif; font-size: 20px; fill: #1C2B24; }
+      .lbl { font-family: Georgia, serif; font-size: 13px; fill: #1C2B24; text-anchor: middle; }
+      .sub { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; text-anchor: middle; }
+      .muted { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .n { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 2; }
+      .focus { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 2.5; }
+      .money { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 2; }
+      .e { stroke: #2F4A3E; stroke-width: 2; fill: none; marker-end: url(#arr); }
+    </style>
+  </defs>
+  <rect width="920" height="560" fill="#FBF8F2"/>
+  <text x="40" y="36" class="t">5@52> <5B@8: · AB0@B A?8@0;8 ·  8B<</text>
+  <text x="40" y="58" class="muted">"5@@0:>B>2K9 C75;  <5B@8:0 @5H5=8O ?@>E>40 1. 5;Q=K9  45=L38. AB0;L=>5 @0725@=Q< 2 1.3.</text>
+
+  <rect class="money" x="360" y="80" width="200" height="56" rx="6"/>
+  <text class="lbl" x="460" y="104">K@CG:0 Pro</text>
+  <text class="sub" x="460" y="122">½ / ?5@8>4</text>
+
+  <rect class="n" x="200" y="180" width="180" height="56" rx="6"/>
+  <text class="lbl" x="290" y="204">;0BOI85</text>
+  <text class="sub" x="290" y="222"># subscribe</text>
+
+  <rect class="n" x="540" y="180" width="180" height="56" rx="6"/>
+  <text class="lbl" x="630" y="204">ARPPU</text>
+  <text class="sub" x="630" y="222"><5A / 3>4 <8:A</text>
+
+  <rect class="n" x="80" y="280" width="170" height="56" rx="6"/>
+  <text class="lbl" x="165" y="304">Paywall reach</text>
+  <text class="sub" x="165" y="322">C2845;8 >?;0BC</text>
+
+  <rect class="n" x="290" y="280" width="170" height="56" rx="6"/>
+  <text class="lbl" x="375" y="304">>=25@A8O 2 Pro</text>
+  <text class="sub" x="375" y="322">87 reach / trial</text>
+
+  <rect class="focus" x="200" y="380" width="220" height="64" rx="6"/>
+  <text class="lbl" x="310" y="406">D7 habit depth e3</text>
+  <text class="sub" x="310" y="426"><5B@8:0 @5H5=8O · ?@>E>4 1</text>
+
+  <rect class="n" x="80" y="480" width="160" height="50" rx="6"/>
+  <text class="lbl" x="160" y="502">>=1>@48=3 </text>
+  <text class="sub" x="160" y="518"></text>
+
+  <rect class="n" x="270" y="480" width="160" height="50" rx="6"/>
+  <text class="lbl" x="350" y="502">habit_created</text>
+
+  <rect class="n" x="460" y="480" width="160" height="50" rx="6"/>
+  <text class="lbl" x="540" y="502">G5:-8=K D1D7</text>
+
+  <rect class="n" x="620" y="280" width="200" height="56" rx="6"/>
+  <text class="lbl" x="720" y="304">#45@60=85 ?;0BOI8E</text>
+  <text class="sub" x="720" y="322">?>765 · 1.3 / :>3>@BK</text>
+
+  <!-- edges -->
+  <path class="e" d="M420 136 V175"/>
+  <path class="e" d="M500 136 V155 H630 V175"/>
+  <path class="e" d="M250 236 V275"/>
+  <path class="e" d="M330 236 V255 H375 V275"/>
+  <path class="e" d="M165 336 V375 H290"/>
+  <path class="e" d="M310 444 V475"/>
+  <path class="e" d="M280 444 V460 H160 V475"/>
+  <path class="e" d="M340 444 V460 H540 V475"/>
+  <path class="e" d="M630 236 V275"/>
+
+  <text x="40" y="545" class="muted">1.1 · =5 =0G8=09B5 A MAU: A=0G0;0 C75;, :>B>@K9 428305B ?@>1;5<C «B5@ONB A5@8N».</text>
+</svg>

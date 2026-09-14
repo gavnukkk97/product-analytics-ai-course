@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" role="img" aria-labelledby="title desc">
+  <title id="title">Ritm metric tree  revenue to actions</title>
+  <desc id="desc">Full metric tree from Pro revenue down to install and CAC. Focus node: D7 habit depth e3 as lever.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#2F4A3E"/>
+    </marker>
+    <style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .lbl { font-family: Georgia, serif; font-size: 13px; fill: #1C2B24; text-anchor: middle; }
+      .sub { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; text-anchor: middle; }
+      .tag { font-family: system-ui, sans-serif; font-size: 9px; fill: #8B3A2F; text-anchor: middle; }
+      .money { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 2; }
+      .n { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.8; }
+      .focus { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 2.5; }
+      .e { stroke: #2F4A3E; stroke-width: 1.8; fill: none; marker-end: url(#arr); }
+      .leg { font-family: system-ui, sans-serif; font-size: 11px; fill: #1C2B24; }
+    </style>
+  </defs>
+  <rect class="bg" width="960" height="620"/>
+  <text x="36" y="32" class="title">@52> <5B@8: ·  8B< · 1.3</text>
+  <text x="36" y="52" class="hint">!25@EC 45=L38 8 A;54AB285, A=87C @KG038. Depth e3  @01>G0O <5B@8:0 @5H5=8O (P1), =5 MAU.</text>
+
+  <rect class="money" x="380" y="70" width="200" height="52" rx="6"/>
+  <text class="lbl" x="480" y="92">K@CG:0 Pro</text>
+  <text class="sub" x="480" y="110">A;54AB285 · ½ / ?5@8>4</text>
+
+  <rect class="n" x="200" y="150" width="170" height="50" rx="6"/>
+  <text class="lbl" x="285" y="172">;0BOI85</text>
+  <text class="sub" x="285" y="188"># subscribe</text>
+
+  <rect class="n" x="590" y="150" width="170" height="50" rx="6"/>
+  <text class="lbl" x="675" y="172">ARPPU / mix</text>
+  <text class="sub" x="675" y="188">299 / 1990 ½</text>
+
+  <rect class="n" x="80" y="230" width="160" height="50" rx="6"/>
+  <text class="lbl" x="160" y="252">Paywall reach</text>
+  <text class="sub" x="160" y="268">C2845;8 >?;0BC</text>
+
+  <rect class="n" x="270" y="230" width="160" height="50" rx="6"/>
+  <text class="lbl" x="350" y="252">CV ’ pay</text>
+  <text class="sub" x="350" y="268">reach ’ Pro</text>
+
+  <rect class="n" x="460" y="230" width="160" height="50" rx="6"/>
+  <text class="lbl" x="540" y="252">Retention Pro</text>
+  <text class="sub" x="540" y="268">A@>: 687=8 · LTV</text>
+
+  <rect class="n" x="680" y="230" width="200" height="50" rx="6"/>
+  <text class="lbl" x="780" y="252">CAC</text>
+  <text class="sub" x="780" y="268">½ / install (?>4?8H8B5)</text>
+
+  <rect class="focus" x="200" y="320" width="220" height="58" rx="6"/>
+  <text class="lbl" x="310" y="342">D7 habit depth e3</text>
+  <text class="tag" x="310" y="360"> +' · <5B@8:0 @5H5=8O P1</text>
+
+  <rect class="n" x="80" y="420" width="150" height="48" rx="6"/>
+  <text class="lbl" x="155" y="442">onboarding </text>
+  <text class="sub" x="155" y="456">A>1KB85</text>
+
+  <rect class="n" x="250" y="420" width="150" height="48" rx="6"/>
+  <text class="lbl" x="325" y="442">habit_created</text>
+  <text class="sub" x="325" y="456">A>1KB85</text>
+
+  <rect class="n" x="420" y="420" width="150" height="48" rx="6"/>
+  <text class="lbl" x="495" y="442">check_in D1D7</text>
+  <text class="sub" x="495" y="456">distinct local_date</text>
+
+  <rect class="n" x="620" y="420" width="150" height="48" rx="6"/>
+  <text class="lbl" x="695" y="442">install</text>
+  <text class="sub" x="695" y="456">users.installed_at</text>
+
+  <path class="e" d="M440 122 V145"/>
+  <path class="e" d="M520 122 V135 H675 V145"/>
+  <path class="e" d="M250 200 V225"/>
+  <path class="e" d="M320 200 V215 H350 V225"/>
+  <path class="e" d="M285 200 V210 H540 V225"/>
+  <path class="e" d="M675 200 V225"/>
+  <path class="e" d="M160 280 V315 H290"/>
+  <path class="e" d="M310 378 V415"/>
+  <path class="e" d="M260 378 V400 H155 V415"/>
+  <path class="e" d="M360 378 V400 H495 V415"/>
+  <path class="e" d="M780 280 V400 H695 V415"/>
+
+  <rect x="36" y="500" width="14" height="14" fill="#DCE8DF" stroke="#2F4A3E"/>
+  <text x="58" y="512" class="leg">A;54AB285 (45=L38 / AGQBG8:8)</text>
+  <rect x="280" y="500" width="14" height="14" fill="#F3E6DF" stroke="#8B3A2F"/>
+  <text x="302" y="512" class="leg">@KG03 @5H5=8O</text>
+  <rect x="460" y="500" width="14" height="14" fill="#F7F3EB" stroke="#2F4A3E"/>
+  <text x="482" y="512" class="leg">?@><56CB>G=K9 C75;</text>
+
+  <text x="36" y="550" class="hint">!<>B@5BL: ?CBL «depth ’ reach ’ pay ’ ARPPU» :>@<8B 2K@CG:C. CAC 28A8B =0 install, =5 =0 MAU.</text>
+  <text x="36" y="575" class="hint">K2>4 4;O P1/P2: G8=8BL 725=> A EC4H59 ?@>?CA:=>9 A?>A>1=>ABLN 4> 45=53, 0 =5 «2AQ 45@52> A@07C».</text>
+  <text x="36" y="600" class="hint">1.3 · 25E8 P1 (4@52>) + P2 (;8AB M:>=><8:8)</text>
+</svg>

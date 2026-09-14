@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+  <title id="title">Metric data layers on Ritm</title>
+  <desc id="desc">Four layers: raw events, clean rules, marts/views, Metabase aggregates feeding a decision.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#2F4A3E"/>
+    </marker>
+    <style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .h { font-family: Georgia, serif; font-size: 14px; fill: #1C2B24; text-anchor: middle; }
+      .t { font-family: system-ui, sans-serif; font-size: 11px; fill: #1C2B24; text-anchor: middle; }
+      .s { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; text-anchor: middle; }
+      .raw { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 1.8; }
+      .clean { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.8; }
+      .mart { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 1.8; }
+      .agg { fill: #E8E4F0; stroke: #2F4A3E; stroke-width: 1.8; }
+      .dec { fill: #1C2B24; }
+      .dt { font-family: system-ui, sans-serif; font-size: 12px; fill: #FBF8F2; text-anchor: middle; }
+      .e { stroke: #2F4A3E; stroke-width: 2; fill: none; marker-end: url(#a); }
+    </style>
+  </defs>
+  <rect class="bg" width="960" height="480"/>
+  <text x="36" y="32" class="title">!;>8 <5B@8: ·  8B< · 5.1</text>
+  <text x="36" y="52" class="hint">?@545;5=85 682QB 2 A;>20@5; G8A;> =0 40H1>@45 4>;6=> AAK;0BLAO =0 28B@8=C, =5 =0 «:0: =0?8A0;8 SQL 2 G0B5».</text>
+
+  <rect class="raw" x="40" y="90" width="200" height="120" rx="8"/>
+  <text class="h" x="140" y="120">1. !K@K5</text>
+  <text class="t" x="140" y="145">events / users</text>
+  <text class="t" x="140" y="162">subscriptions</text>
+  <text class="s" x="140" y="185">4C1;8 · drift · dirt</text>
+
+  <rect class="clean" x="270" y="90" width="200" height="120" rx="8"/>
+  <text class="h" x="370" y="120">2. '8ABK9</text>
+  <text class="t" x="370" y="145">454C? · B8?K</text>
+  <text class="t" x="370" y="162">is_internal out</text>
+  <text class="s" x="370" y="185">?@028;0 QA 704>:C<5=B8@>20=K</text>
+
+  <rect class="mart" x="500" y="90" width="200" height="120" rx="8"/>
+  <text class="h" x="600" y="120">3. 8B@8=K</text>
+  <text class="t" x="600" y="145">v_depth_d7</text>
+  <text class="t" x="600" y="162">2>@>=:0 · :>3>@BK</text>
+  <text class="s" x="600" y="185">1 AB@>:0 = 4>3>2>@ 75@=0</text>
+
+  <rect class="agg" x="730" y="90" width="190" height="120" rx="8"/>
+  <text class="h" x="825" y="120">4. 3@530BK</text>
+  <text class="t" x="825" y="145">:0@B>G:8 Metabase</text>
+  <text class="t" x="825" y="162">KPI =0 M:@0=5</text>
+  <text class="s" x="825" y="185">?>4?8AL = :0@B>G:0 A;>20@O</text>
+
+  <path class="e" d="M240 150 H265"/>
+  <path class="e" d="M470 150 H495"/>
+  <path class="e" d="M700 150 H725"/>
+
+  <rect class="dec" x="270" y="260" width="420" height="50" rx="6"/>
+  <text class="dt" x="480" y="290"> 5H5=85 =0 A8=:0?5 · if/then ?> 25@A88 A;>20@O v0.x</text>
+  <path class="e" d="M825 210 V285 H695"/>
+
+  <text x="40" y="350" class="hint">Backfill: =>20O 25@A8O depth ?5@5AG8BK205B 8AB>@8N  AB0@K5 A:@8=H>BK ?><5G09B5 «4> 40BK D».</text>
+  <text x="40" y="375" class="hint">Schema drift: props.local_date vs local_day <>;G0 @565B check_in ’ depth «?0405B» 157 ?@>4C:B0.</text>
+  <text x="40" y="410" class="hint">!<>B@5BL: AB@5;:0 2?@02> = >B25BAB25==>ABL A<5I05BAO A B@5:8=30 =0 4>3>2>@ A<KA;0. 57 A;>20@O A;>9 4 2@QB C1548B5;L=>.</text>
+  <text x="40" y="445" class="hint">5.1 · 25E0 P1’45<>-2</text>
+</svg>

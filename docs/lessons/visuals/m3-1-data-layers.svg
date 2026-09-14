@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+  <title id="title">From product action to aggregate layers</title>
+  <desc id="desc">Pipeline: UI action to event row to clean views to marts to dashboard number.</desc>
+  <defs>
+    <style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .h { font-family: Georgia, serif; font-size: 13px; fill: #1C2B24; }
+      .hm { font-family: Georgia, serif; font-size: 13px; fill: #1C2B24; text-anchor: middle; }
+      .t { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; text-anchor: middle; }
+      .tl { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; }
+      .s { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; text-anchor: middle; }
+      .box { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.6; }
+      .ok { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 1.8; }
+      .bad { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 1.8; }
+      .focus { fill: #E8EEF2; stroke: #2F4A3E; stroke-width: 1.8; }
+
+      .arrow { font-family: system-ui, sans-serif; font-size: 18px; fill: #2F4A3E; text-anchor: middle; }
+    </style>
+  </defs>
+  <rect class="bg" width="960" height="480"/>
+  <text x="36" y="32" class="title">Откуда берётся цифра на дашборде</text>
+  <text x="36" y="54" class="hint">Каждый слой сжимает зерно. Ошибка на сыром не чинится красивым KPI.</text>
+
+  <rect class="box" x="40" y="100" width="160" height="100" rx="6"/>
+  <text class="hm" x="120" y="140">Действие</text>
+  <text class="s" x="120" y="165">чек-ин в UI</text>
+
+  <text class="arrow" x="230" y="155">→</text>
+
+  <rect class="ok" x="260" y="100" width="160" height="100" rx="6"/>
+  <text class="hm" x="340" y="140">Сырое</text>
+  <text class="s" x="340" y="165">events row</text>
+
+  <text class="arrow" x="450" y="155">→</text>
+
+  <rect class="focus" x="480" y="100" width="160" height="100" rx="6"/>
+  <text class="hm" x="560" y="140">Чистый</text>
+  <text class="s" x="560" y="165">views / дедуп</text>
+
+  <text class="arrow" x="670" y="155">→</text>
+
+  <rect class="box" x="700" y="100" width="220" height="100" rx="6"/>
+  <text class="hm" x="810" y="140">Витрина / KPI</text>
+  <text class="s" x="810" y="165">depth · воронка</text>
+
+  <rect class="bad" x="40" y="240" width="420" height="180" rx="8"/>
+  <text class="h" x="60" y="275">Где ломается</text>
+  <text class="tl" x="60" y="305">· событие не пишется (UI без адреса)</text>
+  <text class="tl" x="60" y="330">· props пустые / schema drift</text>
+  <text class="tl" x="60" y="355">· session ≠ user в знаменателе</text>
+  <text class="tl" x="60" y="380">· агрегат без окна и дедупа</text>
+
+  <rect class="ok" x="500" y="240" width="420" height="180" rx="8"/>
+  <text class="h" x="520" y="275">Что спросить до SQL</text>
+  <text class="tl" x="520" y="305">1. Какая таблица и зерно?</text>
+  <text class="tl" x="520" y="330">2. Ключ соединения?</text>
+  <text class="tl" x="520" y="355">3. Users или события в знаменателе?</text>
+  <text class="tl" x="520" y="380">4. Сырое или уже витрина?</text>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 560" role="img" aria-labelledby="title desc">
+  <title id="title">"@8 @07@K20 :>=BC@0 =0  8B<5</title>
+  <desc id="desc">"@8 :>;>=:8: >BGQB 157 @5H5=8O, <>45;L 157 @KG030, B@8 >?@545;5=8O >4=>9 <5B@8:8.</desc>
+  <defs>
+    <style>
+      .card { fill: #F7F3EB; stroke: #8B3A2F; stroke-width: 2; }
+      .ok { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 2; }
+      .h { font-family: Georgia, 'Times New Roman', serif; font-size: 16px; fill: #1C2B24; }
+      .t { font-family: Georgia, serif; font-size: 20px; fill: #1C2B24; }
+      .b { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; }
+      .muted { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .badge { font-family: system-ui, sans-serif; font-size: 11px; fill: #8B3A2F; font-weight: 700; }
+    </style>
+  </defs>
+  <rect width="920" height="560" fill="#FBF8F2"/>
+  <text x="40" y="36" class="t">"@8 «0=0;8B8:8», :>B>@K5 =8G53> =5 87<5=8;8 ·  8B<</text>
+  <text x="40" y="58" class="muted">@0A=0O @0<:0 = @07@K2 :>=BC@0. 5;Q=0O AB@>:0 = G53> =5 E20B0;>.</text>
+
+  <!-- Card A -->
+  <rect class="card" x="40" y="90" width="270" height="380" rx="8"/>
+  <text x="56" y="118" class="badge">  +: @5H5=85 / 87<5=5=85</text>
+  <text x="56" y="148" class="h">. BGQB @048 >BGQB0</text>
+  <text x="56" y="178" class="b">MAU 48.2k ’ 51.1k (+6%)</text>
+  <text x="56" y="200" class="b">'0B: «@0ABQ<»</text>
+  <text x="56" y="240" class="muted">'B> =5 284=>:</text>
+  <text x="56" y="262" class="b">" D7 A5@88 <>65B ?040BL</text>
+  <text x="56" y="284" class="b">" @>AB 70 AGQB CAB0=>2>:</text>
+  <text x="56" y="306" class="b">" =5B if/then @5H5=8O</text>
+  <rect class="ok" x="56" y="340" width="238" height="100" rx="6"/>
+  <text x="70" y="368" class="b">C6=> 1K;>:</text>
+  <text x="70" y="392" class="b"><5B@8:0 ?@>1;5<K</text>
+  <text x="70" y="414" class="b">(depthe3) + @5H5=85</text>
+
+  <!-- Card B -->
+  <rect class="card" x="325" y="90" width="270" height="380" rx="8"/>
+  <text x="341" y="118" class="badge">  +: 87<5=5=85 ?@>4C:B0</text>
+  <text x="341" y="148" class="h">. >45;L 157 @KG030</text>
+  <text x="341" y="178" class="b">Churn-<>45;L, AUC 0.81</text>
+  <text x="341" y="200" class="b"> 1M:;>35  ?CAB></text>
+  <text x="341" y="240" class="muted">'B> =5 284=>:</text>
+  <text x="341" y="262" class="b">" :0:>9 M:@0= <5=O5<</text>
+  <text x="341" y="284" class="b">" :0:0O <5B@8:0 A428=5BAO</text>
+  <text x="341" y="306" class="b">" F5=0 2=54@5=8O score</text>
+  <rect class="ok" x="341" y="340" width="238" height="100" rx="6"/>
+  <text x="355" y="368" class="b">C6=> 1K;>:</text>
+  <text x="355" y="392" class="b">459AB285 2 ?@>4C:B5</text>
+  <text x="355" y="414" class="b">4> 70?CA:0 <>45;8</text>
+
+  <!-- Card C -->
+  <rect class="card" x="610" y="90" width="270" height="380" rx="8"/>
+  <text x="626" y="118" class="badge">  +: BI / >?@545;5=85</text>
+  <text x="626" y="148" class="h">. "@8 «:>=25@A88»</text>
+  <text x="626" y="178" class="b">@>4C:B: 4.2%</text>
+  <text x="626" y="200" class="b">0@:5B8=3: 7.8%</text>
+  <text x="626" y="240" class="muted">'B> =5 284=>:</text>
+  <text x="626" y="262" class="b">" >:=> 7 vs 30 4=59</text>
+  <text x="626" y="284" class="b">" user vs session</text>
+  <text x="626" y="306" class="b">" :B> 2 7=0<5=0B5;5</text>
+  <rect class="ok" x="626" y="340" width="238" height="100" rx="6"/>
+  <text x="640" y="368" class="b">C6=> 1K;>:</text>
+  <text x="640" y="392" class="b">A;>20@L <5B@8:8</text>
+  <text x="640" y="414" class="b">4> A?>@0 > F8D@5</text>
+
+  <text x="40" y="520" class="muted">0.1 · 2K2>4: A=0G0;0 =0948 2K?02H55 725=>  ?>B>< G8=8 @0AGQB 8;8 40H1>@4.</text>
+</svg>

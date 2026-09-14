@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Paper dashboard to Metabase mapping</title>
+  <desc id="desc">Left: M5.2 paper anatomy. Right: Metabase artifacts for the same Rit< decision dashboard.</desc>
+  <defs>
+    <style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .h { font-family: Georgia, serif; font-size: 14px; fill: #1C2B24; }
+      .t { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; }
+      .s { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; }
+      .paper { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.6; }
+      .mb { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 1.6; }
+      .raw { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 1.6; }
+      .banner { fill: #1C2B24; }
+      .bt { font-family: system-ui, sans-serif; font-size: 11px; fill: #FBF8F2; }
+      .arrow { stroke: #2F4A3E; stroke-width: 2; fill: none; marker-end: url(#m); }
+    </style>
+    <marker id="m" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#2F4A3E"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="960" height="560"/>
+  <text x="36" y="34" class="title">C<030 5.2 ’ :0@B>G:8 Metabase</text>
+  <text x="36" y="54" class="hint">48= if/then. !;520 70:07, A?@020 0@B5D0:BK BI. !20;:0 =5 ?>O2;O5BAO «?>B><C GB> Metabase C<55B».</text>
+
+  <text x="36" y="88" class="h">5.2 1C<030</text>
+  <rect class="banner" x="36" y="100" width="400" height="36" rx="4"/>
+  <text class="bt" x="48" y="122">803=>AB8:0 · depth&lt;25% 2 =54 ’ >=1>@48=3</text>
+
+  <rect class="paper" x="36" y="148" width="90" height="56" rx="4"/>
+  <rect class="paper" x="136" y="148" width="90" height="56" rx="4"/>
+  <rect class="paper" x="236" y="148" width="90" height="56" rx="4"/>
+  <rect class="paper" x="336" y="148" width="100" height="56" rx="4"/>
+  <text class="s" x="56" y="180" style="text-anchor:start">Depth</text>
+  <text class="s" x="156" y="180" style="text-anchor:start">’check</text>
+  <text class="s" x="256" y="180" style="text-anchor:start">Paywall</text>
+  <text class="s" x="356" y="180" style="text-anchor:start">New Pro</text>
+
+  <rect class="paper" x="36" y="220" width="400" height="50" rx="4"/>
+  <text class="s" x="48" y="250" style="text-anchor:start"> 07@57K: 2>@>=:0 · :>3>@B0 D1/D3/D7 · platform</text>
+
+  <rect class="raw" x="36" y="286" width="400" height="50" rx="4"/>
+  <text class="s" x="48" y="316" style="text-anchor:start">!K@>5: onboarding 157 habit 70 24G</text>
+
+  <path class="arrow" d="M460 200 H520"/>
+
+  <text x="540" y="88" class="h">5.4 Metabase</text>
+  <rect class="banner" x="540" y="100" width="384" height="36" rx="4"/>
+  <text class="bt" x="552" y="122">Dashboard description + D8;LB@K</text>
+
+  <rect class="mb" x="540" y="148" width="384" height="56" rx="4"/>
+  <text class="t" x="556" y="172">4 SQL Questions (Number)</text>
+  <text class="s" x="556" y="190" style="text-anchor:start">>?@545;5=85 2 Description :0@B>G:8</text>
+
+  <rect class="mb" x="540" y="220" width="384" height="50" rx="4"/>
+  <text class="t" x="556" y="250">Questions: funnel / cohort table</text>
+
+  <rect class="raw" x="540" y="286" width="384" height="50" rx="4"/>
+  <text class="t" x="556" y="316">Table Question · LIMIT · A25@:0</text>
+
+  <rect class="paper" x="36" y="370" width="888" height="150" rx="6"/>
+  <text class="h" x="56" y="402">@028;0 ?5@52>40</text>
+  <text class="s" x="56" y="430" style="text-anchor:start">· KPI A =5B@8280;L=K< 75@=>< (depth, :>3>@BK)  SQL Question, =5 «sum AB@>:» 2 GUI.</text>
+  <text class="s" x="56" y="454" style="text-anchor:start">· $8;LB@ dashboard = ?5@8>4 / platform; B5 65 ?5@5<5==K5 2> 2A5E :0@B>G:0E @5H5=8O.</text>
+  <text class="s" x="56" y="478" style="text-anchor:start">· !?8A>: >B:070 A 1C<038 («=5B MAU») =5 A>740Q< 28465B0<8 «=0 1C4CI55».</text>
+  <text class="s" x="56" y="502" style="text-anchor:start">K2>4: Metabase D8:A8@C5B 0=0B><8N 5.2; =5 87>1@5B05B =>2K9 40H1>@4.</text>
+</svg>

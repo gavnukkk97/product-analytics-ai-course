@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 540" role="img" aria-labelledby="title desc">
+  <title id="title">45 AI CA:>@O5B 8 345 >AB0QBAO G5;>25:</title>
+  <desc id="desc">"01;8F0-AE5<0 ?> H030< :>=BC@0: @>;L AI ?@>B82 >B25BAB25==>AB8 G5;>25:0 =0 ?@>4C:B5  8B<.</desc>
+  <defs>
+    <style>
+      .t { font-family: Georgia, serif; font-size: 20px; fill: #1C2B24; }
+      .h { font-family: Georgia, serif; font-size: 14px; fill: #1C2B24; }
+      .b { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; }
+      .muted { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .ai { fill: #E8EFEA; stroke: #2F4A3E; stroke-width: 1.5; }
+      .hu { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 1.5; }
+      .step { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.5; }
+      .head { fill: #2F4A3E; }
+      .headt { font-family: system-ui, sans-serif; font-size: 12px; fill: #FBF8F2; }
+    </style>
+  </defs>
+  <rect width="920" height="540" fill="#FBF8F2"/>
+  <text x="40" y="36" class="t">AI 2 :>=BC@5 · CA:>@O5B / =5 70<5=O5B ·  8B<</text>
+  <text x="40" y="58" class="muted">5;Q=K9 AB>;15F  G5@=>28: AI. "5@@0:>B>2K9  >B25BAB25==>ABL G5;>25:0 4> A40G8.</text>
+
+  <!-- headers -->
+  <rect class="head" x="40" y="80" width="200" height="32" rx="4"/>
+  <text x="50" y="100" class="headt">(03 :>=BC@0</text>
+  <rect class="head" x="250" y="80" width="310" height="32" rx="4"/>
+  <text x="260" y="100" class="headt">AI <>65B</text>
+  <rect class="head" x="570" y="80" width="310" height="32" rx="4"/>
+  <text x="580" y="100" class="headt">'5;>25: ?>4?8AK205B</text>
+
+  <!-- rows -->
+  <g font-size="12">
+    <!-- row1 -->
+    <rect class="step" x="40" y="120" width="200" height="52" rx="4"/>
+    <text x="50" y="150" class="b">@>1;5<0 ’ <5B@8:0</text>
+    <rect class="ai" x="250" y="120" width="310" height="52" rx="4"/>
+    <text x="260" y="150" class="b">?5@51>@ :0=4840B>2 <5B@8:</text>
+    <rect class="hu" x="570" y="120" width="310" height="52" rx="4"/>
+    <text x="580" y="150" class="b">2K1>@ D7 depthe3 8 >:=0</text>
+
+    <rect class="step" x="40" y="180" width="200" height="52" rx="4"/>
+    <text x="50" y="210" class="b">5B@8:0 ’ UX</text>
+    <rect class="ai" x="250" y="180" width="310" height="52" rx="4"/>
+    <text x="260" y="210" class="b">G5@=>28: >=1>@48=30 / paywall</text>
+    <rect class="hu" x="570" y="180" width="310" height="52" rx="4"/>
+    <text x="580" y="210" class="b">GB> 87<5@O5< =0 M:@0=5</text>
+
+    <rect class="step" x="40" y="240" width="200" height="52" rx="4"/>
+    <text x="50" y="270" class="b">UX ’ A>1KB8O</text>
+    <rect class="ai" x="250" y="240" width="310" height="52" rx="4"/>
+    <text x="260" y="270" class="b">G5@=>28: tracking plan</text>
+    <rect class="hu" x="570" y="240" width="310" height="52" rx="4"/>
+    <text x="580" y="270" class="b">3@0=C;O@=>ABL 8 <><5=B</text>
+
+    <rect class="step" x="40" y="300" width="200" height="52" rx="4"/>
+    <text x="50" y="330" class="b">0==K5 ’ :>4</text>
+    <rect class="ai" x="250" y="300" width="310" height="52" rx="4"/>
+    <text x="260" y="330" class="b">SQL / Python G5@=>28:</text>
+    <rect class="hu" x="570" y="300" width="310" height="52" rx="4"/>
+    <text x="580" y="330" class="b">?>AB0=>2:0 + ?@8Q<:0</text>
+
+    <rect class="step" x="40" y="360" width="200" height="52" rx="4"/>
+    <text x="50" y="390" class="b"> 57C;LB0B ’ 2K2>4</text>
+    <rect class="ai" x="250" y="360" width="310" height="52" rx="4"/>
+    <text x="260" y="390" class="b">0;LB5@=0B82=K5 >1JOA=5=8O</text>
+    <rect class="hu" x="570" y="360" width="310" height="52" rx="4"/>
+    <text x="580" y="390" class="b">?@8G8==>ABL 8 :>=B5:AB</text>
+
+    <rect class="step" x="40" y="420" width="200" height="52" rx="4"/>
+    <text x="50" y="450" class="b">K2>4 ’ @5H5=85</text>
+    <rect class="ai" x="250" y="420" width="310" height="52" rx="4"/>
+    <text x="260" y="450" class="b">C?0:>2:0 B5:AB0 70I8BK</text>
+    <rect class="hu" x="570" y="420" width="310" height="52" rx="4"/>
+    <text x="580" y="450" class="b">@0AB8< / ?@028< / C18205<</text>
+  </g>
+
+  <text x="40" y="510" class="muted">0.2 · 4>3>2>@Q==>ABL: AI  A>02B>@ :>40 8 G5@=>28:0; =5 A>02B>@ 2K2>40.</text>
+</svg>

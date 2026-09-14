@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+  <title id="title">Corridor test protocol in one hour</title>
+  <desc id="desc">Five steps: task, think-aloud, observe, note friction, debrief without leading.</desc>
+  <defs>
+    <style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .h { font-family: Georgia, serif; font-size: 13px; fill: #1C2B24; }
+      .hm { font-family: Georgia, serif; font-size: 13px; fill: #1C2B24; text-anchor: middle; }
+      .t { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; text-anchor: middle; }
+      .tl { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; }
+      .s { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; text-anchor: middle; }
+      .box { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.6; }
+      .ok { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 1.8; }
+      .bad { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 1.8; }
+      .focus { fill: #E8EEF2; stroke: #2F4A3E; stroke-width: 1.8; }
+
+      .arrow { font-family: system-ui, sans-serif; font-size: 16px; fill: #2F4A3E; text-anchor: middle; }
+    </style>
+  </defs>
+  <rect class="bg" width="960" height="480"/>
+  <text x="36" y="32" class="title">Коридорный тест за час · протокол</text>
+  <text x="36" y="54" class="hint">Один сценарий Ритма · think-aloud · без подсказок «нажми вот сюда».</text>
+
+  <rect class="ok" x="40" y="100" width="150" height="120" rx="6"/>
+  <text class="hm" x="115" y="140">1. Задача</text>
+  <text class="s" x="115" y="170">создать привычку</text>
+  <text class="s" x="115" y="190">и отметить день</text>
+
+  <text class="arrow" x="210" y="160">→</text>
+
+  <rect class="focus" x="230" y="100" width="150" height="120" rx="6"/>
+  <text class="hm" x="305" y="140">2. Think-aloud</text>
+  <text class="s" x="305" y="170">говорит вслух</text>
+  <text class="s" x="305" y="190">что думает</text>
+
+  <text class="arrow" x="400" y="160">→</text>
+
+  <rect class="box" x="420" y="100" width="150" height="120" rx="6"/>
+  <text class="hm" x="495" y="140">3. Наблюдение</text>
+  <text class="s" x="495" y="170">паузы · клики</text>
+  <text class="s" x="495" y="190">ошибки пути</text>
+
+  <text class="arrow" x="590" y="160">→</text>
+
+  <rect class="bad" x="610" y="100" width="150" height="120" rx="6"/>
+  <text class="hm" x="685" y="140">4. Запись</text>
+  <text class="s" x="685" y="170">факт трения</text>
+  <text class="s" x="685" y="190">не «мне кажется»</text>
+
+  <text class="arrow" x="780" y="160">→</text>
+
+  <rect class="ok" x="800" y="100" width="120" height="120" rx="6"/>
+  <text class="hm" x="860" y="145">5. Дебриф</text>
+  <text class="s" x="860" y="175">открытые</text>
+  <text class="s" x="860" y="195">вопросы</text>
+
+  <rect class="box" x="40" y="260" width="880" height="170" rx="8"/>
+  <text class="h" x="60" y="295">Запреты ведущего</text>
+  <text class="tl" x="60" y="325">· Не объяснять продукт заранее и не спасать («вот кнопка»).</text>
+  <text class="tl" x="60" y="350">· Не спрашивать «понравилось ли» — спрашивать, что мешало сделать задачу.</text>
+  <text class="tl" x="60" y="375">· Не обобщать с n=1: три респондента → список проблем, не «доказательство».</text>
+  <text class="tl" x="60" y="400">· Не путать предпочтение («красиво») с провалом задачи (не дошёл до check_in).</text>
+</svg>

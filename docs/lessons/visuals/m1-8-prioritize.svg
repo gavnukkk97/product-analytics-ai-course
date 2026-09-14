@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+  <title id="title">Hypothesis prioritization grid</title>
+  <desc id="desc">Three Ritm hypotheses scored by impact times confidence over cost; catalog idea rejected.</desc>
+  <defs>
+    <style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .th { font-family: system-ui, sans-serif; font-size: 11px; fill: #4A5C52; text-anchor: middle; }
+      .td { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; text-anchor: middle; }
+      .name { font-family: Georgia, serif; font-size: 13px; fill: #1C2B24; }
+      .hdr { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 1.5; }
+      .row { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.5; }
+      .win { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 1.8; }
+      .rej { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 1.8; }
+      .formula { font-family: Georgia, serif; font-size: 14px; fill: #1C2B24; }
+    </style>
+  </defs>
+  <rect class="bg" width="960" height="480"/>
+  <text x="36" y="32" class="title">@8>@8B870F8O 38?>B57 · 2;8O=85 × C25@5==>ABL / AB>8<>ABL</text>
+  <text x="36" y="52" class="hint">(:0;0 15.  A40GC P3  B@8 38?>B57K A <5B@8:>9 ?@>25@:8; >B:07 >1O70B5;5=.</text>
+
+  <text x="36" y="85" class="formula">Score = (Impact × Confidence) / Cost</text>
+
+  <!-- header -->
+  <rect class="hdr" x="40" y="110" width="220" height="36" rx="4"/>
+  <rect class="hdr" x="260" y="110" width="70" height="36" rx="4"/>
+  <rect class="hdr" x="330" y="110" width="70" height="36" rx="4"/>
+  <rect class="hdr" x="400" y="110" width="70" height="36" rx="4"/>
+  <rect class="hdr" x="470" y="110" width="80" height="36" rx="4"/>
+  <rect class="hdr" x="550" y="110" width="370" height="36" rx="4"/>
+  <text class="th" x="150" y="132">8?>B570</text>
+  <text class="th" x="295" y="132">Imp</text>
+  <text class="th" x="365" y="132">Conf</text>
+  <text class="th" x="435" y="132">Cost</text>
+  <text class="th" x="510" y="132">Score</text>
+  <text class="th" x="735" y="132">@>25@:0 / <5B@8:0</text>
+
+  <!-- H1 -->
+  <rect class="win" x="40" y="150" width="220" height="50" rx="4"/>
+  <rect class="win" x="260" y="150" width="70" height="50" rx="4"/>
+  <rect class="win" x="330" y="150" width="70" height="50" rx="4"/>
+  <rect class="win" x="400" y="150" width="70" height="50" rx="4"/>
+  <rect class="win" x="470" y="150" width="80" height="50" rx="4"/>
+  <rect class="win" x="550" y="150" width="370" height="50" rx="4"/>
+  <text class="name" x="55" y="180">H1 #:>@>B8BL >=1>@48=3</text>
+  <text class="td" x="295" y="180">5</text>
+  <text class="td" x="365" y="180">4</text>
+  <text class="td" x="435" y="180">2</text>
+  <text class="td" x="510" y="180">10</text>
+  <text class="td" x="735" y="180">depth e3 · A/B 8;8 rollout</text>
+
+  <!-- H2 -->
+  <rect class="row" x="40" y="205" width="220" height="50" rx="4"/>
+  <rect class="row" x="260" y="205" width="70" height="50" rx="4"/>
+  <rect class="row" x="330" y="205" width="70" height="50" rx="4"/>
+  <rect class="row" x="400" y="205" width="70" height="50" rx="4"/>
+  <rect class="row" x="470" y="205" width="80" height="50" rx="4"/>
+  <rect class="row" x="550" y="205" width="370" height="50" rx="4"/>
+  <text class="name" x="55" y="235">H2 Paywall ?>A;5 streak_3</text>
+  <text class="td" x="295" y="235">4</text>
+  <text class="td" x="365" y="235">4</text>
+  <text class="td" x="435" y="235">2</text>
+  <text class="td" x="510" y="235">8</text>
+  <text class="td" x="735" y="235">habit’sub 144 · paywall_timing</text>
+
+  <!-- H3 -->
+  <rect class="row" x="40" y="260" width="220" height="50" rx="4"/>
+  <rect class="row" x="260" y="260" width="70" height="50" rx="4"/>
+  <rect class="row" x="330" y="260" width="70" height="50" rx="4"/>
+  <rect class="row" x="400" y="260" width="70" height="50" rx="4"/>
+  <rect class="row" x="470" y="260" width="80" height="50" rx="4"/>
+  <rect class="row" x="550" y="260" width="370" height="50" rx="4"/>
+  <text class="name" x="55" y="290">H3 CH D2 157 check_in</text>
+  <text class="td" x="295" y="290">3</text>
+  <text class="td" x="365" y="290">2</text>
+  <text class="td" x="435" y="290">3</text>
+  <text class="td" x="510" y="290">2</text>
+  <text class="td" x="735" y="290">A=0G0;0 :>@84>@ · e1 check_in</text>
+
+  <!-- reject -->
+  <rect class="rej" x="40" y="320" width="220" height="50" rx="4"/>
+  <rect class="rej" x="260" y="320" width="70" height="50" rx="4"/>
+  <rect class="rej" x="330" y="320" width="70" height="50" rx="4"/>
+  <rect class="rej" x="400" y="320" width="70" height="50" rx="4"/>
+  <rect class="rej" x="470" y="320" width="80" height="50" rx="4"/>
+  <rect class="rej" x="550" y="320" width="370" height="50" rx="4"/>
+  <text class="name" x="55" y="350">0B0;>3 +50 ?@82KG5:</text>
+  <text class="td" x="295" y="350">2</text>
+  <text class="td" x="365" y="350">1</text>
+  <text class="td" x="435" y="350">5</text>
+  <text class="td" x="510" y="350">0.4</text>
+  <text class="td" x="735" y="350">" · =5 C7:>5 3>@;KH:></text>
+
+  <text x="40" y="420" class="hint">K2>4: 2KA>:89 Impact 157 Confidence (H3)  A=0G0;0 :0G5AB2>; =87:89 Score ?@8 2KA>:>9 F5=5 (:0B0;>3)  =5 2 A?@8=B.</text>
+  <text x="40" y="450" class="hint">1.8 · 25E0 P3</text>
+</svg>

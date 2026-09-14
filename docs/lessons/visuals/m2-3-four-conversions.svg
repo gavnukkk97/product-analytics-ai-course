@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Four ways to compute conversion</title>
+  <desc id="desc">One subscribe_started event yields four rates depending on denominator and window.</desc>
+  <defs>
+    <style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .h { font-family: Georgia, serif; font-size: 15px; fill: #1C2B24; text-anchor: middle; }
+      .t { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; text-anchor: middle; }
+      .s { font-family: system-ui, sans-serif; font-size: 11px; fill: #4A5C52; text-anchor: middle; }
+      .pct { font-family: Georgia, serif; font-size: 28px; fill: #1C2B24; text-anchor: middle; }
+      .card { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 2; }
+      .warn { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 2.2; }
+      .ok { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 2; }
+    </style>
+  </defs>
+  <rect class="bg" width="960" height="540"/>
+  <text x="36" y="36" class="title">Одно событие — четыре конверсии · «Ритм»</text>
+  <text x="36" y="58" class="hint">Успех везде: subscribe_started. Меняются знаменатель и окно. Какое число — для какого решения.</text>
+  <circle cx="480" cy="270" r="54" fill="#DCE8DF" stroke="#2F4A3E" stroke-width="2"/>
+  <text class="t" x="480" y="266">subscribe_</text>
+  <text class="t" x="480" y="284">started</text>
+  <rect class="card" x="40" y="100" width="200" height="150" rx="8"/>
+  <text class="h" x="140" y="130">A · от install</text>
+  <text class="pct" x="140" y="175">3,8%</text>
+  <text class="s" x="140" y="200">380 / 10 000</text>
+  <text class="s" x="140" y="220">окно 30д · users</text>
+  <text class="t" x="140" y="240">деньги с канала</text>
+  <rect class="ok" x="720" y="100" width="200" height="150" rx="8"/>
+  <text class="h" x="820" y="130">B · от привычки</text>
+  <text class="pct" x="820" y="175">7,0%</text>
+  <text class="s" x="820" y="200">380 / 5 400</text>
+  <text class="s" x="820" y="220">окно 14д · users</text>
+  <text class="t" x="820" y="240">монетизация ценности</text>
+  <rect class="card" x="40" y="320" width="200" height="150" rx="8"/>
+  <text class="h" x="140" y="350">C · от paywall</text>
+  <text class="pct" x="140" y="395">19%</text>
+  <text class="s" x="140" y="420">380 / 2 000</text>
+  <text class="s" x="140" y="440">окно 7д · users</text>
+  <text class="t" x="140" y="460">работает ли пейвол</text>
+  <rect class="warn" x="720" y="320" width="200" height="150" rx="8"/>
+  <text class="h" x="820" y="350">D · по показам</text>
+  <text class="pct" x="820" y="395">6,2%</text>
+  <text class="s" x="820" y="420">380 / 6 100</text>
+  <text class="s" x="820" y="440">строки paywall_view</text>
+  <text class="t" x="820" y="460">обычно врёт</text>
+  <text x="36" y="510" class="hint">Вывод: спорите не о Postgres — о договоре определения. Primary для проблемы серии ближе к B + depth, не к D.</text>
+</svg>

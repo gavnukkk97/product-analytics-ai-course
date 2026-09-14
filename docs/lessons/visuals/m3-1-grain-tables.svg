@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Grain of Rit tables</title>
+  <desc id="desc">Three tables with one-row-means labels and keys joining them.</desc>
+  <defs>
+    <style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .h { font-family: Georgia, serif; font-size: 13px; fill: #1C2B24; }
+      .hm { font-family: Georgia, serif; font-size: 13px; fill: #1C2B24; text-anchor: middle; }
+      .t { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; text-anchor: middle; }
+      .tl { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; }
+      .s { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; text-anchor: middle; }
+      .sl { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; }
+      .box { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.6; }
+      .ok { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 1.8; }
+      .bad { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 1.8; }
+      .focus { fill: #E8EEF2; stroke: #2F4A3E; stroke-width: 1.8; }
+      .line { stroke: #2F4A3E; stroke-width: 2; fill: none; }
+      .zero { stroke: #8B3A2F; stroke-width: 1.5; stroke-dasharray: 4 3; }
+
+      .e { stroke: #2F4A3E; stroke-width: 1.8; fill: none; marker-end: url(#arr); }
+    </style>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#2F4A3E"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="960" height="520"/>
+  <text x="36" y="32" class="title">Зерно таблиц Ритма</text>
+  <text x="36" y="54" class="hint">Одна строка = один факт. Пока не назвали зерно — count(*) врёт.</text>
+
+  <rect class="ok" x="40" y="90" width="260" height="200" rx="8"/>
+  <text class="hm" x="170" y="120">users</text>
+  <text class="t" x="170" y="150">1 строка = 1 user</text>
+  <text class="s" x="170" y="180">PK: user_id</text>
+  <text class="s" x="170" y="200">installed_at · platform</text>
+  <text class="s" x="170" y="220">ab_variant · is_internal</text>
+  <text class="s" x="170" y="250">не дублировать user</text>
+
+  <rect class="focus" x="350" y="90" width="260" height="200" rx="8"/>
+  <text class="hm" x="480" y="120">events</text>
+  <text class="t" x="480" y="150">1 строка = 1 событие</text>
+  <text class="s" x="480" y="180">PK: event_id</text>
+  <text class="s" x="480" y="200">FK: user_id</text>
+  <text class="s" x="480" y="220">event_name · ts · props</text>
+  <text class="s" x="480" y="250">много строк на user</text>
+
+  <rect class="box" x="660" y="90" width="260" height="200" rx="8"/>
+  <text class="hm" x="790" y="120">subscriptions</text>
+  <text class="t" x="790" y="150">1 строка = факт Pro</text>
+  <text class="s" x="790" y="180">PK: subscription_id</text>
+  <text class="s" x="790" y="200">FK: user_id</text>
+  <text class="s" x="790" y="220">plan · status · price</text>
+  <text class="s" x="790" y="250">user может иметь 2+</text>
+
+  <path class="e" d="M300 190 H340"/>
+  <path class="e" d="M610 190 H650"/>
+
+  <rect class="bad" x="40" y="330" width="880" height="150" rx="8"/>
+  <text class="h" x="60" y="365">Типовые ошибки зерна</text>
+  <text class="tl" x="60" y="395">· count(events) как «число пользователей» — раздувает активных</text>
+  <text class="tl" x="60" y="420">· JOIN users↔subscriptions без дедупа — month→year даёт 2 строки на user</text>
+  <text class="tl" x="60" y="445">· depth по числу check_in (тапы), а не по уникальным дням — ломает М1.1</text>
+</svg>

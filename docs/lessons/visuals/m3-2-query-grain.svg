@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Query model and grain on Rit<</title>
+  <desc id="desc">Pipeline FROM-JOIN to SELECT with grain labels for users, events, and result metrics.</desc>
+  <defs>
+    <style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .h { font-family: Georgia, serif; font-size: 13px; fill: #1C2B24; }
+      .t { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; text-anchor: middle; }
+      .s { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; text-anchor: middle; }
+      .box { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 1.8; }
+      .warn { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 1.8; }
+      .panel { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.4; }
+      .arrow { stroke: #2F4A3E; stroke-width: 2; fill: none; marker-end: url(#m); }
+    </style>
+    <marker id="m" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#2F4A3E"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="960" height="560"/>
+  <text x="36" y="34" class="title">>45;L 70?@>A0 8 75@=> · « 8B<»</text>
+  <text x="36" y="54" class="hint">!<>B@8B5: =0 :064>< H035 <5=O5BAO 75@=>. H81:0 <5B@8:8 = >H81:0 75@=0, =5 «701K; SELECT».</text>
+
+  <rect class="panel" x="36" y="78" width="200" height="110" rx="6"/>
+  <text class="h" x="52" y="102">"01;8FK</text>
+  <text class="s" x="136" y="128" style="text-anchor:start">users · 1 AB@>:0 = user</text>
+  <text class="s" x="136" y="148" style="text-anchor:start">events · 1 AB@>:0 = A>1KB85</text>
+  <text class="s" x="136" y="168" style="text-anchor:start">subscriptions · D0:B Pro</text>
+
+  <path class="arrow" d="M246 133 H290"/>
+  <rect class="box" x="300" y="88" width="140" height="90" rx="6"/>
+  <text class="t" x="370" y="122">FROM / JOIN</text>
+  <text class="s" x="370" y="144">A>18@05< AB@>:8</text>
+  <text class="s" x="370" y="162">@8A:: 4C1;8</text>
+
+  <path class="arrow" d="M450 133 H494"/>
+  <rect class="box" x="504" y="88" width="140" height="90" rx="6"/>
+  <text class="t" x="574" y="122">WHERE</text>
+  <text class="s" x="574" y="144">D8;LB@ AB@>:</text>
+  <text class="s" x="574" y="162">event_name, 40BK</text>
+
+  <path class="arrow" d="M654 133 H698"/>
+  <rect class="box" x="708" y="88" width="216" height="90" rx="6"/>
+  <text class="t" x="816" y="122">GROUP / >:=></text>
+  <text class="s" x="816" y="144">AE;>?=CBL  ?><5B8BL</text>
+  <text class="s" x="816" y="162">users / 4=8 / :>3>@BK</text>
+
+  <text x="36" y="230" class="h">"@8 8AE>40 75@=0 (>48= 8 B>B 65 «count»)</text>
+
+  <rect class="box" x="36" y="250" width="280" height="120" rx="6"/>
+  <text class="t" x="176" y="282">count(DISTINCT user_id)</text>
+  <text class="s" x="176" y="306">75@=> ’ ?>;L7>20B5;8</text>
+  <text class="s" x="176" y="326">DAU, :>=25@A8O, depth</text>
+  <text class="s" x="176" y="348">?>GB8 2A5340 4;O ?@>4C:B0</text>
+
+  <rect class="warn" x="340" y="250" width="280" height="120" rx="6"/>
+  <text class="t" x="480" y="282">count(*)</text>
+  <text class="s" x="480" y="306">75@=> ’ AB@>:8 events</text>
+  <text class="s" x="480" y="326">?>:07K paywall, B0?K</text>
+  <text class="s" x="480" y="348">G0AB> 2@QB :0: «:>=25@A8O»</text>
+
+  <rect class="panel" x="644" y="250" width="280" height="120" rx="6"/>
+  <text class="t" x="784" y="282">count(DISTINCT day)</text>
+  <text class="s" x="784" y="306">=0 user ’ 4=8 A check_in</text>
+  <text class="s" x="784" y="326">G8A;8B5;L depth e3</text>
+  <text class="s" x="784" y="348">=5 ?CB0BL A rn ?> B0?0<</text>
+
+  <rect class="warn" x="36" y="400" width="888" height="120" rx="6"/>
+  <text class="h" x="56" y="432">JOIN 157 454C?0</text>
+  <text class="s" x="56" y="458" style="text-anchor:start">events È subscriptions ?> user_id: 5A;8 C user 2 ?>4?8A:8  :064>5 A>1KB85 ×2.</text>
+  <text class="s" x="56" y="480" style="text-anchor:start">@>25@:0: count(*) 4> 8 ?>A;5 JOIN; @O4>< count(DISTINCT user_id).  07>H;8AL  75@=> A;><0=>.</text>
+  <text class="s" x="56" y="502" style="text-anchor:start">K2>4: A=0G0;0 =0@8AC9B5 75@=> 2KE>40, ?>B>< ?8H8B5 SELECT.</text>
+</svg>

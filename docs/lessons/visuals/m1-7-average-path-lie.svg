@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+  <title id="title">Why average CJM lies</title>
+  <desc id="desc">Average path vs two real segments: early paywall drop and streak-first path.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#2F4A3E"/>
+    </marker>
+<style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .h { font-family: Georgia, serif; font-size: 13px; fill: #1C2B24; text-anchor: middle; }
+      .t { font-family: system-ui, sans-serif; font-size: 11px; fill: #1C2B24; text-anchor: middle; }
+      .s { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; text-anchor: middle; }
+      .box { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.8; }
+      .ok { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 1.8; }
+      .focus { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 2.2; }
+      .pri { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 2; }
+      .warn { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 2; }
+      .e { stroke: #2F4A3E; stroke-width: 1.8; fill: none; marker-end: url(#arr); }
+</style></defs>
+  <rect class="bg" width="960" height="480"/>
+  <text x="36" y="32" class="title">Где CJM врёт · усреднённый путь</text>
+  <text x="36" y="52" class="hint">Один «типичный» маршрут скрывает два разных продукта внутри Ритма.</text>
+
+  <rect class="warn" x="60" y="90" width="840" height="70" rx="6"/>
+  <text class="h" x="480" y="118">«Средний» CJM: Install → … → Paywall → Pro</text>
+  <text class="t" x="480" y="142">Выглядит гладко · не описывает никого из когорты</text>
+
+  <rect class="box" x="60" y="200" width="400" height="160" rx="6"/>
+  <text class="h" x="260" y="235">Сегмент Early PW</text>
+  <text class="t" x="260" y="265">Install → onboarding → paywall рано</text>
+  <text class="t" x="260" y="290">→ отвал до habit depth</text>
+  <text class="s" x="260" y="320">Метрика: early_paywall_share · depth</text>
+  <text class="s" x="260" y="340">Гипотеза: timing (H2 → М2.5)</text>
+
+  <rect class="ok" x="500" y="200" width="400" height="160" rx="6"/>
+  <text class="h" x="700" y="235">Сегмент Streak-first</text>
+  <text class="t" x="700" y="265">Habit → check-in ×3 → streak_3</text>
+  <text class="t" x="700" y="290">→ paywall после ценности</text>
+  <text class="s" x="700" y="320">Метрика: habit→subscribe_14d</text>
+  <text class="s" x="700" y="340">Диагноз: узкое = depth (М1.8)</text>
+
+  <text x="36" y="420" class="hint">Правило: рисуйте ≥2 реальных ветки + сегмент, прежде чем звать путь «ключевым». М1.7</text>
+  <text x="36" y="445" class="hint">Стык: CJM → сегменты М1.8 → коридор М4.4 на шаге с дырой в событиях.</text>
+</svg>

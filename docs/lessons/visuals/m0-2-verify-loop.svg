@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 480" role="img" aria-labelledby="title desc">
+  <title id="title">@82KG:0 ?@>25@:8 >B25B0 AI</title>
+  <desc id="desc">&8:;: 2>?@>A @5H5=8O ’ ?@><?B A >?@545;5=85< ’ G5@=>28: AI ’ sanity-check ’ 2K2>4 G5;>25:0 ’ @5H5=85.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#2F4A3E"/>
+    </marker>
+    <style>
+      .t { font-family: Georgia, serif; font-size: 20px; fill: #1C2B24; }
+      .lbl { font-family: Georgia, serif; font-size: 14px; fill: #1C2B24; text-anchor: middle; }
+      .sub { font-family: system-ui, sans-serif; font-size: 11px; fill: #4A5C52; text-anchor: middle; }
+      .muted { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .node { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 2; }
+      .gate { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 2; }
+      .ok { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 2; }
+      .flow { stroke: #2F4A3E; stroke-width: 2; fill: none; marker-end: url(#a); }
+      .back { stroke: #8B3A2F; stroke-width: 2; fill: none; marker-end: url(#a); stroke-dasharray: 5 4; }
+    </style>
+  </defs>
+  <rect width="920" height="480" fill="#FBF8F2"/>
+  <text x="40" y="36" class="t">@82KG:0 ?@>25@:8 · 4> F8D@K 2 @5H5=88</text>
+  <text x="40" y="58" class="muted">@8<5@ 2>?@>A0: paywall  8B<0 =0 D3 streak 8;8 =0 D7?</text>
+
+  <rect class="node" x="40" y="120" width="150" height="70" rx="6"/>
+  <text class="lbl" x="115" y="148">1. >?@>A</text>
+  <text class="sub" x="115" y="168">:0:>5 @5H5=85</text>
+
+  <rect class="node" x="230" y="120" width="170" height="70" rx="6"/>
+  <text class="lbl" x="315" y="148">2. @><?B</text>
+  <text class="sub" x="315" y="168"><5B@8:0 + >:=></text>
+
+  <rect class="node" x="440" y="120" width="150" height="70" rx="6"/>
+  <text class="lbl" x="515" y="148">3. '5@=>28:</text>
+  <text class="sub" x="515" y="168">>B25B AI</text>
+
+  <rect class="gate" x="630" y="110" width="160" height="90" rx="6"/>
+  <text class="lbl" x="710" y="145">4. Sanity</text>
+  <text class="sub" x="710" y="165">>?@545;5=85?</text>
+  <text class="sub" x="710" y="182">3@0=C;O@=>ABL?</text>
+
+  <rect class="ok" x="440" y="300" width="150" height="70" rx="6"/>
+  <text class="lbl" x="515" y="328">5. K2>4</text>
+  <text class="sub" x="515" y="348">20H, =5 AI</text>
+
+  <rect class="ok" x="630" y="300" width="160" height="70" rx="6"/>
+  <text class="lbl" x="710" y="328">6.  5H5=85</text>
+  <text class="sub" x="710" y="348">8;8 A40G0</text>
+
+  <path class="flow" d="M190 155 H225"/>
+  <path class="flow" d="M400 155 H435"/>
+  <path class="flow" d="M590 155 H625"/>
+  <path class="flow" d="M710 200 V295"/>
+  <path class="flow" d="M630 335 H595"/>
+  <path class="back" d="M710 110 V80 H315 V115"/>
+
+  <text x="200" y="78" class="muted" fill="#8B3A2F">=5 ?@>H;> ’ CB>G=8BL ?@><?B</text>
+
+  <rect class="node" x="40" y="300" width="340" height="100" rx="6"/>
+  <text x="56" y="330" class="b" style="font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24;">8=8<C< sanity 4;O  8B<0</text>
+  <text x="56" y="355" style="font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24;">1) G8A;8B5;L / 7=0<5=0B5;L / >:=></text>
+  <text x="56" y="375" style="font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24;">2) user_id, =5 session</text>
+  <text x="56" y="395" style="font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24;">3) F5=0 >H81:8 @0==53> paywall</text>
+
+  <text x="40" y="450" class="muted">0.2 · =5B ?@>25@:8  =5B F8D@K 2 @5H5=88.</text>
+</svg>

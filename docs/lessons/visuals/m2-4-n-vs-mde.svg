@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+  <title id="title">Sample size vs minimum detectable effect</title>
+  <desc id="desc">Tradeoff: smaller MDE needs larger N. Bootstrap as resampling intuition next to formula.</desc>
+  <defs><style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .h { font-family: Georgia, serif; font-size: 13px; fill: #1C2B24; }
+      .hm { font-family: Georgia, serif; font-size: 13px; fill: #1C2B24; text-anchor: middle; }
+      .t { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; text-anchor: middle; }
+      .tl { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; }
+      .s { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; text-anchor: middle; }
+      .sl { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; }
+      .box { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.6; }
+      .ok { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 1.8; }
+      .bad { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 1.8; }
+      .focus { fill: #E8EEF2; stroke: #2F4A3E; stroke-width: 1.8; }
+      .line { stroke: #2F4A3E; stroke-width: 2; fill: none; }
+      .zero { stroke: #8B3A2F; stroke-width: 1.5; stroke-dasharray: 4 3; }
+</style></defs>
+  <rect class="bg" width="960" height="480"/>
+  <text x="36" y="32" class="title">N и MDE: сколько данных нужно</text>
+  <text x="36" y="54" class="hint">Чем меньше эффект, который обязаны поймать, тем больше пользователей в каждое крыло.</text>
+
+  <rect class="focus" x="60" y="90" width="280" height="220" rx="8"/>
+  <text class="hm" x="200" y="120">Малый MDE</text>
+  <text class="t" x="200" y="150">хотим +1–2 п.п.</text>
+  <text class="t" x="200" y="180">→ большой N</text>
+  <text class="s" x="200" y="210">узкий интервал</text>
+  <text class="s" x="200" y="230">дорого по трафику</text>
+  <text class="s" x="200" y="260">риск ошибки II ниже</text>
+
+  <rect class="ok" x="360" y="90" width="280" height="220" rx="8"/>
+  <text class="hm" x="500" y="120">Учебный MDE</text>
+  <text class="t" x="500" y="150">+3 п.п. primary</text>
+  <text class="t" x="500" y="180">на paywall_timing</text>
+  <text class="s" x="500" y="210">порядок: тысячи users</text>
+  <text class="s" x="500" y="230">full-стенд ~2500</text>
+  <text class="s" x="500" y="260">семпл 80 — шум</text>
+
+  <rect class="bad" x="660" y="90" width="240" height="220" rx="8"/>
+  <text class="hm" x="780" y="120">Ловушка</text>
+  <text class="t" x="780" y="155">«уже +4%,</text>
+  <text class="t" x="780" y="178">раскатим»</text>
+  <text class="s" x="780" y="210">без ДИ / без N</text>
+  <text class="s" x="780" y="230">= карго-культ</text>
+  <text class="s" x="780" y="260">из М2.5 peeking</text>
+
+  <rect class="box" x="60" y="340" width="840" height="100" rx="8"/>
+  <text class="h" x="80" y="370">Bootstrap на пальцах</text>
+  <text class="tl" x="80" y="396">Много раз тянем выборку «с возвращением» из своих данных → смотрим разброс оценок. Это ДИ без формулы нормальности.</text>
+  <text class="tl" x="80" y="420">На уроке достаточно: оценка + 95% ДИ (нормальный приближение или bootstrap) · калькулятор Evan Miller — в чтении.</text>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 500" role="img" aria-labelledby="title desc">
+  <title id="title">From corridor observation to quantitative hypothesis</title>
+  <desc id="desc">Bridge observation to friction metric to testable if-then hypothesis for P3.</desc>
+  <defs>
+    <style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .h { font-family: Georgia, serif; font-size: 13px; fill: #1C2B24; }
+      .hm { font-family: Georgia, serif; font-size: 13px; fill: #1C2B24; text-anchor: middle; }
+      .t { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; text-anchor: middle; }
+      .tl { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; }
+      .s { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; text-anchor: middle; }
+      .box { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.6; }
+      .ok { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 1.8; }
+      .bad { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 1.8; }
+      .focus { fill: #E8EEF2; stroke: #2F4A3E; stroke-width: 1.8; }
+
+      .e { stroke: #2F4A3E; stroke-width: 1.8; fill: none; marker-end: url(#a2); }
+    </style>
+    <marker id="a2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#2F4A3E"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="960" height="500"/>
+  <text x="36" y="32" class="title">Наблюдение → гипотеза с метрикой</text>
+  <text x="36" y="54" class="hint">Качественное не заменяет A/B. Оно даёт формулировку, которую потом меряем.</text>
+
+  <rect class="bad" x="40" y="90" width="200" height="140" rx="8"/>
+  <text class="hm" x="140" y="125">Наблюдение</text>
+  <text class="s" x="140" y="155">«ищет, куда</text>
+  <text class="s" x="140" y="175">нажать чек-ин»</text>
+  <text class="s" x="140" y="200">пауза 20+ сек</text>
+
+  <path class="e" d="M250 160 H290"/>
+
+  <rect class="focus" x="300" y="90" width="200" height="140" rx="8"/>
+  <text class="hm" x="400" y="125">Трение</text>
+  <text class="s" x="400" y="155">неясный CTA</text>
+  <text class="s" x="400" y="175">на home</text>
+  <text class="s" x="400" y="200">после habit</text>
+
+  <path class="e" d="M510 160 H550"/>
+
+  <rect class="ok" x="560" y="90" width="200" height="140" rx="8"/>
+  <text class="hm" x="660" y="125">Метрика</text>
+  <text class="s" x="660" y="155">habit→first</text>
+  <text class="s" x="660" y="175">check_in ≤1д</text>
+  <text class="s" x="660" y="200">словарь М5.1</text>
+
+  <path class="e" d="M770 160 H810"/>
+
+  <rect class="box" x="820" y="90" width="100" height="140" rx="8"/>
+  <text class="hm" x="870" y="140">H</text>
+  <text class="s" x="870" y="170">if/then</text>
+  <text class="s" x="870" y="195">→ P3</text>
+
+  <rect class="box" x="40" y="270" width="880" height="180" rx="8"/>
+  <text class="h" x="60" y="305">Шаблон перевода (курс)</text>
+  <text class="tl" x="60" y="335">Наблюдение: [факт без оценки]. Трение: [шаг потока]. Метрика: [определение из словаря].</text>
+  <text class="tl" x="60" y="360">Гипотеза: если [изменение UI], то [метрика] ↑/↓ на [порядок], потому что [механизм].</text>
+  <text class="tl" x="60" y="385">Проверка: коридор повторно (проход 3) и/или A/B М2.5 — не «трое сказали ок».</text>
+  <text class="tl" x="60" y="410">Связь с М1.8: качественная опора к H1–H3, не замена диагностики на воронке.</text>
+</svg>

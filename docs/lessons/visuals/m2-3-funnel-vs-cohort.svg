@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Funnel versus cohort matrix</title>
+  <desc id="desc">Left: Ritм funnel steps. Right: cohort retention matrix with immature tail cells.</desc>
+  <defs>
+    <style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .h { font-family: Georgia, serif; font-size: 16px; fill: #1C2B24; }
+      .t { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; text-anchor: middle; }
+      .s { font-family: system-ui, sans-serif; font-size: 11px; fill: #4A5C52; text-anchor: middle; }
+      .cellt { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; text-anchor: middle; }
+      .step { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 2; }
+      .head { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 1.5; }
+      .cell { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.2; }
+      .na { fill: #E8E4DC; stroke: #8B3A2F; stroke-width: 1.5; stroke-dasharray: 4 3; }
+      .lbl { font-family: system-ui, sans-serif; font-size: 11px; fill: #8B3A2F; text-anchor: middle; }
+    </style>
+  </defs>
+  <rect class="bg" width="960" height="540"/>
+  <text x="36" y="36" class="title">Воронка ≠ когорта · один продукт, два вопроса</text>
+  <text x="36" y="58" class="hint">Слева — где отвал в шагах. Справа — как живут волны install. «—» = хвост ещё не дозрел.</text>
+  <text x="36" y="95" class="h">Воронка (одна волна)</text>
+  <rect class="step" x="60" y="115" width="220" height="40" rx="6"/>
+  <text class="t" x="170" y="140">install · 10 000</text>
+  <rect class="step" x="80" y="170" width="180" height="40" rx="6"/>
+  <text class="t" x="170" y="195">habit_created · 5 400</text>
+  <rect class="step" x="100" y="225" width="140" height="40" rx="6"/>
+  <text class="t" x="170" y="250">depth≥3 · 1 450</text>
+  <rect class="step" x="110" y="280" width="120" height="40" rx="6"/>
+  <text class="t" x="170" y="305">paywall · 2 000</text>
+  <rect class="step" x="120" y="335" width="100" height="40" rx="6"/>
+  <text class="t" x="170" y="360">Pro · 380</text>
+  <text class="s" x="170" y="400">вопрос: где теряем в сценарии</text>
+  <text x="420" y="95" class="h">Когортная матрица (habit / check_in, %)</text>
+  <rect class="head" x="420" y="115" width="80" height="36" rx="3"/>
+  <rect class="head" x="500" y="115" width="70" height="36" rx="3"/>
+  <rect class="head" x="570" y="115" width="70" height="36" rx="3"/>
+  <rect class="head" x="640" y="115" width="70" height="36" rx="3"/>
+  <rect class="head" x="710" y="115" width="70" height="36" rx="3"/>
+  <rect class="head" x="780" y="115" width="70" height="36" rx="3"/>
+  <text class="cellt" x="460" y="138">Когорта</text>
+  <text class="cellt" x="535" y="138">Size</text>
+  <text class="cellt" x="605" y="138">D1</text>
+  <text class="cellt" x="675" y="138">D3</text>
+  <text class="cellt" x="745" y="138">D7</text>
+  <text class="cellt" x="815" y="138">D14</text>
+  <rect class="cell" x="420" y="155" width="80" height="36" rx="3"/>
+  <rect class="cell" x="500" y="155" width="70" height="36" rx="3"/>
+  <rect class="cell" x="570" y="155" width="70" height="36" rx="3"/>
+  <rect class="cell" x="640" y="155" width="70" height="36" rx="3"/>
+  <rect class="cell" x="710" y="155" width="70" height="36" rx="3"/>
+  <rect class="cell" x="780" y="155" width="70" height="36" rx="3"/>
+  <text class="cellt" x="460" y="178">W1</text>
+  <text class="cellt" x="535" y="178">2400</text>
+  <text class="cellt" x="605" y="178">48</text>
+  <text class="cellt" x="675" y="178">31</text>
+  <text class="cellt" x="745" y="178">22</text>
+  <text class="cellt" x="815" y="178">14</text>
+  <rect class="cell" x="420" y="195" width="80" height="36" rx="3"/>
+  <rect class="cell" x="500" y="195" width="70" height="36" rx="3"/>
+  <rect class="cell" x="570" y="195" width="70" height="36" rx="3"/>
+  <rect class="cell" x="640" y="195" width="70" height="36" rx="3"/>
+  <rect class="cell" x="710" y="195" width="70" height="36" rx="3"/>
+  <rect class="cell" x="780" y="195" width="70" height="36" rx="3"/>
+  <text class="cellt" x="460" y="218">W2</text>
+  <text class="cellt" x="535" y="218">2600</text>
+  <text class="cellt" x="605" y="218">51</text>
+  <text class="cellt" x="675" y="218">33</text>
+  <text class="cellt" x="745" y="218">21</text>
+  <text class="cellt" x="815" y="218">13</text>
+  <rect class="cell" x="420" y="235" width="80" height="36" rx="3"/>
+  <rect class="cell" x="500" y="235" width="70" height="36" rx="3"/>
+  <rect class="cell" x="570" y="235" width="70" height="36" rx="3"/>
+  <rect class="cell" x="640" y="235" width="70" height="36" rx="3"/>
+  <rect class="cell" x="710" y="235" width="70" height="36" rx="3"/>
+  <rect class="na" x="780" y="235" width="70" height="36" rx="3"/>
+  <text class="cellt" x="460" y="258">W3</text>
+  <text class="cellt" x="535" y="258">2500</text>
+  <text class="cellt" x="605" y="258">49</text>
+  <text class="cellt" x="675" y="258">29</text>
+  <text class="cellt" x="745" y="258">18</text>
+  <text class="lbl" x="815" y="258">—</text>
+  <rect class="cell" x="420" y="275" width="80" height="36" rx="3"/>
+  <rect class="cell" x="500" y="275" width="70" height="36" rx="3"/>
+  <rect class="cell" x="570" y="275" width="70" height="36" rx="3"/>
+  <rect class="cell" x="640" y="275" width="70" height="36" rx="3"/>
+  <rect class="na" x="710" y="275" width="70" height="36" rx="3"/>
+  <rect class="na" x="780" y="275" width="70" height="36" rx="3"/>
+  <text class="cellt" x="460" y="298">W4</text>
+  <text class="cellt" x="535" y="298">2500</text>
+  <text class="cellt" x="605" y="298">47</text>
+  <text class="cellt" x="675" y="298">28</text>
+  <text class="lbl" x="745" y="298">—</text>
+  <text class="lbl" x="815" y="298">—</text>
+  <text class="s" x="635" y="340">вопрос: как волна живёт на D1 / D7 / D14</text>
+  <text class="hint" x="420" y="380">Нельзя: сравнить D14 у W4 с W1. Можно: D3 у W1–W4.</text>
+  <text class="hint" x="420" y="410">Depth≥3 ≠ D7 retention: это накопленная глубина за 7 дней.</text>
+  <text class="hint" x="36" y="470">Вывод: воронка и когорта рядом полезны; подмена одной другой — типичная ложь слайда.</text>
+  <text class="hint" x="36" y="498">Пунктир / «—» = ещё рано объявлять падение ретеншна.</text>
+</svg>

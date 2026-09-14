@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+  <title id="title">Reading a confidence interval for a difference</title>
+  <desc id="desc">Two scenarios: CI includes zero (noise) vs CI above zero (difference plausible). Point estimate alone is not enough.</desc>
+  <defs><style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .h { font-family: Georgia, serif; font-size: 13px; fill: #1C2B24; }
+      .hm { font-family: Georgia, serif; font-size: 13px; fill: #1C2B24; text-anchor: middle; }
+      .t { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; text-anchor: middle; }
+      .tl { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; }
+      .s { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; text-anchor: middle; }
+      .sl { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; }
+      .box { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.6; }
+      .ok { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 1.8; }
+      .bad { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 1.8; }
+      .focus { fill: #E8EEF2; stroke: #2F4A3E; stroke-width: 1.8; }
+      .line { stroke: #2F4A3E; stroke-width: 2; fill: none; }
+      .zero { stroke: #8B3A2F; stroke-width: 1.5; stroke-dasharray: 4 3; }
+</style></defs>
+  <rect class="bg" width="960" height="480"/>
+  <text x="36" y="32" class="title">Когда разница «настоящая»: читаем интервал</text>
+  <text x="36" y="54" class="hint">Точка — оценка. Отрезок — диапазон, куда ещё легко попасть шум. Ноль = «разницы нет».</text>
+
+  <!-- axis shared labels -->
+  <text x="80" y="100" class="h">Сценарий A · шум</text>
+  <rect class="bad" x="80" y="120" width="360" height="140" rx="8"/>
+  <line class="zero" x1="260" y1="145" x2="260" y2="230"/>
+  <text class="s" x="260" y="142">0</text>
+  <line class="line" x1="140" y1="190" x2="300" y2="190"/>
+  <circle cx="220" cy="190" r="6" fill="#8B3A2F"/>
+  <text class="t" x="260" y="250">ДИ пересекает 0 · нельзя раскатывать</text>
+  <text class="s" x="260" y="268">оценка +2 п.п., но интервал −1…+5</text>
+
+  <text x="520" y="100" class="h">Сценарий B · сигнал</text>
+  <rect class="ok" x="520" y="120" width="360" height="140" rx="8"/>
+  <line class="zero" x1="560" y1="145" x2="560" y2="230"/>
+  <text class="s" x="560" y="142">0</text>
+  <line class="line" x1="620" y1="190" x2="820" y2="190"/>
+  <circle cx="720" cy="190" r="6" fill="#2F4A3E"/>
+  <text class="t" x="700" y="250">ДИ целиком выше 0 · разница правдоподобна</text>
+  <text class="s" x="700" y="268">оценка +5 п.п., интервал +2…+8</text>
+
+  <rect class="box" x="80" y="300" width="800" height="130" rx="8"/>
+  <text class="h" x="100" y="330">Правило курса для Ритма</text>
+  <text class="tl" x="100" y="358">1. Всегда пишите оценку ± интервал (или [низ, верх]), не голый «+5%».</text>
+  <text class="tl" x="100" y="382">2. Если 0 внутри ДИ — исход = «недостаточно уверенности», не «эффект есть, но слабый».</text>
+  <text class="tl" x="100" y="406">3. Широкий ДИ при малом N — нормальный ответ; лечится выборкой и MDE (→ М2.5), не подглядыванием.</text>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Window functions on Rit< events</title>
+  <desc id="desc">Partition by user_id with row_number for first habit_created versus group by collapse.</desc>
+  <defs>
+    <style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .h { font-family: Georgia, serif; font-size: 14px; fill: #1C2B24; }
+      .t { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; }
+      .s { font-family: system-ui, sans-serif; font-size: 11px; fill: #4A5C52; }
+      .c { font-family: ui-monospace, monospace; font-size: 11px; fill: #1C2B24; }
+      .box { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.5; }
+      .hi { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 1.8; }
+      .bad { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 1.8; }
+      .head { fill: #1C2B24; }
+      .ht { font-family: system-ui, sans-serif; font-size: 11px; fill: #FBF8F2; }
+    </style>
+  </defs>
+  <rect class="bg" width="960" height="560"/>
+  <text x="36" y="34" class="title">:=0 =0 ?>B>:5 A>1KB89 ´ 8B<ª</text>
+  <text x="36" y="54" class="hint">PARTITION BY user_id ∑ ORDER BY ts. :=> ?><5G05B AB@>:8; GROUP BY AE;>?K205B.</text>
+
+  <text x="36" y="88" class="h">!K@K5 events (fragment)</text>
+  <rect class="head" x="36" y="100" width="420" height="28" rx="4"/>
+  <text class="ht" x="48" y="118">user_id</text>
+  <text class="ht" x="140" y="118">event_name</text>
+  <text class="ht" x="280" y="118">ts</text>
+  <text class="ht" x="380" y="118">rn</text>
+
+  <rect class="box" x="36" y="128" width="420" height="28"/>
+  <text class="c" x="48" y="146">u1</text>
+  <text class="c" x="140" y="146">habit_created</text>
+  <text class="c" x="280" y="146">01 10:00</text>
+  <text class="c" x="380" y="146">1 ê first</text>
+
+  <rect class="box" x="36" y="156" width="420" height="28"/>
+  <text class="c" x="48" y="174">u1</text>
+  <text class="c" x="140" y="174">check_in</text>
+  <text class="c" x="280" y="174">01 21:00</text>
+  <text class="c" x="380" y="174"></text>
+
+  <rect class="box" x="36" y="184" width="420" height="28"/>
+  <text class="c" x="48" y="202">u1</text>
+  <text class="c" x="140" y="202">habit_created</text>
+  <text class="c" x="280" y="202">03 09:00</text>
+  <text class="c" x="380" y="202">2</text>
+
+  <rect class="box" x="36" y="212" width="420" height="28"/>
+  <text class="c" x="48" y="230">u2</text>
+  <text class="c" x="140" y="230">habit_created</text>
+  <text class="c" x="280" y="230">02 12:00</text>
+  <text class="c" x="380" y="230">1 ê first</text>
+
+  <rect class="hi" x="480" y="100" width="444" height="140" rx="6"/>
+  <text class="h" x="500" y="128">:=>: ?5@2>5 habit</text>
+  <text class="s" x="500" y="152">row_number() OVER (</text>
+  <text class="s" x="500" y="172">  PARTITION BY user_id</text>
+  <text class="s" x="500" y="192">  ORDER BY ts)</text>
+  <text class="t" x="500" y="220">WHERE rn = 1 í 7=0<5=0B5;L depth</text>
+
+  <rect class="hi" x="36" y="280" width="440" height="120" rx="6"/>
+  <text class="h" x="56" y="308">C6=> >:=></text>
+  <text class="s" x="56" y="336">∑ ?5@2>5 / ?>A;54=55 A>1KB85</text>
+  <text class="s" x="56" y="358">∑ lag <564C check_in (@07@K2 A5@88)</text>
+  <text class="s" x="56" y="380">∑ =0:>?8B5;L=K9 AGQBG8: 4=59 4> depth</text>
+
+  <rect class="box" x="500" y="280" width="424" height="120" rx="6"/>
+  <text class="h" x="520" y="308">%20B05B GROUP BY</text>
+  <text class="s" x="520" y="336">∑ DAU = count distinct user ?> 4=N</text>
+  <text class="s" x="520" y="358">∑ G8A;> subscribe_started 70 =545;N</text>
+  <text class="s" x="520" y="380">∑ 4=8 A check_in =0 user (?>B>< filter e3)</text>
+
+  <rect class="bad" x="36" y="430" width="888" height="96" rx="6"/>
+  <text class="h" x="56" y="458">><0=K9 C: rn e 3 ?> check_in</text>
+  <text class="s" x="56" y="484">-B> ´e3 B0?0ª, =5 ´e3 :0;5=40@=KE 4=O 70 7 ACB>: >B habitª. :=> ?@8<5=5=> :@0A82>  >?@545;5=85 depth C18B>.</text>
+  <text class="s" x="56" y="506">K2>4: A=0G0;0 >?@545;5=85 <5B@8:8 (2.3/4.3), ?>B>< PARTITION/ORDER.</text>
+</svg>

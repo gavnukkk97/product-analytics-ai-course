@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Design that breaks analytics data</title>
+  <desc id="desc">Four UI traps in Ritм and how to fix contract or interface.</desc>
+  <defs>
+    <style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .h { font-family: Georgia, serif; font-size: 14px; fill: #1C2B24; }
+      .t { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; }
+      .s { font-family: system-ui, sans-serif; font-size: 11px; fill: #4A5C52; }
+      .bad { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 2; }
+      .ok { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 2; }
+      .box { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <rect class="bg" width="960" height="520"/>
+  <text x="36" y="36" class="title">Дизайн ломает данные — «Ритм»</text>
+  <text x="36" y="58" class="hint">Пара: UI-решение → симптом в логах → чинка контракта или экрана.</text>
+  <text x="80" y="95" class="h">Ловушка UI</text>
+  <text x="360" y="95" class="h">Что в данных</text>
+  <text x="680" y="95" class="h">Чинка</text>
+  <rect class="bad" x="36" y="110" width="280" height="72" rx="6"/>
+  <rect class="box" x="332" y="110" width="280" height="72" rx="6"/>
+  <rect class="ok" x="628" y="110" width="296" height="72" rx="6"/>
+  <text class="t" x="52" y="140">Paywall-модалка без состояния</text>
+  <text class="s" x="52" y="160">нет «экрана» пейвола</text>
+  <text class="t" x="348" y="140">Дубли и пропуски</text>
+  <text class="s" x="348" y="160">paywall_view нестабилен</text>
+  <text class="t" x="644" y="140">Явный trigger + дедуп</text>
+  <text class="s" x="644" y="160">1 view / user / день в метрике</text>
+  <rect class="bad" x="36" y="198" width="280" height="72" rx="6"/>
+  <rect class="box" x="332" y="198" width="280" height="72" rx="6"/>
+  <rect class="ok" x="628" y="198" width="296" height="72" rx="6"/>
+  <text class="t" x="52" y="228">Автологин / silent restore</text>
+  <text class="s" x="52" y="248">сессия сама поднялась</text>
+  <text class="t" x="348" y="228">app_open ≠ возврат</text>
+  <text class="s" x="348" y="248">ретеншн завышен</text>
+  <text class="t" x="644" y="228">Считать по check_in</text>
+  <text class="s" x="644" y="248">или разделить session_restored</text>
+  <rect class="bad" x="36" y="286" width="280" height="72" rx="6"/>
+  <rect class="box" x="332" y="286" width="280" height="72" rx="6"/>
+  <rect class="ok" x="628" y="286" width="296" height="72" rx="6"/>
+  <text class="t" x="52" y="316">Свайп «отметил» без commit</text>
+  <text class="s" x="52" y="336">случайные жесты</text>
+  <text class="t" x="348" y="316">Мусорный check_in</text>
+  <text class="s" x="348" y="336">depth рисует фейк-успех</text>
+  <text class="t" x="644" y="316">Событие после commit</text>
+  <text class="s" x="644" y="336">prop source=swipe|tap</text>
+  <rect class="bad" x="36" y="374" width="280" height="72" rx="6"/>
+  <rect class="box" x="332" y="374" width="280" height="72" rx="6"/>
+  <rect class="ok" x="628" y="374" width="296" height="72" rx="6"/>
+  <text class="t" x="52" y="404">Апселл внутри чек-ина</text>
+  <text class="s" x="52" y="424">ценность и продажа слиты</text>
+  <text class="t" x="348" y="404">Нельзя отделить рычаги</text>
+  <text class="s" x="348" y="424">одна кнопка — два смысла</text>
+  <text class="t" x="644" y="404">streak_3_reached отдельно</text>
+  <text class="s" x="644" y="424">от paywall_view</text>
+  <text x="36" y="480" class="hint">Вывод: если шаг не отделён в UI, tracking plan не спасёт — сначала поверхность, потом событие.</text>
+</svg>

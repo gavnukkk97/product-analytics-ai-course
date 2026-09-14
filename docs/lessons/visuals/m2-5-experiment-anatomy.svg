@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Experiment anatomy for paywall timing</title>
+  <desc id="desc">Six boxes: hypothesis, metrics, sample, window, stop rule, do-not-look list for Ritm A/B.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#2F4A3E"/>
+    </marker>
+    <style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .h { font-family: Georgia, serif; font-size: 13px; fill: #1C2B24; text-anchor: middle; }
+      .t { font-family: system-ui, sans-serif; font-size: 11px; fill: #1C2B24; text-anchor: middle; }
+      .s { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; text-anchor: middle; }
+      .box { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.8; }
+      .pri { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 2; }
+      .warn { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 2; }
+      .e { stroke: #2F4A3E; stroke-width: 1.8; fill: none; marker-end: url(#arr); }
+    </style>
+  </defs>
+  <rect class="bg" width="960" height="560"/>
+  <text x="36" y="32" class="title">=0B><8O M:A?5@8<5=B0 · paywall_timing · 2.5</text>
+  <text x="36" y="52" class="hint">0?>;=O5BAO 4> GB5=8O ab_variant. Primary >4=0; A?8A>: «=5 A<>B@8<» >1O70B5;5=.</text>
+
+  <rect class="box" x="40" y="80" width="280" height="90" rx="6"/>
+  <text class="h" x="180" y="110">1. 8?>B570</text>
+  <text class="t" x="180" y="135">Paywall ?>A;5 streak_3</text>
+  <text class="s" x="180" y="152">‘ subscribe · “ early PW</text>
+
+  <rect class="pri" x="340" y="80" width="280" height="90" rx="6"/>
+  <text class="h" x="480" y="110">2. 5B@8:8</text>
+  <text class="t" x="480" y="135">Primary: habit’sub 144</text>
+  <text class="s" x="480" y="152">Guard: depth · early share</text>
+
+  <rect class="box" x="640" y="80" width="280" height="90" rx="6"/>
+  <text class="h" x="780" y="110">3. K1>@:0</text>
+  <text class="t" x="780" y="135">50/50 =0 install</text>
+  <text class="s" x="780" y="152">157 is_internal · full N</text>
+
+  <path class="e" d="M320 125 H335"/>
+  <path class="e" d="M620 125 H635"/>
+
+  <rect class="box" x="40" y="220" width="280" height="90" rx="6"/>
+  <text class="h" x="180" y="250">4. :=></text>
+  <text class="t" x="180" y="275">144 >B habit_created</text>
+  <text class="s" x="180" y="292">D8:A8@>20=> 70@0=55</text>
+
+  <rect class="box" x="340" y="220" width="280" height="90" rx="6"/>
+  <text class="h" x="480" y="250">5. !B>?</text>
+  <text class="t" x="480" y="275">:0;5=40@L + 4>7@520=85 >:=0</text>
+  <text class="s" x="480" y="292">=5 5654=52=K9 p-value</text>
+
+  <rect class="warn" x="640" y="220" width="280" height="90" rx="6"/>
+  <text class="h" x="780" y="250">6. 5 A<>B@8<</text>
+  <text class="t" x="780" y="275">15 A53<5=B>2 «=0 C40GC»</text>
+  <text class="s" x="780" y="292">CV >B install :0: primary</text>
+
+  <path class="e" d="M180 170 V215"/>
+  <path class="e" d="M480 170 V215"/>
+  <path class="e" d="M780 170 V215"/>
+  <path class="e" d="M320 265 H335"/>
+  <path class="e" d="M620 265 H635"/>
+
+  <rect class="pri" x="120" y="360" width="720" height="70" rx="6"/>
+  <text class="h" x="480" y="390"> 5H5=85 ?>A;5 GB5=8O: @0AB8< / @072>@0G8205< / C18205< + ½</text>
+  <text class="s" x="480" y="412">!25@:0 A instructor key  C ?@5?>4020B5;O; ABC45=B A40QB A2>9 @0AGQB</text>
+
+  <text x="40" y="480" class="hint">!<>B@5BL: F5?>G:0 1’6 4>;6=0 1KBL 70:@KB0 4> SQL. =0G5 GB5=85 ?@52@0I05BAO 2 >E>BC 70 75;Q=K< A53<5=B><.</text>
+  <text x="40" y="510" class="hint">2.5 · 25E0 P4 · M:A?5@8<5=B paywall_timing_2026q3</text>
+</svg>

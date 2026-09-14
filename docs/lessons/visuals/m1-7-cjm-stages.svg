@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">CJM key scenario on Ritm</title>
+  <desc id="desc">Six journey stages from install to Pro with job, friction, and event markers.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#2F4A3E"/>
+    </marker>
+<style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .h { font-family: Georgia, serif; font-size: 13px; fill: #1C2B24; text-anchor: middle; }
+      .t { font-family: system-ui, sans-serif; font-size: 11px; fill: #1C2B24; text-anchor: middle; }
+      .s { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; text-anchor: middle; }
+      .box { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.8; }
+      .ok { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 1.8; }
+      .focus { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 2.2; }
+      .pri { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 2; }
+      .warn { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 2; }
+      .e { stroke: #2F4A3E; stroke-width: 1.8; fill: none; marker-end: url(#arr); }
+</style></defs>
+  <rect class="bg" width="960" height="520"/>
+  <text x="36" y="32" class="title">CJM ключевого сценария · Ритм · М1.7</text>
+  <text x="36" y="52" class="hint">Каждый шаг = работа пользователя + трение + событие из tracking plan. Не «средний путь».</text>
+
+  <rect class="box" x="24" y="90" width="140" height="110" rx="6"/>
+  <text class="h" x="94" y="118">1. Install</text>
+  <text class="t" x="94" y="142">Работа: начать</text>
+  <text class="s" x="94" y="162">Трение: зачем я</text>
+  <text class="s" x="94" y="178">EVT: app_open</text>
+
+  <rect class="box" x="176" y="90" width="140" height="110" rx="6"/>
+  <text class="h" x="246" y="118">2. Онбординг</text>
+  <text class="t" x="246" y="142">Выбрать 1 привычку</text>
+  <text class="s" x="246" y="162">Длинный опрос</text>
+  <text class="s" x="246" y="178">onboarding_*</text>
+
+  <rect class="focus" x="328" y="90" width="140" height="110" rx="6"/>
+  <text class="h" x="398" y="118">3. Habit</text>
+  <text class="t" x="398" y="142">Создать ритуал</text>
+  <text class="s" x="398" y="162">CTA неясен</text>
+  <text class="s" x="398" y="178">habit_created</text>
+
+  <rect class="focus" x="480" y="90" width="140" height="110" rx="6"/>
+  <text class="h" x="550" y="118">4. Check-in</text>
+  <text class="t" x="550" y="142">Отметить день</text>
+  <text class="s" x="550" y="162">Не находит кнопку</text>
+  <text class="s" x="550" y="178">check_in</text>
+
+  <rect class="ok" x="632" y="90" width="140" height="110" rx="6"/>
+  <text class="h" x="702" y="118">5. Streak</text>
+  <text class="t" x="702" y="142">Удержать 3 дня</text>
+  <text class="s" x="702" y="162">Забыл / нет пуша</text>
+  <text class="s" x="702" y="178">streak_3_reached</text>
+
+  <rect class="warn" x="784" y="90" width="152" height="110" rx="6"/>
+  <text class="h" x="860" y="118">6. Paywall</text>
+  <text class="t" x="860" y="142">Решить про Pro</text>
+  <text class="s" x="860" y="162">Ранний / после ценности</text>
+  <text class="s" x="860" y="178">paywall → subscribe</text>
+
+  <path class="e" d="M164 145 H172"/>
+  <path class="e" d="M316 145 H324"/>
+  <path class="e" d="M468 145 H476"/>
+  <path class="e" d="M620 145 H628"/>
+  <path class="e" d="M772 145 H780"/>
+
+  <rect class="pri" x="80" y="250" width="800" height="70" rx="6"/>
+  <text class="h" x="480" y="278">Два пути, не один «средний»</text>
+  <text class="t" x="480" y="300">A: ценность → streak_3 → paywall · B: early paywall → отвал до depth</text>
+
+  <rect class="box" x="80" y="350" width="380" height="90" rx="6"/>
+  <text class="h" x="270" y="380">Логируется ✓</text>
+  <text class="t" x="270" y="405">habit_created · check_in · streak_*</text>
+  <text class="s" x="270" y="425">paywall_view · subscribe_started</text>
+
+  <rect class="warn" x="500" y="350" width="380" height="90" rx="6"/>
+  <text class="h" x="690" y="380">Дыра в разметке ✗</text>
+  <text class="t" x="690" y="405">«искал кнопку 20 сек»</text>
+  <text class="s" x="690" y="425">→ коридор М4.4, не событие</text>
+
+  <text x="36" y="480" class="hint">Смотреть: узкие шаги 3–4 кормят P3; paywall-ветка — вход в A/B М2.5. М1.7 · веха P3</text>
+</svg>

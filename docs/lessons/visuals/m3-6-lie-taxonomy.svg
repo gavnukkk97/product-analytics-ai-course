@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Taxonomy of AI lies in analytics</title>
+  <desc id="desc">Seven classes of plausible AI errors mapped to Rit< schema examples.</desc>
+  <defs>
+    <style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .h { font-family: system-ui, sans-serif; font-size: 12px; font-weight: 600; fill: #1C2B24; text-anchor: middle; }
+      .s { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; text-anchor: middle; }
+      .card { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.5; }
+      .hot { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 1.8; }
+      .cool { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <rect class="bg" width="960" height="560"/>
+  <text x="36" y="34" class="title">"0:A>=><8O ;68 AI · AE5<0 « 8B<»</text>
+  <text x="36" y="54" class="hint">4=0 :0@B>G:0  >48= :;0AA. !=0G0;0 =07>28B5 :;0AA, ?>B>< G8=8B5 :>4 8;8 >B:;>=O9B5 2K2>4.</text>
+
+  <rect class="hot" x="36" y="78" width="210" height="120" rx="6"/>
+  <text class="h" x="141" y="108">K4C<0==>5 ?>;5</text>
+  <text class="s" x="141" y="132">users.device_type</text>
+  <text class="s" x="141" y="152">=5B 2 4.3</text>
+  <text class="s" x="141" y="176">’ reject AE5<K</text>
+
+  <rect class="hot" x="262" y="78" width="210" height="120" rx="6"/>
+  <text class="h" x="367" y="108">5@=></text>
+  <text class="s" x="367" y="132">count(*) A>1KB89</text>
+  <text class="s" x="367" y="152">:0: «:>=25@A8O»</text>
+  <text class="s" x="367" y="176">’ ;><0=K9 A</text>
+
+  <rect class="hot" x="488" y="78" width="210" height="120" rx="6"/>
+  <text class="h" x="593" y="108">INNER JOIN</text>
+  <text class="s" x="593" y="132">habit ) Pro</text>
+  <text class="s" x="593" y="152">2 7=0<5=0B5;5</text>
+  <text class="s" x="593" y="176">’ 4>;O H 100%</text>
+
+  <rect class="hot" x="714" y="78" width="210" height="120" rx="6"/>
+  <text class="h" x="819" y="108">:=> / 454C?</text>
+  <text class="s" x="819" y="132">rne3 ?> B0?0<</text>
+  <text class="s" x="819" y="152">` depth ?> 4=O<</text>
+  <text class="s" x="819" y="176">’ ;><0=K9 C</text>
+
+  <rect class="cool" x="36" y="220" width="290" height="120" rx="6"/>
+  <text class="h" x="181" y="250">>4<5=0 <5B@8:8</text>
+  <text class="s" x="181" y="274">WAU/DAU =0720;8</text>
+  <text class="s" x="181" y="294">«retention 28%»</text>
+  <text class="s" x="181" y="318">’ A25@8BL A 2.3</text>
+
+  <rect class="cool" x="342" y="220" width="290" height="120" rx="6"/>
+  <text class="h" x="487" y="250">80;5:B</text>
+  <text class="s" x="487" y="274">datediff / uniqExact</text>
+  <text class="s" x="487" y="294">2 Postgres-:C@A5</text>
+  <text class="s" x="487" y="318">’ ?5@5?8A0BL</text>
+
+  <rect class="card" x="648" y="220" width="276" height="120" rx="6"/>
+  <text class="h" x="786" y="250">@8G8==>ABL</text>
+  <text class="s" x="786" y="274">SQL <>65B 1KBL >:</text>
+  <text class="s" x="786" y="294">B5:AB ?@> «28=C»  =5B</text>
+  <text class="s" x="786" y="318">’ 38?>B570, =5 D0:B</text>
+
+  <rect class="card" x="36" y="370" width="888" height="150" rx="6"/>
+  <text class="h" x="480" y="404" style="font-family: Georgia, serif; font-size:14px">0: A4020BL :0@B>G:C «?>9<09 ;>6L»</text>
+  <text class="s" x="60" y="436" style="text-anchor:start">1) ;0AA 87 MB>9 :0@BK. 2) >:070B5;LAB2> ?> ?>;O< users/events/subscriptions. 3) A?@02;5==K9 MA:87 8;8 O2=K9 >B:07.</text>
+  <text class="s" x="60" y="460" style="text-anchor:start">4) &5=0 >H81:8 4;O @5H5=8O  8B<0 (>=1>@48=3 / paywall / F5=0 Pro). 5) >=B@>;L=K9 count 8;8 sample 5 user_id.</text>
+  <text class="s" x="60" y="492" style="text-anchor:start">K2>4: 48DD5@5=F80B>@ :C@A0  =5 «C<5BL ?>?@>A8BL SQL», 0 AB018;L=> ;>28BL MB8 A5<L :;0AA>2.</text>
+</svg>

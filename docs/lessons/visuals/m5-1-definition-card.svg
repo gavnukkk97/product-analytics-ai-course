@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Metric definition card template</title>
+  <desc id="desc">Filled example card for D7 habit depth e3 with numerator, denominator, window, grain, filters, owner.</desc>
+  <defs>
+    <style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .card { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 2; }
+      .hdr { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 2; }
+      .h { font-family: Georgia, serif; font-size: 16px; fill: #1C2B24; }
+      .k { font-family: system-ui, sans-serif; font-size: 11px; fill: #4A5C52; }
+      .v { font-family: system-ui, sans-serif; font-size: 13px; fill: #1C2B24; }
+      .warn { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 1.5; }
+      .wt { font-family: system-ui, sans-serif; font-size: 11px; fill: #8B3A2F; }
+    </style>
+  </defs>
+  <rect class="bg" width="960" height="520"/>
+  <text x="36" y="32" class="title">0@B>G:0 >?@545;5=8O · H01;>= 5.1</text>
+  <text x="36" y="52" class="hint">@8<5@ 70?>;=5=8O: D7 habit depth e3. 4=> 8<O  >4=> G8A;> =0 40H1>@45 8 2 N=8B-;8AB5.</text>
+
+  <rect class="hdr" x="60" y="75" width="840" height="48" rx="6"/>
+  <text class="h" x="80" y="105">D7 habit depth e3 · ritm-metrics-v0.1</text>
+
+  <rect class="card" x="60" y="130" width="840" height="300" rx="6"/>
+
+  <text class="k" x="80" y="160">>?@>A @5H5=8O</text>
+  <text class="v" x="80" y="180">@028< ;8 >=1>@48=3 =0 A;54CNI59 =545;5? (if depth &lt; ?>@>30 2 2>;=K ’ 40)</text>
+
+  <text class="k" x="80" y="210">5@=></text>
+  <text class="v" x="80" y="230">1 AB@>:0 @0AGQB0 = 1 user A ?5@2K< habit_created 2 2>;=5</text>
+
+  <text class="k" x="80" y="260">'8A;8B5;L</text>
+  <text class="v" x="80" y="280">users A e3 distinct local_date, 345 1K; check_in 2 >:=5</text>
+
+  <text class="k" x="500" y="260">=0<5=0B5;L</text>
+  <text class="v" x="500" y="280">users A e1 habit_created (=5 2A5 install)</text>
+
+  <text class="k" x="80" y="310">:=> / O:>@L</text>
+  <text class="v" x="80" y="330">7 ACB>: >B ts ?5@2>3> habit_created</text>
+
+  <text class="k" x="500" y="310">$8;LB@K</text>
+  <text class="v" x="500" y="330">is_internal = false; platform  @07@57, =5 A<5AL</text>
+
+  <text class="k" x="80" y="360">54C? / :@0O</text>
+  <text class="v" x="80" y="380">4C1;8 check_in 2 >48= local_date = 1 45=L; schema_version 1|2</text>
+
+  <text class="k" x="500" y="360">;045;5F · 25@A8O</text>
+  <text class="v" x="500" y="380">0=0;8B8:  8B<0 · v0.1 · 40B0 D8:A0F88</text>
+
+  <rect class="warn" x="60" y="450" width="840" height="40" rx="4"/>
+  <text class="wt" x="80" y="475">5 ?CB0BL A Habit retention D7 (1K; check_in 8<5==> =0 4=5 7). @C3>5 8<O  4@C30O :0@B>G:0.</text>
+</svg>

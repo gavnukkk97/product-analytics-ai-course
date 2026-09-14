@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Dashboard anatomy for a decision</title>
+  <desc id="desc">Hierarchy: decision banner, four KPIs, funnel/cohort cuts, raw verification layer.</desc>
+  <defs>
+    <style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .h { font-family: Georgia, serif; font-size: 14px; fill: #1C2B24; }
+      .t { font-family: system-ui, sans-serif; font-size: 12px; fill: #1C2B24; text-anchor: middle; }
+      .s { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; text-anchor: middle; }
+      .kpi { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 2; }
+      .panel { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.8; }
+      .raw { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 1.8; }
+      .banner { fill: #1C2B24; }
+      .bt { font-family: system-ui, sans-serif; font-size: 13px; fill: #FBF8F2; }
+    </style>
+  </defs>
+  <rect class="bg" width="960" height="560"/>
+  <text x="36" y="34" class="title">Анатомия дашборда · «Ритм» (бумага → Metabase)</text>
+  <text x="36" y="54" class="hint">Сверху решение и KPI, ниже разрезы, внизу сырое. Один экран — один тип.</text>
+  <rect class="banner" x="36" y="72" width="888" height="44" rx="6"/>
+  <text class="bt" x="52" y="92">Диагностика недели · продакт+аналитик · if depth&lt;25% 2 недели → правим онбординг</text>
+  <text class="bt" x="52" y="108" style="font-size:11px; fill:#DCE8DF;">Не MAU-обзор. Данные fresher &lt; 36ч.</text>
+  <text x="36" y="145" class="h">1. Числа решения (3–5)</text>
+  <rect class="kpi" x="36" y="155" width="210" height="78" rx="6"/>
+  <rect class="kpi" x="258" y="155" width="210" height="78" rx="6"/>
+  <rect class="kpi" x="480" y="155" width="210" height="78" rx="6"/>
+  <rect class="kpi" x="702" y="155" width="222" height="78" rx="6"/>
+  <text class="t" x="141" y="180">Depth ≥3</text>
+  <text class="s" x="141" y="198">26% · окно 7д от habit</text>
+  <text class="s" x="141" y="214">было 24%</text>
+  <text class="t" x="363" y="180">→ ≥1 check_in</text>
+  <text class="s" x="363" y="198">70% от habit</text>
+  <text class="s" x="363" y="214">users, 7д</text>
+  <text class="t" x="585" y="180">Paywall рано</text>
+  <text class="s" x="585" y="198">34% view до streak_3</text>
+  <text class="s" x="585" y="214">guardrail</text>
+  <text class="t" x="813" y="180">New Pro</text>
+  <text class="s" x="813" y="198">340 users / нед</text>
+  <text class="s" x="813" y="214">без renew</text>
+  <text x="36" y="270" class="h">2. Разрезы (почему KPI плохой)</text>
+  <rect class="panel" x="36" y="280" width="440" height="130" rx="6"/>
+  <rect class="panel" x="492" y="280" width="432" height="130" rx="6"/>
+  <text class="t" x="256" y="310">Воронка install → Pro</text>
+  <text class="s" x="256" y="332">шаги + конверсии users</text>
+  <text class="s" x="256" y="352">разрез: platform</text>
+  <text class="s" x="256" y="380">не 12 линий ретеншна</text>
+  <text class="t" x="708" y="310">Когорты D1 / D3 / D7</text>
+  <text class="s" x="708" y="332">heatmap 4 волны</text>
+  <text class="s" x="708" y="352">«—» = недозревший хвост</text>
+  <text class="s" x="708" y="380">habit retention по check_in</text>
+  <text x="36" y="440" class="h">3. Сырое / сверка</text>
+  <rect class="raw" x="36" y="450" width="888" height="70" rx="6"/>
+  <text class="t" x="480" y="480">Таблица: onboarding_completed без habit_created за 24ч · count</text>
+  <text class="s" x="480" y="500">для SQL-сверки карточек Metabase, не для ежедневного чтения всей команды</text>
+  <text x="36" y="545" class="hint">Вывод: если виджет не меняет if/then — его нет на этом экране.</text>
+</svg>

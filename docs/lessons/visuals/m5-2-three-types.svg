@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+  <title id="title">Three dashboard types must not mix</title>
+  <desc id="desc">Monitoring, diagnosis, research — different questions and density.</desc>
+  <defs>
+    <style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .h { font-family: Georgia, serif; font-size: 18px; fill: #1C2B24; text-anchor: middle; }
+      .t { font-family: system-ui, sans-serif; font-size: 13px; fill: #1C2B24; text-anchor: middle; }
+      .s { font-family: system-ui, sans-serif; font-size: 11px; fill: #4A5C52; text-anchor: middle; }
+      .a { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 2; }
+      .b { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 2; }
+      .c { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 2; }
+      .x { fill: #8B3A2F; font-family: Georgia, serif; font-size: 22px; text-anchor: middle; }
+    </style>
+  </defs>
+  <rect class="bg" width="960" height="480"/>
+  <text x="36" y="36" class="title">Три типа дашборда · не мешать на одном экране</text>
+  <text x="36" y="58" class="hint">Смотрите вопрос и плотность. Стрелки «в один экран» — антипаттерн свалки.</text>
+  <rect class="a" x="40" y="90" width="260" height="280" rx="10"/>
+  <text class="h" x="170" y="130">Мониторинг</text>
+  <text class="t" x="170" y="165">Всё ли в коридоре?</text>
+  <text class="s" x="170" y="195">мало чисел · тренд</text>
+  <text class="s" x="170" y="215">алерт при выходе</text>
+  <text class="t" x="170" y="255">Ритм:</text>
+  <text class="s" x="170" y="280">depth≥3</text>
+  <text class="s" x="170" y="300">новые Pro</text>
+  <text class="s" x="170" y="320">freshness данных</text>
+  <text class="s" x="170" y="350">для CEO / daily pulse</text>
+  <rect class="b" x="350" y="90" width="260" height="280" rx="10"/>
+  <text class="h" x="480" y="130">Диагностика</text>
+  <text class="t" x="480" y="165">Где сломалось?</text>
+  <text class="s" x="480" y="195">воронка · сегменты</text>
+  <text class="s" x="480" y="215">сравнение периодов</text>
+  <text class="t" x="480" y="255">Ритм:</text>
+  <text class="s" x="480" y="280">шаги до depth</text>
+  <text class="s" x="480" y="300">paywall trigger</text>
+  <text class="s" x="480" y="320">platform / когорта</text>
+  <text class="s" x="480" y="350">пятничный синкап</text>
+  <rect class="c" x="660" y="90" width="260" height="280" rx="10"/>
+  <text class="h" x="790" y="130">Исследование</text>
+  <text class="t" x="790" y="165">Что ещё может</text>
+  <text class="t" x="790" y="185">быть верно?</text>
+  <text class="s" x="790" y="215">ad-hoc · много разрезов</text>
+  <text class="t" x="790" y="255">Ритм:</text>
+  <text class="s" x="790" y="280">habit_type × depth</text>
+  <text class="s" x="790" y="300">разовый вопрос</text>
+  <text class="s" x="790" y="320">ноутбук / ad-hoc</text>
+  <text class="s" x="790" y="350">не вечный экран</text>
+  <text class="x" x="320" y="230">≠</text>
+  <text class="x" x="630" y="230">≠</text>
+  <text x="36" y="420" class="hint">Антипаттерн: мониторинг + диагностика + «топ привычек» на одном дашборде = никто не знает, зачем открыл.</text>
+  <text x="36" y="450" class="hint">Вывод: сначала тип и if/then, потом виджеты. Metabase (М5.4) только фиксирует анатомию.</text>
+</svg>

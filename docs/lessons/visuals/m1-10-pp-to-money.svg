@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+  <title id="title">From percentage points to money</title>
+  <desc id="desc">Pipeline from lift in pp through cohort size and ARPPU to decision verb.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#2F4A3E"/>
+    </marker>
+<style>
+      .bg { fill: #FBF8F2; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; fill: #1C2B24; }
+      .hint { font-family: system-ui, sans-serif; font-size: 12px; fill: #4A5C52; }
+      .h { font-family: Georgia, serif; font-size: 13px; fill: #1C2B24; text-anchor: middle; }
+      .t { font-family: system-ui, sans-serif; font-size: 11px; fill: #1C2B24; text-anchor: middle; }
+      .s { font-family: system-ui, sans-serif; font-size: 10px; fill: #4A5C52; text-anchor: middle; }
+      .box { fill: #F7F3EB; stroke: #2F4A3E; stroke-width: 1.8; }
+      .ok { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 1.8; }
+      .focus { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 2.2; }
+      .pri { fill: #DCE8DF; stroke: #2F4A3E; stroke-width: 2; }
+      .warn { fill: #F3E6DF; stroke: #8B3A2F; stroke-width: 2; }
+      .e { stroke: #2F4A3E; stroke-width: 1.8; fill: none; marker-end: url(#arr); }
+</style></defs>
+  <rect class="bg" width="960" height="480"/>
+  <text x="36" y="32" class="title">+п.п. → деньги → решение · Ритм</text>
+  <text x="36" y="52" class="hint">Порядок величины важнее «точной» ₽; формулы — из юнит-листа М1.3.</text>
+
+  <rect class="box" x="40" y="100" width="160" height="100" rx="6"/>
+  <text class="h" x="120" y="135">Δ primary</text>
+  <text class="t" x="120" y="160">+5 п.п.</text>
+  <text class="s" x="120" y="180">habit→sub 14д</text>
+
+  <rect class="box" x="230" y="100" width="160" height="100" rx="6"/>
+  <text class="h" x="310" y="135">База волны</text>
+  <text class="t" x="310" y="160">5400 habit</text>
+  <text class="s" x="310" y="180">за период</text>
+
+  <rect class="box" x="420" y="100" width="160" height="100" rx="6"/>
+  <text class="h" x="500" y="135">Δ Pro</text>
+  <text class="t" x="500" y="160">≈ +270</text>
+  <text class="s" x="500" y="180">подписок</text>
+
+  <rect class="ok" x="610" y="100" width="160" height="100" rx="6"/>
+  <text class="h" x="690" y="135">₽ порядка</text>
+  <text class="t" x="690" y="160">× ARPPU</text>
+  <text class="s" x="690" y="180">лист М1.3</text>
+
+  <rect class="pri" x="800" y="100" width="120" height="100" rx="6"/>
+  <text class="h" x="860" y="140">Глагол</text>
+  <text class="t" x="860" y="170">растим</text>
+
+  <path class="e" d="M200 150 H225"/>
+  <path class="e" d="M390 150 H415"/>
+  <path class="e" d="M580 150 H605"/>
+  <path class="e" d="M770 150 H795"/>
+
+  <rect class="box" x="80" y="250" width="800" height="120" rx="6"/>
+  <text class="h" x="480" y="285">Три честных оговорки</text>
+  <text class="t" x="480" y="315">1) Эффект на полной когорте стенда ≠ прод без учёта сезонности</text>
+  <text class="t" x="480" y="340">2) Guardrail depth просел → деньги primary не покупают раскатку</text>
+  <text class="s" x="480" y="360">3) «Почти значимо» не умножаем на ₽ — сначала дизайн/N (М2.4)</text>
+
+  <text x="36" y="430" class="hint">Смотреть: цепочка без прыжка «+2 п.п. = успех». М1.10 · мост в капстоун М6.1</text>
+</svg>
