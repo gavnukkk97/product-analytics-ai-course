@@ -96,13 +96,17 @@
 | [`m0-1-contour.md`](./m0-1-contour.md) | М0.1 Контур решения | 1 | рамка |
 | [`m0-2-ai-in-contour.md`](./m0-2-ai-in-contour.md) | М0.2 AI в контуре | 1 | рамка |
 | [`m1-1-problem-market.md`](./m1-1-problem-market.md) | М1.1 Рынок и проблема | 1 | P1 |
+| [`m1-2-jtbd.md`](./m1-2-jtbd.md) | М1.2 JTBD / job story | 3 | P2→P3 |
 | [`m4-1-screen-as-hypothesis.md`](./m4-1-screen-as-hypothesis.md) | М4.1 Экран как гипотеза | 1 | P1 вход |
+| [`m4-2-flow-friction.md`](./m4-2-flow-friction.md) | М4.2 Поток и трение | 3 | мост М4.3 |
 | [`m3-1-data-grain.md`](./m3-1-data-grain.md) | М3.1 Откуда данные / зерно | 1 | **P1** |
 | [`m3-2-sql-zero-to-windows.md`](./m3-2-sql-zero-to-windows.md) | М3.2 SQL с нуля до окон | 1–3 | P1–P2 |
 | [`m1-3-unit-economics.md`](./m1-3-unit-economics.md) | М1.3 Юнит-экономика / древо | 2 | **P1+P2** |
+| [`m1-4-product-finance.md`](./m1-4-product-finance.md) | М1.4 Финансы продукта / payback | 6 | **P4** деньги |
 | [`m4-3-tracking-plan.md`](./m4-3-tracking-plan.md) | М4.3 Tracking plan / измеримость | 2 | P1 |
 | [`m2-1-noise-variability.md`](./m2-1-noise-variability.md) | М2.1 Шум и вариативность | 2 | фундамент |
 | [`m2-2-descriptive-stats.md`](./m2-2-descriptive-stats.md) | М2.2 Описательная статистика | 2 | фундамент |
+| [`m1-6-benefit-tax.md`](./m1-6-benefit-tax.md) | М1.6 Выгода и налог | 6 | P4 поверхность |
 | [`m1-7-cjm-journey.md`](./m1-7-cjm-journey.md) | М1.7 CJM / путь пользователя | 3–5 | **P3** |
 | [`m2-3-conversion-cohorts.md`](./m2-3-conversion-cohorts.md) | М2.3 Конверсия и когорты | 3 | P2 |
 | [`m3-3-query-under-the-hood.md`](./m3-3-query-under-the-hood.md) | М3.3 Под капотом SQL | 3 | мост Metabase |
@@ -115,13 +119,15 @@
 | [`m4-4-corridor-tests.md`](./m4-4-corridor-tests.md) | М4.4 Коридорные тесты | 5 | **P3** |
 | [`m5-3-chart-choice.md`](./m5-3-chart-choice.md) | М5.3 Выбор визуализации | 5 | мост → М5.4 |
 | [`m5-4-metabase-dashboard.md`](./m5-4-metabase-dashboard.md) | М5.4 Сборка в Metabase | 5 | P3 / демо-2 |
+| [`m5-5-analytics-in-team.md`](./m5-5-analytics-in-team.md) | М5.5 Жизнь аналитики в команде | опция | ритуал / архив |
 | [`m2-4-confidence-intervals.md`](./m2-4-confidence-intervals.md) | М2.4 ДИ / N×2 / bootstrap *(углублён stats-ab)* | 6 | **P4** |
 | [`m2-5-ab-design-read.md`](./m2-5-ab-design-read.md) | М2.5 A/B дизайн/чтение + SRM/CUPED-lite *(углублён stats-ab)* | 6–8 | **P4** |
+| [`m2-6-when-ab-impossible.md`](./m2-6-when-ab-impossible.md) | М2.6 Когда A/B невозможен | 7 | **P4** альтернативы |
 | [`m1-5-strategy-nsm.md`](./m1-5-strategy-nsm.md) | М1.5 Стратегия / NSM | 7 | P4 рамка |
 | [`m1-10-insight-to-decision.md`](./m1-10-insight-to-decision.md) | М1.10 Вывод → решение / деньги | 7–8 | **P4** |
 | [`m6-1-capstone-defense.md`](./m6-1-capstone-defense.md) | М6.1 Капстоун / живая защита (+разбор М6.2) | 8 | **P4 защита** |
 
-**Ещё нет файлов (nice-to-have):** М1.2, М1.4, М1.6, М2.6, М4.2, М5.5 — см. [`../full-course-gap-plan.md`](../full-course-gap-plan.md).
+**Ещё нет отдельных файлов (опции):** М1.9, М2.7 — не блокер. Nice-to-have календарных уроков закрыты 14.09.2026.
 
 Порядок чтения на неделе 1: М0.1 → М0.2 → М1.1 → **М4.1** → **М3.1** → старт **М3.2**.
 
@@ -129,8 +135,10 @@
 
 - Данные: **М3.1** → **М4.3** → **М3.2** → **М3.3** → **М3.4** → **М3.5** → **М3.6**.
 - Решение на экране: М1.1 → **М4.1** → М2.3 → **М5.1** → **М5.2** → **М5.3** → **М5.4**.
-- Статистика: **М2.1** → **М2.2** → М2.3 → М2.4 → М2.5.
-- Практика-спина: **М1.3** → **М1.7** → **М1.8** + **М4.4** → **М2.4** → **М2.5** → **М1.5** / **М1.10** → **М6.1**.
+- Статистика: **М2.1** → **М2.2** → М2.3 → М2.4 → М2.5 → **М2.6**.
+- Практика-спина: **М1.3** → **М1.2** / **М1.7** → **М1.8** + **М4.4** → **М2.4** → **М2.5** → **М1.4** / **М1.6** / **М1.5** / **М1.10** → **М6.1**.
+- UX-поверхность: **М4.1** → **М4.2** → **М4.3** (+ **М1.6**).
+- BI-жизнь: **М5.1** → **М5.2** → **М5.3** → **М5.4** → **М5.5**.
 
 A/B-ядро (**М2.4**, **М2.5**) углублено из stats-ab — [`../../internal/stats-ab-weave.md`](../../internal/stats-ab-weave.md). Самодостаточность uploads: [`../../internal/article-weave-map.md`](../../internal/article-weave-map.md), библиотека [`../materials-library.md`](../materials-library.md).
 

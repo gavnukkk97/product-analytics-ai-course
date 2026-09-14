@@ -73,7 +73,13 @@ Wishlist закрыт: локальные md лежат в [`uploads/`](./upload
 | **М2.1** | — | [`lessons/m2-1-noise-variability.md`](./lessons/m2-1-noise-variability.md) · **написан** |
 | **М2.2** | — | [`lessons/m2-2-descriptive-stats.md`](./lessons/m2-2-descriptive-stats.md) · **написан** |
 | **М4.1** | — (UX: NN/g / Surf в ux-sources) | [`lessons/m4-1-screen-as-hypothesis.md`](./lessons/m4-1-screen-as-hypothesis.md) · **написан** |
+| **М4.2** | — (Habr user flow) | [`lessons/m4-2-flow-friction.md`](./lessons/m4-2-flow-friction.md) · **написан** |
+| **М1.2** | — (GoPractice JTBD / Kustov) | [`lessons/m1-2-jtbd.md`](./lessons/m1-2-jtbd.md) · **написан** |
+| **М1.4** | GoPractice + vc.ru + Min LTV/CAC uploads | [`lessons/m1-4-product-finance.md`](./lessons/m1-4-product-finance.md) · **написан** |
+| **М1.6** | — (Бюро UI / Habr friction) | [`lessons/m1-6-benefit-tax.md`](./lessons/m1-6-benefit-tax.md) · **написан** |
+| **М2.6** | — (Statsig / DoorDash switchback) | [`lessons/m2-6-when-ab-impossible.md`](./lessons/m2-6-when-ab-impossible.md) · **написан** |
 | **М5.3** | storytellingwithdata / IBS — §1 топ + §3 BI | [`lessons/m5-3-chart-choice.md`](./lessons/m5-3-chart-choice.md) · **написан** |
+| **М5.5** | Metabase Learn organization | [`lessons/m5-5-analytics-in-team.md`](./lessons/m5-5-analytics-in-team.md) · **написан** |
 | **М5.1** | [`uploads/medium-seregina-metrics-frameworks.md`](./uploads/medium-seregina-metrics-frameworks.md) · [`uploads/medium-seregina-metrics-hierarchy-vs-pyramid.md`](./uploads/medium-seregina-metrics-hierarchy-vs-pyramid.md) · [`uploads/linkedin-zaleuska-north-star-product-metrics.md`](./uploads/linkedin-zaleuska-north-star-product-metrics.md) · [`uploads/bonus-gopractice-product-health-dashboard.md`](./uploads/bonus-gopractice-product-health-dashboard.md) | [`lessons/m5-1-metrics-layer.md`](./lessons/m5-1-metrics-layer.md) · **woven** |
 | **М5.2** | [`uploads/bonus-gopractice-product-health-dashboard.md`](./uploads/bonus-gopractice-product-health-dashboard.md) · [`uploads/bonus-habr-product-dashboard.md`](./uploads/bonus-habr-product-dashboard.md) | [`lessons/m5-2-dashboard-decision.md`](./lessons/m5-2-dashboard-decision.md) · **woven** |
 | **М5** (обзор) | + Geoghegan end-to-end | см. М0.1 / М5.2 |
@@ -187,19 +193,23 @@ Wishlist закрыт: локальные md лежат в [`uploads/`](./upload
 |---|---|---|---|
 | М0.1 / М0.2 | GoPractice data-informed (инвентарь); Habr 1066650 | Geoghegan end-to-end | М0.1 **woven** (стадии) |
 | М1.1 | Beskov vc.ru | — | — |
-| М1.2 | Kustov ScrumTrek; GoPractice JTBD | — | — |
+| М1.2 | Kustov ScrumTrek; GoPractice JTBD | — | [`lessons/m1-2-jtbd.md`](./lessons/m1-2-jtbd.md) · **написан** |
 | М1.3 | GoPractice unit-econ; vc.ru 3052938; Pulse/Medium KI | GoPractice + vc.ru + KI + Min LTV/CAC | **woven** |
-| М1.5 / М5.1 | Zaleuska / Swartz; Seregina; GoPractice NSM | Seregina ×2 · Zaleuska · Swartz | М5.1 **woven**; М1.5 **stub** |
+| М1.4 | GoPractice unit-econ; vc.ru LTV/CAC; payback guides | GoPractice + Min LTV/CAC uploads | [`lessons/m1-4-product-finance.md`](./lessons/m1-4-product-finance.md) · **написан** |
+| М1.5 / М5.1 | Zaleuska / Swartz; Seregina; GoPractice NSM | Seregina ×2 · Zaleuska · Swartz | М5.1 **woven**; М1.5 **написан** |
+| М1.6 | Бюро UI; Habr user flow / friction | — | [`lessons/m1-6-benefit-tax.md`](./lessons/m1-6-benefit-tax.md) · **написан** |
 | М1.8 | Ashworth RICE (кусок); RCA Product Heroes | Tyler RICE excerpt | **woven** |
 | М2.3 | GoPractice retention; Красинский; Kariernik/Habr SQL | Swartz · Duckweave · Habr SQL | **woven** |
 | М2.4–М2.5 | GoPractice A/B; Habr 996860; Evan Miller; **stats-ab** (адаптация) | Geoghegan (мышца эксперимента) | М2.4 + М2.5 **углублены** (SRM/CUPED-lite/N×2); см. `internal/stats-ab-weave.md` |
+| М2.6 | Statsig/DoorDash switchback; GoPractice A/B границы | — | [`lessons/m2-6-when-ab-impossible.md`](./lessons/m2-6-when-ab-impossible.md) · **написан** |
 | М3.2 | sql-python канон; Medium windows | Hashblock · Mohit · Shaun · Sneha · Kariernik | **woven** |
-| М3.4 | sql-python pandas/polars | Nick Patel Pandas→DuckDB | **stub** |
+| М3.4 | sql-python pandas/polars | Nick Patel Pandas→DuckDB | **написан** |
 | М3.6 | Habr 1066650 + 944010; zasqlpython | — | — |
-| М4.2 | Habr User flow | — | — |
+| М4.2 | Habr User flow; Habr Proto friction | — | [`lessons/m4-2-flow-friction.md`](./lessons/m4-2-flow-friction.md) · **написан** |
 | М4.3 | Surf; Habr Лавка; Habr OTUS события | — | — |
 | М4.4 | Beskov; Замесин; Habr Альфа (ux-sources) | — | — |
 | М5.2–М5.4 | GoPractice health; Habr 929770; IBS; Kariernik PM-дашборд; Metabase Learn | GoPractice health · Habr дашборд | М5.2 **woven** |
+| М5.5 | Metabase Learn organization; product team dashboard; adoption rituals | — | [`lessons/m5-5-analytics-in-team.md`](./lessons/m5-5-analytics-in-team.md) · **написан** |
 
 ---
 
@@ -218,13 +228,14 @@ Wishlist закрыт: локальные md лежат в [`uploads/`](./upload
 | Пробел | Статус |
 |---|---|
 | Концепты uploads только в «Дальше читать» | **Снято** для ядра P1–P4 носителей: см. weave-map |
-| М1.5 / М3.4 полные уроки | **stub** в `lessons/`; дожать в конвейере |
+| М1.5 / М3.4 полные уроки | **написаны** в `lessons/` |
 | М2.4 / М2.5 глубокий A/B | **снято** в store: углублены уроки из stats-ab-course (не uploads); sync в GitHub-pack — по запросу |
-| М2.6 полный текст / Bayes / causal deep | optional конвейер; stats-ab М5–М6 как private ref |
+| М2.6 полный текст / Bayes / causal deep | **М2.6 написан** (switchback/квази обзор); Bayes/causal deep — optional stats-ab М5–М6 private ref |
 | М3.6 методика приёмки AI | Риторика закрыта открытым Habr; авторский набор ложных ответов на схеме Ритма — есть в уроке |
 | М4.3 «дизайн, ломающий данные» | Процесс разметки усилен (Лавка/OTUS); авторский антипример в уроке |
-| М5.5 жизнь аналитики в команде | Готового ритуала в uploads нет |
+| М1.2 / М1.4 / М1.6 / М4.2 | **написаны** 14.09.2026 |
+| М5.5 жизнь аналитики в команде | **написан** (`m5-5-analytics-in-team.md`); ритуал + Metabase org |
 | EN Medium SQL windows | md в [`uploads/`](./uploads/); идеи **woven** в М3.2 под Postgres |
 | LinkedIn без логина | md в uploads |
 
-*Обновлено 14 сентября 2026 (self-contained weave + stats-ab A/B).*
+*Обновлено 14 сентября 2026 (nice-to-have gap closure + self-contained weave + stats-ab A/B).*
