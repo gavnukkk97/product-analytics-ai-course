@@ -101,7 +101,39 @@ flowchart LR
 
 Каждая строка словаря = заполненная карточка из §2.
 
-### 5. Связь с вехами
+### 5. Сначала вопросы, потом метрики (продуктовая воронка как фреймворк)
+
+Пирамида/иерархия «на все случаи» часто слишком тяжела для команды на Ритме. Рабочий вход курса:
+
+1. Разложите путь пользователя на **этапы** (у нас: привлечение → онбординг → ценность/привычка → монетизация → удержание платящих → (опционально) рекомендации).
+2. На каждом этапе задайте 3–5 **вопросов решения** («находят ли ценность за 7 дней?», «давим ли paywall до ценности?»).
+3. Только потом привяжите к вопросу **одну** метрику с карточкой §2.
+
+Retention имеет смысл там, где вы **намеренно им управляете** и где окупаемость **не** на первой продаже. На Ритме freemium + подписка — как раз такой случай; «медитировать на D1» без if/then — нет.
+
+Классификация слоёв (гигиена / ценность / деньги / рост) помогает не смешать на одном дашборде crash-free и ARPPU. Полное дерево стратегии и North Star — stub [`m1-5-strategy-nsm.md`](./m1-5-strategy-nsm.md); здесь фиксируем договорённость для словаря.
+
+### 6. North Star на Ритме: гипотеза, не культ
+
+**North Star (NSM)** — одна метрика, которая лучше всего отражает доставку ценности *на текущем этапе*. Это **гипотеза**: её можно сменить, когда сменится узкое место или стадия продукта.
+
+Мини-дерево курса (ствол → входы):
+
+```mermaid
+flowchart TD
+  NSM["NSM-кандидат: D7 habit depth ≥3"] --> I1[Activation: habit → ≥1 check_in]
+  NSM --> I2[Quality: early paywall share ↓]
+  NSM --> I3[Monetization: habit → subscribe 14д]
+  I1 --> S1[onboarding_completed]
+  I2 --> S2[paywall trigger]
+  I3 --> S3[новые Pro / ARPPU]
+```
+
+Критерии хорошего NSM для нас: отражает ценность (не vanity MAU), измерим из событий Ритма, связан с деньгами через древо М1.3, команда может на него влиять за спринт.
+
+Антипаттерны: три «north star» сразу; оптимизация NSM ценой guardrail (ранний paywall «покупает» подписки); дерево вокруг NSM, которое запрещает смотреть на здоровье и кассу.
+
+### 7. Связь с вехами
 
 | Вехи / демо | Роль М5.1 |
 |---|---|
@@ -135,6 +167,7 @@ flowchart LR
 3. Явно укажите **две метрики, которые чаще всего путают** (например depth vs D7 retention) и чем отличаются.
 4. Добавьте колонку «источник слоя»: сырое / view / будущая витрина.
 5. Зафиксируйте версию словаря: `ritm-metrics-v0.1`, дата, владелец.
+6. Назовите **одного** NSM-кандидата на текущий этап Ритма и 2–3 input-метрики; одной строкой — почему не MAU.
 
 ### Расширение «руки»
 
@@ -154,7 +187,7 @@ flowchart LR
 
 - [ ] 5–7 метрик с полными карточками; нет «голых» %.
 - [ ] Разведены depth и retention (или другая пара-двойник).
-- [ ] Указаны слой данных и версия словаря.
+- [ ] Указаны слой данных, версия словаря и NSM-кандидат с inputs.
 - [ ] Ядро + одно расширение.
 - [ ] AI мог нагенерировать глоссарий «как у всех SaaS» — вы выкинули метрики без якоря в событиях Ритма.
 
@@ -174,10 +207,12 @@ flowchart LR
 
 ## Дальше читать
 
+База — в теории выше. Библиотека курса (внутри пакета, без Medium):
+
 - Модуль в карте: [`../course-structure.md`](../course-structure.md) §4–5 (М5.1), вехи §3.2–3.3.
-- Инвентарь BI: [`../sources-inventory.md`](../sources-inventory.md) — GoPractice «точное определение метрик»; глоссарий Rick.ai как жанр (не копировать тексты).
-- Офлайн (рамки метрик / NSM): [`../uploads/medium-seregina-metrics-frameworks.md`](../uploads/medium-seregina-metrics-frameworks.md) · [`../uploads/medium-seregina-metrics-hierarchy-vs-pyramid.md`](../uploads/medium-seregina-metrics-hierarchy-vs-pyramid.md) · [`../uploads/linkedin-zaleuska-north-star-product-metrics.md`](../uploads/linkedin-zaleuska-north-star-product-metrics.md).
+- **Библиотека (рамки / NSM):** [`../uploads/medium-seregina-metrics-frameworks.md`](../uploads/medium-seregina-metrics-frameworks.md) · [`../uploads/medium-seregina-metrics-hierarchy-vs-pyramid.md`](../uploads/medium-seregina-metrics-hierarchy-vs-pyramid.md) · [`../uploads/linkedin-zaleuska-north-star-product-metrics.md`](../uploads/linkedin-zaleuska-north-star-product-metrics.md) · [`../uploads/bonus-gopractice-product-health-dashboard.md`](../uploads/bonus-gopractice-product-health-dashboard.md).
+- Стратегия и дерево роста (stub): [`m1-5-strategy-nsm.md`](./m1-5-strategy-nsm.md).
 - Дашборд под словарь: [`m5-2-dashboard-decision.md`](./m5-2-dashboard-decision.md) → [`m5-4-metabase-dashboard.md`](./m5-4-metabase-dashboard.md).
 - Конверсии-источники смысла: [`m2-3-conversion-cohorts.md`](./m2-3-conversion-cohorts.md).
 
-Стенд и view: [`../stand/README.md`](../stand/README.md).
+Стенд и view: [`../stand/README.md`](../stand/README.md). · Карта: [`../materials-library.md`](../materials-library.md).

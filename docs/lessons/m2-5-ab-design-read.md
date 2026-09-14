@@ -105,6 +105,14 @@ flowchart LR
 | Primary шум, early paywall ↓ | **не путать** приятный guardrail с победой |
 | Primary ↓ | **разворачиваем** / **убиваем** гипотезу timing |
 
+### 6. Эксперимент — мышца роста (не разовый отчёт)
+
+A/B на Ритме — не «домашка на неделю 8», а навык, который копят с P3: гипотеза из диагностики → карточка → честное чтение. Без этой мышцы команда скатывается в «запустили и посмотрели глазами».
+
+Связка с активацией: ищите **aha-момент** — порог, после которого ретеншн/глубина резко лучше (у нас кандидат — **depth≥3** или `streak_3`). Эксперимент `paywall_timing_*` проверяет, не ломаем ли мы путь к aha ранним paywall. Не превращайте aha в карго: сначала определение и сравнение когорт (М2.3), потом тест.
+
+Меньше разметки «на всякий клик», больше событий на критический путь (М4.3): иначе мощность эксперимента уходит в шум свойств.
+
 ---
 
 ## Разобранный пример: карточка до чтения данных
@@ -173,10 +181,12 @@ flowchart LR
 
 ## Дальше читать
 
-- Вехи P4 и капстоун: [`../course-structure.md`](../course-structure.md) §3.2, §4.1; визуал «анатомия эксперимента» §5.
-- Инвентарь: [`../sources-inventory.md`](../sources-inventory.md) — GoPractice design / peeking / non-normal; Evan Miller (калькуляторы).
-- Диагноз → гипотеза: [`m1-8-product-diagnosis.md`](./m1-8-product-diagnosis.md).
-- Определения метрик: [`m5-1-metrics-layer.md`](./m5-1-metrics-layer.md).
-- Стенд A/B: [`../stand/README.md`](../stand/README.md) (ключ — `instructor/`, не в студенческую сдачу).
+База дизайна A/B — выше. Открытые якоря A/B (GoPractice/Habr) — в [`../materials-library.md`](../materials-library.md); в uploads отдельного A/B-корпуса мало — стадии/эксперимент как мышца: [`../uploads/medium-geoghegan-end-to-end-product-analytics-strategy.md`](../uploads/medium-geoghegan-end-to-end-product-analytics-strategy.md).
 
-Рядом по статистике: [`m2-4-confidence-intervals.md`](./m2-4-confidence-intervals.md) (ДИ / MDE / N). Когда A/B нельзя — М2.6.
+- Вехи P4: [`../course-structure.md`](../course-structure.md) §3.2, §4.1.
+- Диагноз → гипотеза: [`m1-8-product-diagnosis.md`](./m1-8-product-diagnosis.md).
+- Определения: [`m5-1-metrics-layer.md`](./m5-1-metrics-layer.md).
+- ДИ / MDE: [`m2-4-confidence-intervals.md`](./m2-4-confidence-intervals.md).
+- Стенд: [`../stand/README.md`](../stand/README.md) (ключ — `instructor/`).
+
+Когда A/B нельзя — М2.6 (конвейер).

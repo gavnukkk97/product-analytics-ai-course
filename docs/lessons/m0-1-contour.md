@@ -84,6 +84,21 @@ flowchart TD
 - **Аналитик** владеет честностью пути «как достали и почему можно верить».
 - Оба обязаны понимать чужое звено достаточно, чтобы спорить.
 
+### 5. Какие метрики «срочные» — зависит от стадии продукта
+
+«Что измеряется — тем управляют» работает и во вред: можно годами растить MAU, убивая смысл продукта. На курсе приоритет метрик якорится на **стадии**, а не на универсальном дашборде.
+
+| Стадия (учебно) | Главный вопрос | Фокус на Ритме |
+|---|---|---|
+| Введение / PMF | находят ли ценность? | retention / depth, stickiness чек-инов — не масштаб рекламы |
+| Рост | как масштабировать без дырявого ведра? | воронка, «aha» (у нас depth≥3), эксперименты |
+| Зрелость | прибыльность | CAC, LTV, payback, маржа (М1.3) |
+| Спад | удержать интерес | churn платящих, power users — позже капстоуна |
+
+Типовые ловушки ранней стадии: **leaky bucket** (много install, нулевой D7) — сначала чинить удержание, не заливать трафик; оптимизация paywall до ценности — «рост» денег ценой depth.
+
+Ритм на курсе живёт между «введение» и «рост»: проблема М1.1 про серию на 3–5 день — это ещё про ценность, не про ARR.
+
 ---
 
 ## Разобранный пример: три аналитики Ритма, которые ничего не изменили
@@ -167,9 +182,11 @@ flowchart TD
 
 ## Дальше читать
 
-- Карта опор и контур: [`../course-structure.md`](../course-structure.md) §2.
-- Инвентарь публичных опор по продукту/метрикам: [`../sources-inventory.md`](../sources-inventory.md) (раздел про плейлист VK Team, лекция 1 — блиц по метрикам; лекция 9 — активность/retention — как фон, не как текст урока).
-- Офлайн: стратегия end-to-end product analytics — [`../uploads/medium-geoghegan-end-to-end-product-analytics-strategy.md`](../uploads/medium-geoghegan-end-to-end-product-analytics-strategy.md).
-- Что ещё нужно для стенда данных: [`../materials-needed.md`](../materials-needed.md).
+База — контур и стадии выше. Библиотека курса:
+
+- Карта опор: [`../course-structure.md`](../course-structure.md) §2.
+- **Библиотека:** [`../uploads/medium-geoghegan-end-to-end-product-analytics-strategy.md`](../uploads/medium-geoghegan-end-to-end-product-analytics-strategy.md).
+- Карта материалов: [`../materials-library.md`](../materials-library.md).
+- Стенд: [`../materials-needed.md`](../materials-needed.md) · [`../stand/README.md`](../stand/README.md).
 
 Следующий модуль: [`m0-2-ai-in-contour.md`](./m0-2-ai-in-contour.md).

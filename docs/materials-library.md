@@ -1,21 +1,24 @@
-# Публичная библиотека материалов (Medium / LinkedIn / Habr / vc.ru / GoPractice)
+# Публичная библиотека материалов (внутренняя библиотека курса)
 
-Кураторский слой поверх инвентарей. Для писателей уроков и «дальше читать».  
-Проверка / discovery: **13 сентября 2026**. Язык предпочтения: **RU first**. Paywall не обходим.
+**Роль:** самодостаточность курса. Студент закрывает базу **внутри** уроков + `docs/uploads/`; уход на Medium/LinkedIn — опция, не обязательный шаг.  
+Кураторский слой поверх инвентарей. Для писателей уроков и блока «Дальше читать» (= углубление в библиотеке курса).  
+Проверка / discovery: **13–14 сентября 2026**. Язык предпочтения: **RU first**. Paywall не обходим.
 
 | Связанные доки | Роль |
 |---|---|
-| [`medium-linkedin-sources.md`](./medium-linkedin-sources.md) | оценка семёрки kir + первая discovery-волна |
-| [`medium-download-wishlist.md`](./medium-download-wishlist.md) | что выгрузить kir (md preferred) |
+| [`uploads/README.md`](./uploads/README.md) | **внутренняя библиотека** md (kir, 2026-09-14) — читать из курса |
+| [`lessons/`](./lessons/) | тела уроков: концепции уже вшиты; uploads — углубление |
+| [`../internal/article-weave-map.md`](../internal/article-weave-map.md) | карта upload → модуль → статус weave |
+| [`medium-linkedin-sources.md`](./medium-linkedin-sources.md) | оценка семёрки kir + discovery |
+| [`medium-download-wishlist.md`](./medium-download-wishlist.md) | wishlist (закрыт выгрузкой) |
 | [`ux-sources.md`](./ux-sources.md) | М4.* детально |
 | [`sql-python-sources.md`](./sql-python-sources.md) | М3.* канон SQL/Python |
 | [`sources-inventory.md`](./sources-inventory.md) | полный корпус (Красинский, TG, GoPractice, …) |
 | [`course-structure.md`](./course-structure.md) | модули и вехи P1–P4 |
-| [`uploads/README.md`](./uploads/README.md) | **офлайн-копии** Medium/LinkedIn/бонус (kir, 2026-09-14) |
 
-**Легенда решения:** `keep` — можно цитировать/класть в «дальше читать»; `adapt` — взять кусок (чеклист, таблицу, рамку), не целиком; `skip` — не тащить в обязательный трек; `mirror` — Medium 403 → открытое зеркало; **`local`** — есть md в [`uploads/`](./uploads/).
+**Легенда решения:** `keep` — можно цитировать/класть в библиотеку урока; `adapt` — взять кусок (чеклист, таблицу, рамку), не целиком; `skip` — не тащить в обязательный трек; `mirror` — Medium 403 → открытое зеркало; **`local`** — есть md в [`uploads/`](./uploads/); **`woven`** — концепт уже в теле урока (см. weave-map).
 
-**Доступ из облака:** Medium часто **Cloudflare 403**; LinkedIn Pulse иногда открыт без логина, **посты** и часть Pulse — только с сессии. Habr / vc.ru / GoPractice / Surf / Kariernik — обычно открыты.
+**Доступ из облака:** Medium часто **Cloudflare 403**; LinkedIn Pulse иногда открыт без логина, **посты** и часть Pulse — только с сессии. Поэтому **локальные копии в `uploads/` — основной способ самодостаточности**. Habr / vc.ru / GoPractice / Surf / Kariernik — обычно открыты (доп. якоря).
 
 ---
 
@@ -38,27 +41,35 @@
 
 ---
 
-## 2. Офлайн-библиотека uploads (выгрузка kir, 2026-09-14)
+## 2. Внутренняя библиотека uploads (самодостаточность курса)
 
-Wishlist закрыт: локальные md лежат в [`uploads/`](./uploads/). Инвентарь и атрибуция — [`uploads/README.md`](./uploads/README.md).  
-В уроках: блок «Дальше читать» → относительные пути `../uploads/…` (1–3 ссылки), **без** вставки тел статей.
+Wishlist закрыт: локальные md лежат в [`uploads/`](./uploads/). Инвентарь и атрибуция — [`uploads/README.md`](./uploads/README.md). Карта вшивания в уроки — [`../internal/article-weave-map.md`](../internal/article-weave-map.md).
+
+**Как студент использует:**
+
+1. Читает **тело урока** — там уже пересказ нужных концептов голосом Ритма / спирали.
+2. При необходимости углубляется в 1–3 файла из `uploads/` по ссылкам «Дальше читать» (относительные пути `../uploads/…`).
+3. Внешние URL (Medium и т.п.) — **опционально**; курс не требует выходить за paywall/403.
+
+Тела статей в уроки не копируем; пиратские дампы курсов не используем. Атрибуция идей — в имени файла uploads и в weave-map.
 
 ### Карта: модуль → офлайн-копии
 
-| Модуль | Локальные файлы (курс-пакет) |
-|---|---|
-| **М0.1** | [`uploads/medium-geoghegan-end-to-end-product-analytics-strategy.md`](./uploads/medium-geoghegan-end-to-end-product-analytics-strategy.md) |
-| **М1.3** | [`uploads/bonus-gopractice-unit-economics.md`](./uploads/bonus-gopractice-unit-economics.md) · [`uploads/bonus-vcru-ltv-cac-unit-economics.md`](./uploads/bonus-vcru-ltv-cac-unit-economics.md) · [`uploads/medium-ki-unit-economics-one-day.md`](./uploads/medium-ki-unit-economics-one-day.md) · [`uploads/linkedin-min-finance-operators-guide-ltvcac.md`](./uploads/linkedin-min-finance-operators-guide-ltvcac.md) · (дубль Pulse) [`uploads/linkedin-ki-unit-economics-one-day.md`](./uploads/linkedin-ki-unit-economics-one-day.md) |
-| **М1.5** *(урок ещё не в `lessons/`)* | [`uploads/medium-seregina-metrics-hierarchy-vs-pyramid.md`](./uploads/medium-seregina-metrics-hierarchy-vs-pyramid.md) · [`uploads/linkedin-zaleuska-north-star-product-metrics.md`](./uploads/linkedin-zaleuska-north-star-product-metrics.md) · [`uploads/linkedin-swartz-hierarchy-product-metrics.md`](./uploads/linkedin-swartz-hierarchy-product-metrics.md) · [`uploads/medium-seregina-metrics-frameworks.md`](./uploads/medium-seregina-metrics-frameworks.md) |
-| **М1.8** | [`uploads/linkedin-tyler-rice-excerpt.md`](./uploads/linkedin-tyler-rice-excerpt.md) |
-| **М2.3** | [`uploads/linkedin-swartz-hierarchy-product-metrics.md`](./uploads/linkedin-swartz-hierarchy-product-metrics.md) · [`uploads/medium-duckweave-duckdb-retention-cohorts.md`](./uploads/medium-duckweave-duckdb-retention-cohorts.md) · [`uploads/bonus-habr-product-metrics-sql.md`](./uploads/bonus-habr-product-metrics-sql.md) · [`uploads/medium-hashblock-duckdb-window-cohorts.md`](./uploads/medium-hashblock-duckdb-window-cohorts.md) |
-| **М3.2** | [`uploads/medium-hashblock-duckdb-window-cohorts.md`](./uploads/medium-hashblock-duckdb-window-cohorts.md) · [`uploads/medium-mohitdaxini-monthly-cohort-retention-sql.md`](./uploads/medium-mohitdaxini-monthly-cohort-retention-sql.md) · [`uploads/medium-shaunmia-sql-window-cohort-analysis.md`](./uploads/medium-shaunmia-sql-window-cohort-analysis.md) · [`uploads/medium-snehagupta-10-sql-queries-data-analyst.md`](./uploads/medium-snehagupta-10-sql-queries-data-analyst.md) · [`uploads/bonus-kariernik-sql-product-analyst.md`](./uploads/bonus-kariernik-sql-product-analyst.md) · [`uploads/bonus-habr-product-metrics-sql.md`](./uploads/bonus-habr-product-metrics-sql.md) · [`uploads/medium-duckweave-duckdb-retention-cohorts.md`](./uploads/medium-duckweave-duckdb-retention-cohorts.md) |
-| **М3.4** *(урок ещё не в `lessons/`)* | [`uploads/medium-nickpatel-pandas-to-duckdb.md`](./uploads/medium-nickpatel-pandas-to-duckdb.md) |
-| **М5.1** | [`uploads/medium-seregina-metrics-frameworks.md`](./uploads/medium-seregina-metrics-frameworks.md) · [`uploads/medium-seregina-metrics-hierarchy-vs-pyramid.md`](./uploads/medium-seregina-metrics-hierarchy-vs-pyramid.md) · [`uploads/linkedin-zaleuska-north-star-product-metrics.md`](./uploads/linkedin-zaleuska-north-star-product-metrics.md) · [`uploads/bonus-gopractice-product-health-dashboard.md`](./uploads/bonus-gopractice-product-health-dashboard.md) |
-| **М5.2** | [`uploads/bonus-gopractice-product-health-dashboard.md`](./uploads/bonus-gopractice-product-health-dashboard.md) · [`uploads/bonus-habr-product-dashboard.md`](./uploads/bonus-habr-product-dashboard.md) |
-| **М5** (обзор) | + [`uploads/medium-geoghegan-end-to-end-product-analytics-strategy.md`](./uploads/medium-geoghegan-end-to-end-product-analytics-strategy.md) |
+| Модуль | Локальные файлы (курс-пакет) | Урок |
+|---|---|---|
+| **М0.1** | [`uploads/medium-geoghegan-end-to-end-product-analytics-strategy.md`](./uploads/medium-geoghegan-end-to-end-product-analytics-strategy.md) | [`lessons/m0-1-contour.md`](./lessons/m0-1-contour.md) · **woven** |
+| **М1.3** | [`uploads/bonus-gopractice-unit-economics.md`](./uploads/bonus-gopractice-unit-economics.md) · [`uploads/bonus-vcru-ltv-cac-unit-economics.md`](./uploads/bonus-vcru-ltv-cac-unit-economics.md) · [`uploads/medium-ki-unit-economics-one-day.md`](./uploads/medium-ki-unit-economics-one-day.md) · [`uploads/linkedin-min-finance-operators-guide-ltvcac.md`](./uploads/linkedin-min-finance-operators-guide-ltvcac.md) · (дубль Pulse) [`uploads/linkedin-ki-unit-economics-one-day.md`](./uploads/linkedin-ki-unit-economics-one-day.md) | [`lessons/m1-3-unit-economics.md`](./lessons/m1-3-unit-economics.md) · **woven** |
+| **М1.5** | [`uploads/medium-seregina-metrics-hierarchy-vs-pyramid.md`](./uploads/medium-seregina-metrics-hierarchy-vs-pyramid.md) · [`uploads/linkedin-zaleuska-north-star-product-metrics.md`](./uploads/linkedin-zaleuska-north-star-product-metrics.md) · [`uploads/linkedin-swartz-hierarchy-product-metrics.md`](./uploads/linkedin-swartz-hierarchy-product-metrics.md) · [`uploads/medium-seregina-metrics-frameworks.md`](./uploads/medium-seregina-metrics-frameworks.md) | [`lessons/m1-5-strategy-nsm.md`](./lessons/m1-5-strategy-nsm.md) · **stub** |
+| **М1.8** | [`uploads/linkedin-tyler-rice-excerpt.md`](./uploads/linkedin-tyler-rice-excerpt.md) | [`lessons/m1-8-product-diagnosis.md`](./lessons/m1-8-product-diagnosis.md) · **woven** |
+| **М2.3** | [`uploads/linkedin-swartz-hierarchy-product-metrics.md`](./uploads/linkedin-swartz-hierarchy-product-metrics.md) · [`uploads/medium-duckweave-duckdb-retention-cohorts.md`](./uploads/medium-duckweave-duckdb-retention-cohorts.md) · [`uploads/bonus-habr-product-metrics-sql.md`](./uploads/bonus-habr-product-metrics-sql.md) · [`uploads/medium-hashblock-duckdb-window-cohorts.md`](./uploads/medium-hashblock-duckdb-window-cohorts.md) | [`lessons/m2-3-conversion-cohorts.md`](./lessons/m2-3-conversion-cohorts.md) · **woven** |
+| **М2.5** | [`uploads/medium-geoghegan-end-to-end-product-analytics-strategy.md`](./uploads/medium-geoghegan-end-to-end-product-analytics-strategy.md) (эксперимент как мышца / стадии) | [`lessons/m2-5-ab-design-read.md`](./lessons/m2-5-ab-design-read.md) · **woven** (A/B-детали — открытые GoPractice/Habr в §3.4) |
+| **М3.2** | [`uploads/medium-hashblock-duckdb-window-cohorts.md`](./uploads/medium-hashblock-duckdb-window-cohorts.md) · [`uploads/medium-mohitdaxini-monthly-cohort-retention-sql.md`](./uploads/medium-mohitdaxini-monthly-cohort-retention-sql.md) · [`uploads/medium-shaunmia-sql-window-cohort-analysis.md`](./uploads/medium-shaunmia-sql-window-cohort-analysis.md) · [`uploads/medium-snehagupta-10-sql-queries-data-analyst.md`](./uploads/medium-snehagupta-10-sql-queries-data-analyst.md) · [`uploads/bonus-kariernik-sql-product-analyst.md`](./uploads/bonus-kariernik-sql-product-analyst.md) · [`uploads/bonus-habr-product-metrics-sql.md`](./uploads/bonus-habr-product-metrics-sql.md) · [`uploads/medium-duckweave-duckdb-retention-cohorts.md`](./uploads/medium-duckweave-duckdb-retention-cohorts.md) | [`lessons/m3-2-sql-zero-to-windows.md`](./lessons/m3-2-sql-zero-to-windows.md) · **woven** |
+| **М3.4** | [`uploads/medium-nickpatel-pandas-to-duckdb.md`](./uploads/medium-nickpatel-pandas-to-duckdb.md) | [`lessons/m3-4-pandas-polars.md`](./lessons/m3-4-pandas-polars.md) · **stub** |
+| **М5.1** | [`uploads/medium-seregina-metrics-frameworks.md`](./uploads/medium-seregina-metrics-frameworks.md) · [`uploads/medium-seregina-metrics-hierarchy-vs-pyramid.md`](./uploads/medium-seregina-metrics-hierarchy-vs-pyramid.md) · [`uploads/linkedin-zaleuska-north-star-product-metrics.md`](./uploads/linkedin-zaleuska-north-star-product-metrics.md) · [`uploads/bonus-gopractice-product-health-dashboard.md`](./uploads/bonus-gopractice-product-health-dashboard.md) | [`lessons/m5-1-metrics-layer.md`](./lessons/m5-1-metrics-layer.md) · **woven** |
+| **М5.2** | [`uploads/bonus-gopractice-product-health-dashboard.md`](./uploads/bonus-gopractice-product-health-dashboard.md) · [`uploads/bonus-habr-product-dashboard.md`](./uploads/bonus-habr-product-dashboard.md) | [`lessons/m5-2-dashboard-decision.md`](./lessons/m5-2-dashboard-decision.md) · **woven** |
+| **М5** (обзор) | + Geoghegan end-to-end | см. М0.1 / М5.2 |
 
-История wishlist и URL: [`medium-download-wishlist.md`](./medium-download-wishlist.md). Политика копий: см. заметку в [`uploads/README.md`](./uploads/README.md).
+История wishlist и URL: [`medium-download-wishlist.md`](./medium-download-wishlist.md). Политика копий: [`uploads/README.md`](./uploads/README.md).
 
 ---
 
@@ -162,23 +173,23 @@ Wishlist закрыт: локальные md лежат в [`uploads/`](./upload
 
 ## 4. Карта «модуль → якоря»
 
-| Модуль | Якоря (открытые first) | Офлайн (`uploads/`) |
-|---|---|---|
-| М0.1 / М0.2 | GoPractice data-informed (инвентарь); Habr 1066650 | Geoghegan end-to-end |
-| М1.1 | Beskov vc.ru | — |
-| М1.2 | Kustov ScrumTrek; GoPractice JTBD | — |
-| М1.3 | GoPractice unit-econ; vc.ru 3052938; Pulse/Medium KI | GoPractice + vc.ru + KI + Min LTV/CAC |
-| М1.5 / М5.1 | Zaleuska / Swartz; Seregina; GoPractice NSM | Seregina ×2 · Zaleuska · Swartz |
-| М1.8 | Ashworth RICE (кусок); RCA Product Heroes | Tyler RICE excerpt |
-| М2.3 | GoPractice retention; Красинский; Kariernik/Habr SQL | Swartz · Duckweave · Habr SQL |
-| М2.4–М2.5 | GoPractice A/B; Habr 996860; Evan Miller | — |
-| М3.2 | sql-python канон; Medium windows | Hashblock · Mohit · Shaun · Sneha · Kariernik |
-| М3.4 | sql-python pandas/polars | Nick Patel Pandas→DuckDB |
-| М3.6 | Habr 1066650 + 944010; zasqlpython | — |
-| М4.2 | Habr User flow | — |
-| М4.3 | Surf; Habr Лавка; Habr OTUS события | — |
-| М4.4 | Beskov; Замесин; Habr Альфа (ux-sources) | — |
-| М5.2–М5.4 | GoPractice health; Habr 929770; IBS; Kariernik PM-дашборд; Metabase Learn | GoPractice health · Habr дашборд |
+| Модуль | Якоря (открытые first) | Офлайн (`uploads/`) | В теле урока |
+|---|---|---|---|
+| М0.1 / М0.2 | GoPractice data-informed (инвентарь); Habr 1066650 | Geoghegan end-to-end | М0.1 **woven** (стадии) |
+| М1.1 | Beskov vc.ru | — | — |
+| М1.2 | Kustov ScrumTrek; GoPractice JTBD | — | — |
+| М1.3 | GoPractice unit-econ; vc.ru 3052938; Pulse/Medium KI | GoPractice + vc.ru + KI + Min LTV/CAC | **woven** |
+| М1.5 / М5.1 | Zaleuska / Swartz; Seregina; GoPractice NSM | Seregina ×2 · Zaleuska · Swartz | М5.1 **woven**; М1.5 **stub** |
+| М1.8 | Ashworth RICE (кусок); RCA Product Heroes | Tyler RICE excerpt | **woven** |
+| М2.3 | GoPractice retention; Красинский; Kariernik/Habr SQL | Swartz · Duckweave · Habr SQL | **woven** |
+| М2.4–М2.5 | GoPractice A/B; Habr 996860; Evan Miller | Geoghegan (мышца эксперимента) | М2.5 частично **woven**; М2.4 thin |
+| М3.2 | sql-python канон; Medium windows | Hashblock · Mohit · Shaun · Sneha · Kariernik | **woven** |
+| М3.4 | sql-python pandas/polars | Nick Patel Pandas→DuckDB | **stub** |
+| М3.6 | Habr 1066650 + 944010; zasqlpython | — | — |
+| М4.2 | Habr User flow | — | — |
+| М4.3 | Surf; Habr Лавка; Habr OTUS события | — | — |
+| М4.4 | Beskov; Замесин; Habr Альфа (ux-sources) | — | — |
+| М5.2–М5.4 | GoPractice health; Habr 929770; IBS; Kariernik PM-дашборд; Metabase Learn | GoPractice health · Habr дашборд | М5.2 **woven** |
 
 ---
 
@@ -186,20 +197,23 @@ Wishlist закрыт: локальные md лежат в [`uploads/`](./upload
 
 - Paywalled пиратские копии книг / курсов.  
 - Агентский LinkedIn-SEO (MVP «поставьте аналитику»).  
-- Medium как **единственный** URL обязательного чтения для студентов (403 у части аудитории) — только зеркало или выгрузка в Context.  
+- Medium как **единственный** URL обязательного чтения для студентов (403 у части аудитории) — только зеркало, выгрузка в `uploads/`, или концепт уже в теле урока.  
 - Полный awesome-PM списком студентам.  
 - Дубликат всего каталога GoPractice / Красинского — см. основной инвентарь.
 
 ---
 
-## 6. Пробелы после этой волны
+## 6. Пробелы после волны weave (2026-09-14)
 
 | Пробел | Статус |
 |---|---|
-| М3.6 методика приёмки AI | Риторика закрыта открытым Habr; нужен **авторский** набор ложных ответов на схеме Ритма |
-| М4.3 «дизайн, ломающий данные» | Процесс разметки усилен (Лавка/OTUS); авторский антипример всё ещё нужен |
-| М5.5 жизнь аналитики в команде | Намёки в Лавке (роли аналитик↔фронт); готового ритуала нет |
-| EN Medium SQL windows | **Закрыто:** md в [`uploads/`](./uploads/) (kir, 2026-09-14) |
-| LinkedIn без логина | **Закрыто** для wishlist L1–L4 + RICE excerpt — см. uploads |
+| Концепты uploads только в «Дальше читать» | **Снято** для ядра P1–P4 носителей: см. weave-map |
+| М1.5 / М3.4 полные уроки | **stub** в `lessons/`; дожать в конвейере |
+| М2.4 / М2.5 глубокий A/B из uploads | thin в uploads; опираемся на открытый GoPractice/Habr (§3.4) |
+| М3.6 методика приёмки AI | Риторика закрыта открытым Habr; авторский набор ложных ответов на схеме Ритма — есть в уроке |
+| М4.3 «дизайн, ломающий данные» | Процесс разметки усилен (Лавка/OTUS); авторский антипример в уроке |
+| М5.5 жизнь аналитики в команде | Готового ритуала в uploads нет |
+| EN Medium SQL windows | md в [`uploads/`](./uploads/); идеи **woven** в М3.2 под Postgres |
+| LinkedIn без логина | md в uploads |
 
-*Обновлено 14 сентября 2026.*
+*Обновлено 14 сентября 2026 (self-contained weave).*

@@ -69,9 +69,9 @@
 
 Не плодите 15 сегментов «на всякий» — это исследование, не P3.
 
-### 4. Приоритизация: влияние × уверенность × стоимость
+### 4. Приоритизация: влияние × уверенность × стоимость (+ RICE)
 
-Рабочая шкала курса (1–5):
+Рабочая шкала курса (1–5) для быстрой сдачи P3:
 
 $$
 \text{Score} = \frac{\text{Impact} \times \text{Confidence}}{\text{Cost}}
@@ -83,9 +83,24 @@ $$
 | **Confidence** | есть ли данные + (желательно) качественный сигнал |
 | **Cost** | инженерия, риск, время до проверки |
 
+Полный **RICE** (когда нужен охват аудитории явно):
+
+$$
+\text{RICE} = \frac{\text{Reach} \times \text{Impact} \times \text{Confidence}}{\text{Effort}}
+$$
+
+| Поле RICE | На Ритме |
+|---|---|
+| **Reach** | скольких users волны коснётся за период (все новые / только Android / только без check_in) |
+| **Impact** | сила эффекта на depth / CV / ₽ (шкала 0,25–3 или 1–5 — зафиксируйте) |
+| **Confidence** | % уверенности (данные воронки + коридор повышают) |
+| **Effort** | человеко-недели (≈ Cost выше) |
+
+Score курса ≈ RICE без отдельного Reach: для P3 хватает, если в тексте гипотезы написано *кого* касаетесь. Если спорите «всем» vs «сегменту» — выпишите Reach явно.
+
 Схема ранжирования: [`visuals/m1-8-prioritize.svg`](./visuals/m1-8-prioritize.svg).
 
-Гипотеза без **метрики проверки** и **окна** в P3 не считается.
+Гипотеза без **метрики проверки** и **окна** в P3 не считается. После запуска фичи — цикл обратной связи (сторы, коридор, аналитика) входит в Confidence следующей волны, а не заменяет метрику.
 
 ### 5. От гипотезы к проверке (мост в P4)
 
@@ -179,10 +194,11 @@ flowchart TD
 
 ## Дальше читать
 
-- Вехи P3 и календарь недели 5: [`../course-structure.md`](../course-structure.md) §3.2, §4.1.
-- Инвентарь: [`../sources-inventory.md`](../sources-inventory.md) — RCA Product Heroes (жанр корневых причин); логика испытаний диагностики (пересказ своими словами).
-- Офлайн (приоритизация RICE): [`../uploads/linkedin-tyler-rice-excerpt.md`](../uploads/linkedin-tyler-rice-excerpt.md).
-- Входы: [`m1-3-unit-economics.md`](./m1-3-unit-economics.md), [`m2-3-conversion-cohorts.md`](./m2-3-conversion-cohorts.md), [`m5-1-metrics-layer.md`](./m5-1-metrics-layer.md).
-- Выход в эксперимент: М2.5; качественная опора: М4.4.
+База диагностики и RICE — выше. Библиотека курса:
 
-Дашборд как зеркало диагноза: [`m5-2-dashboard-decision.md`](./m5-2-dashboard-decision.md).
+- Вехи P3: [`../course-structure.md`](../course-structure.md) §3.2, §4.1.
+- **Библиотека (RICE):** [`../uploads/linkedin-tyler-rice-excerpt.md`](../uploads/linkedin-tyler-rice-excerpt.md).
+- Входы: [`m1-3-unit-economics.md`](./m1-3-unit-economics.md), [`m2-3-conversion-cohorts.md`](./m2-3-conversion-cohorts.md), [`m5-1-metrics-layer.md`](./m5-1-metrics-layer.md), [`m1-7-cjm-journey.md`](./m1-7-cjm-journey.md).
+- Выход: [`m2-5-ab-design-read.md`](./m2-5-ab-design-read.md); коридор: [`m4-4-corridor-tests.md`](./m4-4-corridor-tests.md).
+- Дашборд диагноза: [`m5-2-dashboard-decision.md`](./m5-2-dashboard-decision.md).
+- Карта: [`../materials-library.md`](../materials-library.md).

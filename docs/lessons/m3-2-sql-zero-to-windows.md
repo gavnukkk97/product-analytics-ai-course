@@ -133,7 +133,64 @@ WHERE rn = 1;
 
 Окно ≠ `GROUP BY`: после `GROUP BY` строк меньше; после окна строк столько же, плюс колонка-метка.
 
-### 5. Почему «запрос без ошибки» врёт
+### 5. Рецепт: когортная матрица ретеншна на Postgres
+
+Тот же пайплайн, что в М2.3 §7 — на схеме Ритма. Идея окон (first-touch / offset) универсальна; ниже — **Postgres**, не DuckDB.
+
+```sql
+-- Habit retention: когорта = неделя первого habit_created;
+-- день N = был ≥1 check_in на calendar day = habit_day + N
+WITH first_habit AS (
+  SELECT user_id,
+         min(ts) AS habit_at,
+         date_trunc('week', min(ts))::date AS cohort_week
+  FROM events
+  WHERE event_name = 'habit_created'
+  GROUP BY 1
+),
+check_days AS (
+  SELECT e.user_id,
+         (e.ts AT TIME ZONE 'Europe/Moscow')::date AS d
+  FROM events e
+  JOIN users u ON u.user_id = e.user_id AND u.is_internal = false
+  WHERE e.event_name = 'check_in'
+  GROUP BY 1, 2
+),
+aged AS (
+  SELECT f.cohort_week,
+         f.user_id,
+         (c.d - (f.habit_at AT TIME ZONE 'Europe/Moscow')::date) AS day_n
+  FROM first_habit f
+  JOIN check_days c ON c.user_id = f.user_id
+  WHERE c.d >= (f.habit_at AT TIME ZONE 'Europe/Moscow')::date
+),
+cohort_sizes AS (
+  SELECT cohort_week, count(*) AS cohort_users
+  FROM first_habit f
+  JOIN users u USING (user_id)
+  WHERE u.is_internal = false
+  GROUP BY 1
+)
+SELECT a.cohort_week,
+       a.day_n,
+       count(DISTINCT a.user_id) AS retained,
+       round(100.0 * count(DISTINCT a.user_id) / cs.cohort_users, 1) AS retained_pct
+FROM aged a
+JOIN cohort_sizes cs USING (cohort_week)
+WHERE a.day_n IN (0, 1, 3, 7, 14)
+GROUP BY 1, 2, cs.cohort_users
+ORDER BY 1, 2;
+```
+
+Что проверять перед сдачей:
+
+- знаменатель = размер когорты **на якоре**, не «активные в день N»;
+- day_n считается от **habit**, не от «первого любого события», если так в словаре М5.1;
+- недозревшие когорты: нет day_14 — не сравнивайте с зрелыми (М2.3).
+
+Другие окна на том же паттерне: `min(...) OVER (PARTITION BY user_id)` для first-touch без схлопывания строк; `lag` для разрывов streak; накопительный `count(DISTINCT day)` к depth≥3 — см. эскиз ниже.
+
+### 6. Почему «запрос без ошибки» врёт
 
 Типовые классы (их же ловите в трёх сломанных запросах ниже и в М3.6):
 
@@ -286,11 +343,14 @@ WHERE rn >= 3;
 
 ## Дальше читать
 
-- Карта модуля: [`../course-structure.md`](../course-structure.md) § М3.2.
-- Пакет опор: [`../sql-python-sources.md`](../sql-python-sources.md) — Karpov Simulator; Kariernik «15 запросов»; HireHi окна; Habr «продуктовые метрики на SQL» / OTUS когорты.
-- Офлайн (окна / когорты SQL): [`../uploads/medium-hashblock-duckdb-window-cohorts.md`](../uploads/medium-hashblock-duckdb-window-cohorts.md) · [`../uploads/medium-mohitdaxini-monthly-cohort-retention-sql.md`](../uploads/medium-mohitdaxini-monthly-cohort-retention-sql.md) · [`../uploads/bonus-kariernik-sql-product-analyst.md`](../uploads/bonus-kariernik-sql-product-analyst.md).
-- Схема событий: [`m4-3-tracking-plan.md`](./m4-3-tracking-plan.md).
-- Определения конверсий: [`m2-3-conversion-cohorts.md`](./m2-3-conversion-cohorts.md).
-- Следующий дифференциатор проверки: [`m3-6-verify-ai-sql.md`](./m3-6-verify-ai-sql.md) (после М3.5 или параллельно сильным).
+База окон и когорт — в §4–5 выше. Библиотека курса (примеры окон; диалект в статьях может быть DuckDB — переносите идею на Postgres Ритма):
 
-Не используем выгрузки rar с Яндекс.Диска (#6/#8) — только публичные тренажёры и статьи выше / офлайн-копии uploads.
+- Карта модуля: [`../course-structure.md`](../course-structure.md) § М3.2.
+- **Библиотека:** [`../uploads/medium-hashblock-duckdb-window-cohorts.md`](../uploads/medium-hashblock-duckdb-window-cohorts.md) · [`../uploads/medium-mohitdaxini-monthly-cohort-retention-sql.md`](../uploads/medium-mohitdaxini-monthly-cohort-retention-sql.md) · [`../uploads/medium-duckweave-duckdb-retention-cohorts.md`](../uploads/medium-duckweave-duckdb-retention-cohorts.md) · [`../uploads/bonus-kariernik-sql-product-analyst.md`](../uploads/bonus-kariernik-sql-product-analyst.md).
+- Python рядом (stub): [`m3-4-pandas-polars.md`](./m3-4-pandas-polars.md).
+- Схема событий: [`m4-3-tracking-plan.md`](./m4-3-tracking-plan.md).
+- Определения: [`m2-3-conversion-cohorts.md`](./m2-3-conversion-cohorts.md).
+- Проверка AI: [`m3-6-verify-ai-sql.md`](./m3-6-verify-ai-sql.md).
+- Карта: [`../materials-library.md`](../materials-library.md).
+
+Не используем выгрузки rar с Яндекс.Диска (#6/#8).

@@ -118,7 +118,39 @@ flowchart TB
 
 **Предел прогноза:** из D7 нельзя честно вывести LTV на 24 месяца без модели и оговорок — это стык с М1.3/М1.4, не магия таблицы.
 
-### 6. Связь с depth ≥3
+### 6. Retention как keystone (и когда он *не* главное)
+
+В иерархии продуктовых метрик **удержание — замок**: без него рост привлечения = дырявое ведро, а «engagement» без возврата рано или поздно обнуляется. На Ритме это особенно жёстко: CAC платится на install, а маржа приходит только если привычка **возвращает**.
+
+Но keystone ≠ «единственная метрика навсегда»:
+
+| Ситуация | Фокус |
+|---|---|
+| Окупаемость *не* на первой продаже (наш freemium→Pro) | habit retention + depth обязательны |
+| Технический сбой / пустой онбординг | сначала health (crash, доходимость), иначе retention врёт |
+| Канал с payback на первом платеже и коротким циклом | можно временно держать воронку продажи выше ретеншна — **не** наш дефолт |
+
+Слои «ниже» retention в учебной иерархии: надёжность → удовлетворённость/трение → acquisition → **retention** → engagement → деньги. Не прыгайте к ARPPU, пока ведро течёт на D7.
+
+### 7. Пайплайн когортного расчёта (модель, не «магия GROUP BY»)
+
+Плохой SQL пытается сразу схлопнуть всё в один `GROUP BY`. Чистая модель (диалект курса — Postgres; идея окон та же):
+
+```mermaid
+flowchart LR
+  A[События → user-день activity] --> B[Когорта = MIN якоря на user]
+  B --> C[offset = возраст относительно якоря]
+  C --> D["retained / cohort_size"]
+```
+
+1. Схлопните активность до **user × день** (или неделя) — иначе 50 check_in в день раздуют «ретеншн».
+2. Якорь когорты: `min(habit_created)` или `installed_at` — **одно** определение.
+3. Offset: день/неделя жизни относительно якоря (`date_trunc` + разница).
+4. Доля: distinct users с activity на offset N / размер когорты на offset 0.
+
+Практика SQL — в [`m3-2-sql-zero-to-windows.md`](./m3-2-sql-zero-to-windows.md). Здесь важно уметь **прочитать** матрицу и не сравнивать недозревший хвост.
+
+### 8. Связь с depth ≥3
 
 D7 habit depth ≥3 — **не** классический N-day retention. Это *накопленная глубина* за окно 7 дней. Можно иметь высокий D1 и низкий depth (зашли один раз и пропали) или наоборот редкие, но плотные дни. Для проблемы Ритма из М1.1 depth обычно важнее голого D1.
 
@@ -210,10 +242,12 @@ D7 habit depth ≥3 — **не** классический N-day retention. Эт�
 
 ## Дальше читать
 
-- Карта модуля и визуал «воронка + когорта»: [`../course-structure.md`](../course-structure.md) §4–5 (М2.3).
-- Инвентарь: [`../sources-inventory.md`](../sources-inventory.md) — блок метрик/когорт (Красинский: конверсия и способы счёта; GoPractice retention / точное определение метрик).
-- Офлайн: [`../uploads/linkedin-swartz-hierarchy-product-metrics.md`](../uploads/linkedin-swartz-hierarchy-product-metrics.md) · [`../uploads/medium-duckweave-duckdb-retention-cohorts.md`](../uploads/medium-duckweave-duckdb-retention-cohorts.md) · [`../uploads/bonus-habr-product-metrics-sql.md`](../uploads/bonus-habr-product-metrics-sql.md).
-- Стык к SQL когорт/воронок: [`../sql-python-sources.md`](../sql-python-sources.md) (Kariernik, Habr SQL-метрики) — практикуем после/параллельно М3.2.
-- Словарь метрик позже: М5.1; дашборд под эти определения — [`m5-2-dashboard-decision.md`](./m5-2-dashboard-decision.md).
+База — в теории выше. Библиотека курса (внутри пакета):
 
-Рядом по смыслу: [`m1-1-problem-market.md`](./m1-1-problem-market.md), [`m4-3-tracking-plan.md`](./m4-3-tracking-plan.md).
+- Карта модуля: [`../course-structure.md`](../course-structure.md) §4–5 (М2.3).
+- **Библиотека:** [`../uploads/linkedin-swartz-hierarchy-product-metrics.md`](../uploads/linkedin-swartz-hierarchy-product-metrics.md) · [`../uploads/medium-duckweave-duckdb-retention-cohorts.md`](../uploads/medium-duckweave-duckdb-retention-cohorts.md) · [`../uploads/bonus-habr-product-metrics-sql.md`](../uploads/bonus-habr-product-metrics-sql.md) · [`../uploads/medium-hashblock-duckdb-window-cohorts.md`](../uploads/medium-hashblock-duckdb-window-cohorts.md).
+- SQL когорт на схеме Ритма: [`m3-2-sql-zero-to-windows.md`](./m3-2-sql-zero-to-windows.md).
+- Словарь: [`m5-1-metrics-layer.md`](./m5-1-metrics-layer.md); дашборд: [`m5-2-dashboard-decision.md`](./m5-2-dashboard-decision.md).
+- Карта библиотеки: [`../materials-library.md`](../materials-library.md).
+
+Рядом: [`m1-1-problem-market.md`](./m1-1-problem-market.md), [`m4-3-tracking-plan.md`](./m4-3-tracking-plan.md).

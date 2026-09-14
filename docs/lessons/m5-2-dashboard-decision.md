@@ -85,13 +85,28 @@ flowchart TD
 
 | Антипаттерн | Симптом | Что сделать |
 |---|---|---|
-| Метрический супермаркет | 30 виджетов «на всякий» | вынести в исследование / второй дашборд |
+| Метрический супермаркет / *death by dashboard* | 30 виджетов «на всякий» | вынести в исследование / второй дашборд |
 | Три конверсии без подписи | спор 4% vs 19% | одно определение из М2.3 на карточке |
 | 12 линий ретеншна | никто не читает | когортная heatmap (М5.3) |
 | Смешение денег и UX-микро | ARPPU рядом с цветом кнопки | разные экраны / роли |
 | Нет даты обновления данных | решения по вчерашней дыре | timestamp + freshness |
+| Vanity без ценности | MAU↑ при depth↓ | NSM/входы из М5.1, не «ещё активных» |
 
-### 5. Мост к Metabase (М5.4)
+### 5. Дашборд «здоровья»: три блока, один экран мониторинга
+
+Когда тип = **мониторинг** (не диагностика спринта), держите три полосы — иначе экран снова расползается:
+
+| Блок | Вопрос | Числа Ритма (пример) |
+|---|---|---|
+| **Привлечение** | приходят ли нужные люди? | installs / неделя; CAC (если есть); доля organic/paid |
+| **Продукт / ценность** | находят ли привычку? | depth≥3; habit→check_in; early paywall share |
+| **Рост / деньги** | растём ли устойчиво? | новые Pro; habit→subscribe 14д; (позже) churn платящих |
+
+Это не три разных дашборда навсегда: на диагностическом экране P3 вы *углубляете* один блок. На бумаге М5.2 для синкапа недели часто хватает health-мониторинга + одного drill-down.
+
+**Воронка ценности** на дашборде — шаги к ценности продукта (habit → depth), а не только магазинная воронка install→pay. Магазинную можно вторым рядом, с подписью определения.
+
+### 6. Мост к Metabase (М5.4)
 
 На бумаге вы уже задаёте то, что в Metabase станет:
 
@@ -182,10 +197,13 @@ MAU, DAU, installs, store rating, 8 воронок, 12 линий ретеншн
 
 ## Дальше читать
 
-- Анатомия дашборда в карте курса: [`../course-structure.md`](../course-structure.md) §5 визуал 6; модуль М5.2.
-- Инвентарь BI: [`../sources-inventory.md`](../sources-inventory.md) §5 — GoPractice creating-dashboards / pichok; IBS «дашборд для менеджера»; Metabase Learn best practices (для М5.4).
-- Офлайн (дашборд под решение): [`../uploads/bonus-gopractice-product-health-dashboard.md`](../uploads/bonus-gopractice-product-health-dashboard.md) · [`../uploads/bonus-habr-product-dashboard.md`](../uploads/bonus-habr-product-dashboard.md).
-- Определения конверсий/когорт, которые тащите на карточки: [`m2-3-conversion-cohorts.md`](./m2-3-conversion-cohorts.md).
-- События-источники: [`m4-3-tracking-plan.md`](./m4-3-tracking-plan.md).
+База экрана — выше. Библиотека курса:
 
-Следующий по BI-списке: М5.3 (выбор графика) → М5.4 (сборка в Metabase на Postgres).
+- Анатомия дашборда: [`../course-structure.md`](../course-structure.md) §5 визуал 6; модуль М5.2.
+- **Библиотека:** [`../uploads/bonus-gopractice-product-health-dashboard.md`](../uploads/bonus-gopractice-product-health-dashboard.md) · [`../uploads/bonus-habr-product-dashboard.md`](../uploads/bonus-habr-product-dashboard.md).
+- Определения: [`m2-3-conversion-cohorts.md`](./m2-3-conversion-cohorts.md) · [`m5-1-metrics-layer.md`](./m5-1-metrics-layer.md).
+- События: [`m4-3-tracking-plan.md`](./m4-3-tracking-plan.md).
+- Сборка Metabase: [`m5-4-metabase-dashboard.md`](./m5-4-metabase-dashboard.md).
+- Карта: [`../materials-library.md`](../materials-library.md).
+
+Следующий по BI: М5.3 (выбор графика) → М5.4.
