@@ -1,6 +1,6 @@
 # Уроки курса: формат и договорённости
 
-Студенческие тексты модулей лежат здесь. Карта модулей, календарь и **четыре проектные вехи на Ритме** — в [`../course-structure.md`](../course-structure.md) (§3, §4.1, §11.1). Источники для «дальше читать» — только из инвентаря (`../sources-inventory.md` и соседние docs), без выгрузок чужих курсов.
+Студенческие тексты модулей лежат здесь. Карта модулей, календарь и **четыре проектные вехи на Ритме** — в [`../course-structure.md`](../course-structure.md) (§3, §4.1, §11.1). План дыр полного курса — [`../full-course-gap-plan.md`](../full-course-gap-plan.md). Источники для «дальше читать» — только из инвентаря (`../sources-inventory.md` и соседние docs), без выгрузок чужих курсов.
 
 ---
 
@@ -30,7 +30,7 @@
 | **P3. Точки роста** | диагностика, сегменты, 3 гипотезы | **М1.7** ✓, **М1.8** ✓, М5.2/М5.4, **М4.4** ✓ | 5 |
 | **P4. A/B** | дизайн/чтение эксперимента + решение деньгами | **М2.4** ✓, **М2.5** ✓, **М1.10** ✓, **М6.1** ✓ | 6–8 |
 
-✓ = текст урока уже в этой папке. Дыры вех P1–P4 по текстам закрыты (см. §6 и course-structure §11.1).
+✓ = текст урока уже в этой папке. Дыры вех P1–P4 по текстам закрыты. Календарный must-have (нед. 1–5 мосты) — закрыт 14.09.2026.
 
 ---
 
@@ -89,40 +89,49 @@
 
 ---
 
-## 6. Что уже написано / что писать для вех
+## 6. Что уже написано
 
-| Файл | Модуль | Неделя | Вехи |
+| Файл | Модуль | Неделя | Вехи / роль |
 |---|---|---|---|
 | [`m0-1-contour.md`](./m0-1-contour.md) | М0.1 Контур решения | 1 | рамка |
 | [`m0-2-ai-in-contour.md`](./m0-2-ai-in-contour.md) | М0.2 AI в контуре | 1 | рамка |
 | [`m1-1-problem-market.md`](./m1-1-problem-market.md) | М1.1 Рынок и проблема | 1 | P1 |
-| [`m1-3-unit-economics.md`](./m1-3-unit-economics.md) | М1.3 Юнит-экономика / древо | 2 | **P1+P2** |
-| [`m1-5-strategy-nsm.md`](./m1-5-strategy-nsm.md) | М1.5 Стратегия / NSM *(stub)* | 7 | P4 рамка |
-| [`m4-3-tracking-plan.md`](./m4-3-tracking-plan.md) | М4.3 Tracking plan / измеримость | 2 | P1 |
-| [`m3-2-sql-zero-to-windows.md`](./m3-2-sql-zero-to-windows.md) | М3.2 SQL с нуля до окон | 1–3 | P1–P2 |
-| [`m3-4-pandas-polars.md`](./m3-4-pandas-polars.md) | М3.4 pandas/polars *(stub)* | 4 | мост |
-| [`m2-3-conversion-cohorts.md`](./m2-3-conversion-cohorts.md) | М2.3 Конверсия и когорты | 3 | P2 |
+| [`m4-1-screen-as-hypothesis.md`](./m4-1-screen-as-hypothesis.md) | М4.1 Экран как гипотеза | 1 | P1 вход |
 | [`m3-1-data-grain.md`](./m3-1-data-grain.md) | М3.1 Откуда данные / зерно | 1 | **P1** |
+| [`m3-2-sql-zero-to-windows.md`](./m3-2-sql-zero-to-windows.md) | М3.2 SQL с нуля до окон | 1–3 | P1–P2 |
+| [`m1-3-unit-economics.md`](./m1-3-unit-economics.md) | М1.3 Юнит-экономика / древо | 2 | **P1+P2** |
+| [`m4-3-tracking-plan.md`](./m4-3-tracking-plan.md) | М4.3 Tracking plan / измеримость | 2 | P1 |
+| [`m2-1-noise-variability.md`](./m2-1-noise-variability.md) | М2.1 Шум и вариативность | 2 | фундамент |
+| [`m2-2-descriptive-stats.md`](./m2-2-descriptive-stats.md) | М2.2 Описательная статистика | 2 | фундамент |
+| [`m1-7-cjm-journey.md`](./m1-7-cjm-journey.md) | М1.7 CJM / путь пользователя | 3–5 | **P3** |
+| [`m2-3-conversion-cohorts.md`](./m2-3-conversion-cohorts.md) | М2.3 Конверсия и когорты | 3 | P2 |
+| [`m3-3-query-under-the-hood.md`](./m3-3-query-under-the-hood.md) | М3.3 Под капотом SQL | 3 | мост Metabase |
+| [`m3-4-pandas-polars.md`](./m3-4-pandas-polars.md) | М3.4 pandas/polars | 4 | мост |
+| [`m3-5-ai-copilot-sql-python.md`](./m3-5-ai-copilot-sql-python.md) | М3.5 AI-со-пилот | 4 | мост → М3.6 |
 | [`m3-6-verify-ai-sql.md`](./m3-6-verify-ai-sql.md) | М3.6 Проверка AI SQL/Python | 4 | мост |
 | [`m5-1-metrics-layer.md`](./m5-1-metrics-layer.md) | М5.1 Слой метрик / словарь | 4 | P1→демо-2 |
 | [`m5-2-dashboard-decision.md`](./m5-2-dashboard-decision.md) | М5.2 Дашборд под решение | 4 | P2→P3 |
-| [`m1-7-cjm-journey.md`](./m1-7-cjm-journey.md) | М1.7 CJM / путь пользователя | 3–5 | **P3** |
 | [`m1-8-product-diagnosis.md`](./m1-8-product-diagnosis.md) | М1.8 Диагностика и точки роста | 5 | **P3** |
 | [`m4-4-corridor-tests.md`](./m4-4-corridor-tests.md) | М4.4 Коридорные тесты | 5 | **P3** |
+| [`m5-3-chart-choice.md`](./m5-3-chart-choice.md) | М5.3 Выбор визуализации | 5 | мост → М5.4 |
 | [`m5-4-metabase-dashboard.md`](./m5-4-metabase-dashboard.md) | М5.4 Сборка в Metabase | 5 | P3 / демо-2 |
 | [`m2-4-confidence-intervals.md`](./m2-4-confidence-intervals.md) | М2.4 ДИ / N×2 / bootstrap *(углублён stats-ab)* | 6 | **P4** |
 | [`m2-5-ab-design-read.md`](./m2-5-ab-design-read.md) | М2.5 A/B дизайн/чтение + SRM/CUPED-lite *(углублён stats-ab)* | 6–8 | **P4** |
+| [`m1-5-strategy-nsm.md`](./m1-5-strategy-nsm.md) | М1.5 Стратегия / NSM | 7 | P4 рамка |
 | [`m1-10-insight-to-decision.md`](./m1-10-insight-to-decision.md) | М1.10 Вывод → решение / деньги | 7–8 | **P4** |
 | [`m6-1-capstone-defense.md`](./m6-1-capstone-defense.md) | М6.1 Капстоун / живая защита (+разбор М6.2) | 8 | **P4 защита** |
 
-Порядок чтения на неделе 1: М0.1 → М0.2 → М1.1 (далее по календарю — М4.1, **М3.1**, старт **М3.2**).
+**Ещё нет файлов (nice-to-have):** М1.2, М1.4, М1.6, М2.6, М4.2, М5.5 — см. [`../full-course-gap-plan.md`](../full-course-gap-plan.md).
 
-Цепочки уже написанных текстов:
+Порядок чтения на неделе 1: М0.1 → М0.2 → М1.1 → **М4.1** → **М3.1** → старт **М3.2**.
 
-- Данные: **М3.1** (зерно) → **М4.3** (события/схема) → **М3.2** (SQL до окон + 3 ломаных) → **М3.6** (поймай ложь AI).
-- Решение на экране: М1.1 (метрика depth) → М2.3 (как считать) → **М5.1** (словарь) → **М5.2** (бумага) → **М5.4** (Metabase + Postgres).
-- Практика-спина: **М1.3** (древо+юнит) → **М1.7** (CJM) → **М1.8** + **М4.4** (точки роста + коридор) → **М2.4** → **М2.5** (A/B) → **М1.10** → **М6.1** (защита).
+Цепочки:
 
-**Write-next (дыры вех P1–P4 по текстам закрыты).** Конвейер §4.1: дожим stubs **М1.5**, **М3.4** → М1.4 → М1.6 → **М2.6** → остальные. A/B-ядро (**М2.4**, **М2.5**) углублено из stats-ab — [`../../internal/stats-ab-weave.md`](../../internal/stats-ab-weave.md). Самодостаточность uploads: [`../../internal/article-weave-map.md`](../../internal/article-weave-map.md), библиотека [`../materials-library.md`](../materials-library.md).
+- Данные: **М3.1** → **М4.3** → **М3.2** → **М3.3** → **М3.4** → **М3.5** → **М3.6**.
+- Решение на экране: М1.1 → **М4.1** → М2.3 → **М5.1** → **М5.2** → **М5.3** → **М5.4**.
+- Статистика: **М2.1** → **М2.2** → М2.3 → М2.4 → М2.5.
+- Практика-спина: **М1.3** → **М1.7** → **М1.8** + **М4.4** → **М2.4** → **М2.5** → **М1.5** / **М1.10** → **М6.1**.
 
-Не копируем тексты/датасеты Практикума; все практики — на схеме и синтетике Ритма.
+A/B-ядро (**М2.4**, **М2.5**) углублено из stats-ab — [`../../internal/stats-ab-weave.md`](../../internal/stats-ab-weave.md). Самодостаточность uploads: [`../../internal/article-weave-map.md`](../../internal/article-weave-map.md), библиотека [`../materials-library.md`](../materials-library.md).
+
+Не копируем тексты/датасеты Практикума; все практики — на схеме и синтетике Ритма. Ground truth A/B — только у преподавателя, не в этих файлах.

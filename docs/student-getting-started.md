@@ -4,6 +4,8 @@
 
 Этот файл — входная дверь. Карта модулей и календарь ~8 недель — в [`course-structure.md`](./course-structure.md). Список уже написанных уроков — [`lessons/README.md`](./lessons/README.md).
 
+**Для преподавателя:** операционный ранбук потока — [`instructor-guide.md`](./instructor-guide.md) (в Context store; в public student pack ключ A/B не входит).
+
 ---
 
 ## 0. Что поставить
