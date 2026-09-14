@@ -110,8 +110,8 @@
 | [`m1-8-product-diagnosis.md`](./m1-8-product-diagnosis.md) | М1.8 Диагностика и точки роста | 5 | **P3** |
 | [`m4-4-corridor-tests.md`](./m4-4-corridor-tests.md) | М4.4 Коридорные тесты | 5 | **P3** |
 | [`m5-4-metabase-dashboard.md`](./m5-4-metabase-dashboard.md) | М5.4 Сборка в Metabase | 5 | P3 / демо-2 |
-| [`m2-4-confidence-intervals.md`](./m2-4-confidence-intervals.md) | М2.4 ДИ / когда разница реальна | 6 | **P4** |
-| [`m2-5-ab-design-read.md`](./m2-5-ab-design-read.md) | М2.5 A/B дизайн и чтение | 6–8 | **P4** |
+| [`m2-4-confidence-intervals.md`](./m2-4-confidence-intervals.md) | М2.4 ДИ / N×2 / bootstrap *(углублён stats-ab)* | 6 | **P4** |
+| [`m2-5-ab-design-read.md`](./m2-5-ab-design-read.md) | М2.5 A/B дизайн/чтение + SRM/CUPED-lite *(углублён stats-ab)* | 6–8 | **P4** |
 | [`m1-10-insight-to-decision.md`](./m1-10-insight-to-decision.md) | М1.10 Вывод → решение / деньги | 7–8 | **P4** |
 | [`m6-1-capstone-defense.md`](./m6-1-capstone-defense.md) | М6.1 Капстоун / живая защита (+разбор М6.2) | 8 | **P4 защита** |
 
@@ -123,6 +123,6 @@
 - Решение на экране: М1.1 (метрика depth) → М2.3 (как считать) → **М5.1** (словарь) → **М5.2** (бумага) → **М5.4** (Metabase + Postgres).
 - Практика-спина: **М1.3** (древо+юнит) → **М1.7** (CJM) → **М1.8** + **М4.4** (точки роста + коридор) → **М2.4** → **М2.5** (A/B) → **М1.10** → **М6.1** (защита).
 
-**Write-next (дыры вех P1–P4 по текстам закрыты).** Конвейер §4.1: дожим stubs **М1.5**, **М3.4** → М1.4 → М1.6 → М2.6 → остальные. Самодостаточность: концепты из `uploads/` вшиты в ядро уроков — см. [`../../internal/article-weave-map.md`](../../internal/article-weave-map.md), библиотека [`../materials-library.md`](../materials-library.md).
+**Write-next (дыры вех P1–P4 по текстам закрыты).** Конвейер §4.1: дожим stubs **М1.5**, **М3.4** → М1.4 → М1.6 → **М2.6** → остальные. A/B-ядро (**М2.4**, **М2.5**) углублено из stats-ab — [`../../internal/stats-ab-weave.md`](../../internal/stats-ab-weave.md). Самодостаточность uploads: [`../../internal/article-weave-map.md`](../../internal/article-weave-map.md), библиотека [`../materials-library.md`](../materials-library.md).
 
 Не копируем тексты/датасеты Практикума; все практики — на схеме и синтетике Ритма.

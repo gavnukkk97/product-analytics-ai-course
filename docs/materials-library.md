@@ -9,6 +9,7 @@
 | [`uploads/README.md`](./uploads/README.md) | **внутренняя библиотека** md (kir, 2026-09-14) — читать из курса |
 | [`lessons/`](./lessons/) | тела уроков: концепции уже вшиты; uploads — углубление |
 | [`../internal/article-weave-map.md`](../internal/article-weave-map.md) | карта upload → модуль → статус weave |
+| [`../internal/stats-ab-weave.md`](../internal/stats-ab-weave.md) | карта stats-ab-course → М2.4/М2.5 |
 | [`medium-linkedin-sources.md`](./medium-linkedin-sources.md) | оценка семёрки kir + discovery |
 | [`medium-download-wishlist.md`](./medium-download-wishlist.md) | wishlist (закрыт выгрузкой) |
 | [`ux-sources.md`](./ux-sources.md) | М4.* детально |
@@ -62,7 +63,8 @@ Wishlist закрыт: локальные md лежат в [`uploads/`](./upload
 | **М1.5** | [`uploads/medium-seregina-metrics-hierarchy-vs-pyramid.md`](./uploads/medium-seregina-metrics-hierarchy-vs-pyramid.md) · [`uploads/linkedin-zaleuska-north-star-product-metrics.md`](./uploads/linkedin-zaleuska-north-star-product-metrics.md) · [`uploads/linkedin-swartz-hierarchy-product-metrics.md`](./uploads/linkedin-swartz-hierarchy-product-metrics.md) · [`uploads/medium-seregina-metrics-frameworks.md`](./uploads/medium-seregina-metrics-frameworks.md) | [`lessons/m1-5-strategy-nsm.md`](./lessons/m1-5-strategy-nsm.md) · **stub** |
 | **М1.8** | [`uploads/linkedin-tyler-rice-excerpt.md`](./uploads/linkedin-tyler-rice-excerpt.md) | [`lessons/m1-8-product-diagnosis.md`](./lessons/m1-8-product-diagnosis.md) · **woven** |
 | **М2.3** | [`uploads/linkedin-swartz-hierarchy-product-metrics.md`](./uploads/linkedin-swartz-hierarchy-product-metrics.md) · [`uploads/medium-duckweave-duckdb-retention-cohorts.md`](./uploads/medium-duckweave-duckdb-retention-cohorts.md) · [`uploads/bonus-habr-product-metrics-sql.md`](./uploads/bonus-habr-product-metrics-sql.md) · [`uploads/medium-hashblock-duckdb-window-cohorts.md`](./uploads/medium-hashblock-duckdb-window-cohorts.md) | [`lessons/m2-3-conversion-cohorts.md`](./lessons/m2-3-conversion-cohorts.md) · **woven** |
-| **М2.5** | [`uploads/medium-geoghegan-end-to-end-product-analytics-strategy.md`](./uploads/medium-geoghegan-end-to-end-product-analytics-strategy.md) (эксперимент как мышца / стадии) | [`lessons/m2-5-ab-design-read.md`](./lessons/m2-5-ab-design-read.md) · **woven** (A/B-детали — открытые GoPractice/Habr в §3.4) |
+| **М2.4** | — (мало в uploads; якоря §3.4 + stats-ab) | [`lessons/m2-4-confidence-intervals.md`](./lessons/m2-4-confidence-intervals.md) · **углублён** (stats-ab) |
+| **М2.5** | [`uploads/medium-geoghegan-end-to-end-product-analytics-strategy.md`](./uploads/medium-geoghegan-end-to-end-product-analytics-strategy.md) (эксперимент как мышца) | [`lessons/m2-5-ab-design-read.md`](./lessons/m2-5-ab-design-read.md) · **углублён** (stats-ab + GoPractice/Habr §3.4) |
 | **М3.2** | [`uploads/medium-hashblock-duckdb-window-cohorts.md`](./uploads/medium-hashblock-duckdb-window-cohorts.md) · [`uploads/medium-mohitdaxini-monthly-cohort-retention-sql.md`](./uploads/medium-mohitdaxini-monthly-cohort-retention-sql.md) · [`uploads/medium-shaunmia-sql-window-cohort-analysis.md`](./uploads/medium-shaunmia-sql-window-cohort-analysis.md) · [`uploads/medium-snehagupta-10-sql-queries-data-analyst.md`](./uploads/medium-snehagupta-10-sql-queries-data-analyst.md) · [`uploads/bonus-kariernik-sql-product-analyst.md`](./uploads/bonus-kariernik-sql-product-analyst.md) · [`uploads/bonus-habr-product-metrics-sql.md`](./uploads/bonus-habr-product-metrics-sql.md) · [`uploads/medium-duckweave-duckdb-retention-cohorts.md`](./uploads/medium-duckweave-duckdb-retention-cohorts.md) | [`lessons/m3-2-sql-zero-to-windows.md`](./lessons/m3-2-sql-zero-to-windows.md) · **woven** |
 | **М3.4** | [`uploads/medium-nickpatel-pandas-to-duckdb.md`](./uploads/medium-nickpatel-pandas-to-duckdb.md) | [`lessons/m3-4-pandas-polars.md`](./lessons/m3-4-pandas-polars.md) · **stub** |
 | **М5.1** | [`uploads/medium-seregina-metrics-frameworks.md`](./uploads/medium-seregina-metrics-frameworks.md) · [`uploads/medium-seregina-metrics-hierarchy-vs-pyramid.md`](./uploads/medium-seregina-metrics-hierarchy-vs-pyramid.md) · [`uploads/linkedin-zaleuska-north-star-product-metrics.md`](./uploads/linkedin-zaleuska-north-star-product-metrics.md) · [`uploads/bonus-gopractice-product-health-dashboard.md`](./uploads/bonus-gopractice-product-health-dashboard.md) | [`lessons/m5-1-metrics-layer.md`](./lessons/m5-1-metrics-layer.md) · **woven** |
@@ -122,6 +124,7 @@ Wishlist закрыт: локальные md лежат в [`uploads/`](./upload
 | [Habr 983060 — выбор метода](https://habr.com/ru/articles/983060/) | ru | открыто | adapt | χ² / bootstrap / CUPED обзор |
 | Evan Miller calculators | en | открыто | keep | Уже в инвентаре |
 | KISSmetrics A/B workflow | en | PDF/блог фрагментарно | adapt / низкий | Исторически в medium-linkedin; **замена = GoPractice + Habr 996860** |
+| [stats-ab-course](https://github.com/gavnukkk97/stats-ab-course) (kir) | ru | открыто (репо) | **adapt** → тела М2.4/М2.5 | Не студенческий dump: карта [`../internal/stats-ab-weave.md`](../internal/stats-ab-weave.md) |
 
 ### 3.5. BI storytelling / дашборд под решение (М5.1–М5.4)
 
@@ -182,7 +185,7 @@ Wishlist закрыт: локальные md лежат в [`uploads/`](./upload
 | М1.5 / М5.1 | Zaleuska / Swartz; Seregina; GoPractice NSM | Seregina ×2 · Zaleuska · Swartz | М5.1 **woven**; М1.5 **stub** |
 | М1.8 | Ashworth RICE (кусок); RCA Product Heroes | Tyler RICE excerpt | **woven** |
 | М2.3 | GoPractice retention; Красинский; Kariernik/Habr SQL | Swartz · Duckweave · Habr SQL | **woven** |
-| М2.4–М2.5 | GoPractice A/B; Habr 996860; Evan Miller | Geoghegan (мышца эксперимента) | М2.5 частично **woven**; М2.4 thin |
+| М2.4–М2.5 | GoPractice A/B; Habr 996860; Evan Miller; **stats-ab** (адаптация) | Geoghegan (мышца эксперимента) | М2.4 + М2.5 **углублены** (SRM/CUPED-lite/N×2); см. `internal/stats-ab-weave.md` |
 | М3.2 | sql-python канон; Medium windows | Hashblock · Mohit · Shaun · Sneha · Kariernik | **woven** |
 | М3.4 | sql-python pandas/polars | Nick Patel Pandas→DuckDB | **stub** |
 | М3.6 | Habr 1066650 + 944010; zasqlpython | — | — |
@@ -209,11 +212,12 @@ Wishlist закрыт: локальные md лежат в [`uploads/`](./upload
 |---|---|
 | Концепты uploads только в «Дальше читать» | **Снято** для ядра P1–P4 носителей: см. weave-map |
 | М1.5 / М3.4 полные уроки | **stub** в `lessons/`; дожать в конвейере |
-| М2.4 / М2.5 глубокий A/B из uploads | thin в uploads; опираемся на открытый GoPractice/Habr (§3.4) |
+| М2.4 / М2.5 глубокий A/B | **снято** в store: углублены уроки из stats-ab-course (не uploads); sync в GitHub-pack — по запросу |
+| М2.6 полный текст / Bayes / causal deep | optional конвейер; stats-ab М5–М6 как private ref |
 | М3.6 методика приёмки AI | Риторика закрыта открытым Habr; авторский набор ложных ответов на схеме Ритма — есть в уроке |
 | М4.3 «дизайн, ломающий данные» | Процесс разметки усилен (Лавка/OTUS); авторский антипример в уроке |
 | М5.5 жизнь аналитики в команде | Готового ритуала в uploads нет |
 | EN Medium SQL windows | md в [`uploads/`](./uploads/); идеи **woven** в М3.2 под Postgres |
 | LinkedIn без логина | md в uploads |
 
-*Обновлено 14 сентября 2026 (self-contained weave).*
+*Обновлено 14 сентября 2026 (self-contained weave + stats-ab A/B).*
